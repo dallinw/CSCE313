@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Jan 31 09:05:33 2018
+Quartus II 32-bit Version : 12.0 Build 178 05/31/2012 SJ Full Version
+Revision Name : lights
+Top-level Entity Name : lights
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 4,083 / 114,480 ( 4 % )
+    Total combinational functions : 3,386 / 114,480 ( 3 % )
+    Dedicated logic registers : 2,681 / 114,480 ( 2 % )
+Total registers : 2800
+Total pins : 176 / 529 ( 33 % )
+Total virtual pins : 0
+Total memory bits : 65,664 / 3,981,312 ( 2 % )
+Embedded Multiplier 9-bit elements : 4 / 532 ( < 1 % )
+Total PLLs : 1 / 4 ( 25 % )
