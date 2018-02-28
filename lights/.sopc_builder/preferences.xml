@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="Default">
+  <columns>
+   <opcodeName visible="0" />
+   <connections preferredWidth="175" />
+   <irq preferredWidth="34" />
+   <export visible="0" />
+   <name preferredWidth="227" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="257" />
+   <clocksource preferredWidth="257" />
+   <frequency preferredWidth="246" />
+  </columns>
+ </clocktable>
+ <window width="1302" height="1067" x="463" y="19" />
+ <library
+   expandedCategories="Library,Project,Library/Interface Protocols/Ethernet,Library/Bridges/Memory Mapped,Library/Interface Protocols,Library/Bridges" />
+</preferences>

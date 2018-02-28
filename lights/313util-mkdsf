@@ -1,0 +1,479 @@
+#!/bin/sh
+# shellcheck disable=SC2034
+# shellcheck disable=SC2120
+# shellcheck disable=SC2119
+# shellcheck disable=SC1091
+# shellcheck disable=SC2129
+# shellcheck disable=SC2091
+# shellcheck disable=SC1090
+
+# The above have to come immediately after the shebang line to apply to the
+# entire file. These directives are used to disable certain ShellCheck
+# warnings.
+#
+# SC2034 - disabled because there are some variables that will wind up unused
+# in most DAEDALUS scripts due to burning in the config.
+#
+# SC2120, SC2119 - Disabled to prevent shellcheck from complaining about unused
+# optional arguments.
+#
+# SC1091 - Prevents spurious warnings relating to altera.lib.
+#
+# SC2129 - Disabled becaues {} notation is not supported in many sh
+# implementations, and is thus not used by DAEDALUS
+#
+# SC2091 - Allow executing $(command... ) which is useful for running code
+# generated at runtime.
+#
+# SC1090 - Allow sourcing from non-constant sources.
+
+# This script is made available to student users of DAEDALUS. It will when
+# executed within a Quartus project directory, produce a DSF (DAEDALUS
+# Submission Format) file containing your project as well as required metadata.
+# The resulting .dsf file will be placed on your Desktop, assuming this script
+# can find it, and will be placed in your home directory otherwise.
+#
+# Note that this script respects your XDG settings, so you have made your
+# desktop directory something other than ~/Desktop that way, this should
+# respect it.
+#
+# USAGE:
+#
+# studentutil-mkdsf [PROJECT CODE] [GROUP MEMBER 1] [ GROUP MEMBER 2]
+#
+# [PROJECT CODE] is the DAEDALUS project code for the assignment you are
+# working on. Your instructor will give this to you.
+#
+# [GROUP MEMBER N] is the user ID for the Nth group member, this is almost
+# always the output of the command `whoami`. Note that your submission file
+# will bear only the username of the user account it was created in it's
+# filename. Don't worry, the user ID for each group member is stored within the
+# resulting DSF file.
+#
+# NOTE: 'studentutil-mkdsf' is the DAEDALUS internal name for this script. It
+# will most likely be called NNNutil-mkdsf where "NNN" is your course code.
+# This is done because the pre-baked configuration values for each course code
+# DAEDALUS supports are different.
+
+
+########10########20#### DAEDALUS SHARED COMMONCONFIG ####60########70########80
+
+set -u
+DAEDALUS_STUDENT_EXPOSED_DIR="/usr/local/3rdparty/csce611/daedalus/student-exposed"
+DAEDALUS_COURSE_NUMBER=313
+DAEDALUS_ENABLE_DEBUG="YES"
+
+########10########20####### DAEDALUS SHARED LOGGING ######60########70########80
+
+# .SCRIPTDOC
+#
+# This snippet provides various useful logging functions. All logging functions
+# use ``log_generic`` as a back-end.
+#
+# .ENDOC
+
+# .DOCUMENTS log_generic
+
+# Produces a log message with a specified logging level. A timestamp and the
+# script name are calculated automatically. The log message is sent to standard
+# error.
+
+# If the variable ``DAEDALUS_LOGGING_MIRROR`` is defined, then the log messages
+# will also be appended to the file which this variable points to. This is
+# highly useful for modules who's stderr/stdout cannot be captured/recorded.
+
+# .SYNTAX
+#
+# $1 . . . logging level (arbitrary string such as 'DEBUG')
+#
+# $@ . . . message to log (also an arbitary string)
+
+# .ENDOC
+log_generic () {
+	# $1 . . . level
+	# $2 . . . message
+	timestamp=$(date)
+	scriptname=$(basename "$0")
+	level="$1"
+	shift
+	message="$*"
+	printf "[%s][%s][%s]: %s\\n" "$scriptname" "$level" "$timestamp" "$message" > /dev/stderr
+
+	if (: "${DAEDALUS_LOGGING_MIRROR?}") > /dev/null 2>&1 ; then
+		# mirror output
+		printf "[%s][%s][%s]: %s\\n" "$scriptname" "$level" "$timestamp" "$message" >> "$DAEDALUS_LOGGING_MIRROR"
+	fi
+}
+
+# .DOCUMENTS log_debug
+#
+# Produces a log message with log level ``DEBUG``. If the varaible
+# ``DAEDALUS_ENABLE_DEBUG`` is not exactly equal to ``YES``, this function
+# does nothing (i.e. ``DEBUG`` level messages are squealched).
+#
+# .SYNTAX
+#
+# $1 . . . log message
+#
+# .ENDOC
+log_debug () {
+	if [ "$DAEDALUS_ENABLE_DEBUG" != "YES" ] ; then
+		# do nothing
+		true
+	else
+		log_generic "DEBUG" "$*"
+	fi
+}
+
+# .DOCUMENTS log_info
+#
+# .ENDOC
+log_info () {
+	log_generic "INFO " "$*"
+}
+
+# .DOCUMENTS log-Warn
+#
+# .ENDOC
+log_warn () {
+	log_generic "WARN " "$*"
+}
+
+# .DOCUMENTS log-error
+#
+# .ENDOC
+log_error () {
+	log_generic "ERROR" "$*"
+}
+
+
+########10########20####### DAEDALUS SHARED VERSION ######60########70########80
+
+DAEDALUS_VERSION='0.0.1-GIT'
+
+########10########20##### DAEDALUS SHARED showversion ####60########70########80
+
+# display DAEDALUS version when the script starts. ##SNIPPET:version and
+# ##SNIPPET:logging must come first.
+
+SCRIPT_NAME=$(basename "$0")
+log_info "this is DAEDALUS version $DAEDALUS_VERSION, componant '$SCRIPT_NAME'"
+
+
+########10########20###### DAEDALUS SHARED SENSIBLE ######60########70########80
+
+
+sensible_md5 () {
+	set +u
+	if [ -x "$(which md5)" ] ; then
+		echo "md5"
+		return
+	fi
+
+	if [ -x "$(which md5sum)" ] ; then
+		echo "md5sum"
+		return
+	fi
+	set -u
+}
+
+sensible_timeout () {
+	set +u
+	if [ -x "$(which gtimeout)" ] ; then
+		gtimeout "$1"
+		return
+	fi
+
+	if [ -x "$(which timeout)" ] ; then
+		timeout "$1"
+		return
+	fi
+	set -u
+}
+########10########20##### general scripting utilities ####60########70########80
+
+# .SCRIPTDOC
+#
+# Various uncatagorized utilities in the sh language.
+#
+# Note that this requires the 'sensible' snippet.
+#
+# .ENDOC
+
+get_random_identifier () {
+	uuidgen
+}
+
+ensure_dir_exists () {
+	log_debug "Ensuring directory '$1' exists"
+	mkdir -p "$1"
+	if [ ! -e "$1" ] ; then
+		log_error "'$1' should have been created, but was not."
+		force_script_crash
+	fi
+}
+
+debug_dump_dirinfo () {
+	DIRINFO_START_DIR="$(pwd)"
+	if [ $# -ne 0 ] ; then
+		cd "$1" ||:
+	fi
+
+	log_debug "- - - DIRINFO - - - "
+	log_debug "PWD: $(pwd)"
+	log_debug "DIR CONTENTS: "
+	find . | while read -r line ; do
+		log_debug "$line"
+	done
+
+	cd "$DIRINFO_START_DIR" ||:
+}
+
+safe_cd () {
+	if [ $# -ne 1 ] ; then
+		log_error "Incorrect number of arguments for safe_cd: $#"
+		exit 1
+	fi
+
+	cd "$1" || (log_error "Failed to cd to '$1'" ; exit 1)
+}
+
+# .DOCUMENTS safe_cp
+#
+# Copy a file from one place to another, and crash the script if the operation
+# fails. Overwrites the destination file if it exists already.
+#
+# .SYNTAX
+#
+# $1 . . . source file
+#
+# $2 . . . destination file (should not be a directory)
+#
+# .ENDOC
+safe_cp () {
+
+	if [ $# -ne 2 ] ; then
+		log_error "Incorrect usage for safe_cp (got # args, expected 2)"
+		force_script_crash
+	fi
+
+	CP_SRC_FILE="$1"
+	CP_DEST_FILE="$2"
+
+	log_debug "safe copying '$CP_SRC_FILE' to '$CP_DEST_FILE'"
+
+	if [ ! -e "$CP_SRC_FILE" ] ; then
+		log_error "Source file '$CP_SRC_FILE' does not exist"
+		force_script_crash
+	fi
+
+	if [ -f "$CP_DEST_FILE" ] ; then
+		log_debug "Destination file exists, deleting it"
+		rm -f "$CP_DEST_FILE"
+	fi
+
+	if [ -f "$CP_DEST_FILE" ] ; then
+		log_error "Failed do delete dest file '$CP_DEST_FILE'"
+		force_script_crash
+	fi
+
+	cp "$CP_SRC_FILE" "$CP_DEST_FILE"
+
+	if [ ! -f "$CP_DEST_FILE" ] ; then
+		log_error "failed to copy '$CP_SRC_FILE' to '$CP_DEST_FILE'"
+		force_script_crash
+	fi
+
+}
+
+require_binary () {
+	# crash if a binary is not in $PATH
+	if [ ! -x "$(which "$1")" ] ; then
+		log_error "Binary '$1' needs to be in PATH, but is not"
+		log_debug "PATH: $PATH"
+		exit 1
+	else
+		log_debug "Binary '$1' is in PATH - require_binary OK"
+	fi
+}
+
+log_breakpoint () {
+	log_generic "BREAKPOINT" "$*"
+}
+
+debug_breakpoint () {
+	# drop to interactive BASH shell
+	
+	if [ ! -t 0 ] ; then
+		log_error "Attempted to drop to breakpoint shell, but /dev/stdin is not a tty"
+		return
+	fi
+	
+	log_breakpoint "DROPPING TO INTERACTIVE BREAKPOINT SHELL"
+	log_breakpoint "WD: '$(pwd)'"
+	log_breakpoint "F : '$(basename "$0")'"
+	log_breakpoint "Use EOF (<C-D>) to resume execution"
+	printf "BREAKPOINT (%s)> " "$(basename "$0")"
+	while read -r ln ; do
+		if [ "$ln" = "exit" ] ; then
+			log_breakpoint "Exiting breakpoint shell"
+			return
+		fi
+		eval "$ln"
+		printf "BREAKPOINT (%s)> " "$(basename "$0")"
+	done
+}
+
+# .DOCUMENTS force_script_crash
+#
+# Force the running script to crash. This is useful because calling 'exit 1'
+# from within a function doe snot always kill the entire script.
+#
+# .ENDOC
+force_script_crash () {
+	log_error "Script has been forced to crash"
+	kill -9 $$
+	exit 1
+}
+
+
+########10########20########30### SCRIPT BODY ##50########60########70########80
+
+
+if [ $# -lt 2 ] ; then
+	log_error "(E34) Insufficient arguments."
+	log_info "USAGE: $(basename "$0") [PROJECT CODE] [ID 1] [ID 2]... [ID N]"
+	log_info "For more information, please run 'less $0'."
+	exit 1
+fi
+
+# extract project code
+PROJECT_CODE=$1
+log_info "Project code is $PROJECT_CODE"
+shift
+
+# generate the group member list for the DSF.ini - this is what is actually
+# used to assign grades.
+GROUP="$1"  # prevent a leading , from appearing in the group list
+shift
+for member in "$@" ; do
+	GROUP="$GROUP,$member"
+done
+
+# validate that each member of the group is actually a user on the system, to
+# protect against typos. This is a separate loop to avoid duplicated code to
+# check the first member and all of the members after the first separately.
+for member in $(echo "$GROUP" | tr ',' ' ') ; do
+	if ! id "$member" > /dev/null 2>&1 ; then
+		log_error "(E86) group member '$member' does not appear to exist, refusing to proceed."
+		exit 1
+	fi
+done
+
+# if this is a sane Quartus project directory, there should be exactly one
+# .qpf file present.
+QPF_COUNT=$(find . -name "*.qpf" 2>/dev/null | wc -l)
+if [ "$QPF_COUNT" -lt 1 ] ; then
+	log_error "(E37) Missing QPF file in '$(pwd)'. Are you cd-ed into your Quartus project folder?"
+	exit 1
+fi
+if [ "$QPF_COUNT" -gt 1 ] ; then
+	log_error "(E41) Multiple QPF files found in $(pwd)'. Not sure what to do; giving up."
+	exit 1
+fi
+
+# run any secondary validation
+log_info "Executing secondary validation for project code '$PROJECT_CODE'"
+VALIDATION_DIR="$DAEDALUS_STUDENT_EXPOSED_DIR/$PROJECT_CODE"
+VALIDATION_SCRIPT="$VALIDATION_DIR/student-validate.sh"
+VALIDATION_STATUS="false"
+VALIDATION_MD5=$(sensible_md5 "$VALIDATION_DIR/student-validate.sh" 2>/dev/null)
+
+# if the validation script exists, execute it
+if [ -x "$VALIDATION_SCRIPT" ] ; then
+	if ! "$VALIDATION_SCRIPT" ; then
+		log_error "(E88) validation script failed, refusing to proceed."
+		exit 1
+	fi
+	VALIDATION_STATUS="true"
+else
+	log_error "No validation script found for project code '$PROJECT_CODE'"
+	log_info "hint: this script needs to be run in the Linux lab"
+	exit 1
+fi
+
+# generate a unique project hash, this is arbitrary and only used to avoid
+# filename collisions.
+PROJECT_HASH=$(uuidgen)
+
+# generate the DSF in unpacked format
+log_info "Assembling DSF contents..."
+DSF_NAME="$(whoami)-$PROJECT_CODE-$PROJECT_HASH"
+log_info "DSF name is $DSF_NAME"
+
+# figure out where to put the DSF file
+DEST_DIR="$HOME"
+# if the user has set alternate XDG preferences from the defaults, try to
+# respect those first
+if [ -d "$(which xdg-user-dir 2>&1)" ] ; then
+	DEST_DIR=$(xdg-user-dir Desktop)
+else
+	# fail over and try to find ~/Desktop if XDG isnt available
+	if [ -e "$HOME/Desktop" ] ; then
+		DEST_DIR="$HOME/Desktop"
+	fi
+fi
+log_info "Identified desktop dir as '$DEST_DIR'."
+
+# sanity check that the DSF file name is not already in use. This would imply
+# a hash collision.
+DSF_DIR="$DEST_DIR/$DSF_NAME"
+if [ -e "$DSF_DIR" ] ; then
+	log_error "(E67) DSF assembly directory '$DSF_DIR' already exists, this should never happen."
+	exit 1
+fi
+if [ -e "$DSF_DIR.dsf" ] ; then
+	log_error "(E71) DSF file '$DSF_DIR.dsf' already exists, this should never happen."
+	exit 1
+fi
+
+# create directories
+mkdir "$DSF_DIR"
+mkdir "$DSF_DIR/submission"
+
+# generate shasum.txt
+log_info "Generating checksums... "
+find . -type f -exec shasum '{}' \; > "$DSF_DIR/shasum.txt" 2>/dev/null
+log_info "Finished generating checksums."
+
+# copy Quartus project files into the submission subdirectory
+log_info "Generating DSF contents... "
+cp -r ./ "$DSF_DIR/submission/"
+rm -rf "$DSF_DIR/submission/db"
+rm -rf "$DSF_DIR/submission/incremental_db"
+rm -rf "$DSF_DIR/submission/simulation"
+
+# generate the DSF.ini file
+echo '[dsf-base]' >> "$DSF_DIR/DSF.ini"
+echo "version=$DAEDALUS_VERSION" >> "$DSF_DIR/DSF.ini"
+echo "id=$(whoami)" >> "$DSF_DIR/DSF.ini"
+echo "group=$GROUP" >> "$DSF_DIR/DSF.ini"
+echo "timestamp=$(date)" >> "$DSF_DIR/DSF.ini"
+echo "validation_status=$VALIDATION_STATUS" >> "$DSF_DIR/DSF.ini"
+echo "validation_md5=$VALIDATION_MD5" >> "$DSF_DIR/DSF.ini"
+echo "project_code=$PROJECT_CODE" >> "$DSF_DIR/DSF.ini"
+
+log_info "Done generating DSF contents."
+
+# compress the generate directory
+log_info "Packing DSF file... "
+safe_cd "$DEST_DIR"
+tar cfz "$DSF_NAME.dsf" "$DSF_NAME"
+log_info "Finished packing DSF file."
+
+
+# delete working directory and move the final .dsf to the user's desktop
+log_info "Cleaning up... "
+rm -rf "$DSF_NAME"
+log_info "Script finished. Your DSF file is at '$DEST_DIR/$DSF_NAME.dsf'"
+
