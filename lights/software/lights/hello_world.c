@@ -13,18 +13,22 @@
 #include <stdlib.h>  // for file I/O
 #include <altera_avalon_performance_counter.h>
 
+#define FIXED_POINT
 
 alt_up_pixel_buffer_dma_dev *my_pixel_buffer; //declare global var
 const int num_rows = 240;  //from 320
 const int num_cols = 320; //from 240
 float row;
 float col;
+int shift_amt = 9;
+
 int rcount;
 int bool_dec;
 float scount;
 
 int main()
 {
+
 	// open the .dat file
 	FILE *myfile;
 	//myfile = fopen("my_fs/myfile.dat","rb");
@@ -32,10 +36,12 @@ int main()
 	if(myfile==NULL) perror ("error opening datafile");
 
 	//allocate memory and read image data
+
 	alt_u32 keys;
 	alt_u32 current_value = 1;
 	alt_u32 current_state = 3;
 	alt_u8 *my_image;
+	alt_u8 cycle_counter = 0;
 	my_image = (alt_u8 *)malloc(320*240*3);
 	fread(my_image,sizeof(alt_u8),320*240*3,myfile);
 
@@ -103,8 +109,27 @@ int main()
 	else if (current_state == 5) {
 		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
 		int i, j;
+
+
+		#ifdef FIXED_POINT
+
+		alt_32 sine = (alt_32)(sinf(rcount*(M_PI/180))*512.0f);
+		alt_32 cosine = (alt_32)(cosf(rcount*(M_PI/180))*512.0f);
+
+
+		#else
+
 		float sine = sinf(rcount*(M_PI/180));
 		float cosine = cosf(rcount*(M_PI/180));
+
+		#endif
+
+		int iterations = 0;
+		int sum_of_cycles = 0;
+		int average_cycles = 0;
+
+		//reset performance counter
+		PERF_RESET(PERFORMANCE_COUNTER_0_BASE);
 
 		for(i=0; i<num_rows-1; i++){
 			//break if key press
@@ -113,20 +138,73 @@ int main()
 			break;
 			}
 			for(j=0; j<num_cols-1; j++) {
+				//start performance counter to record cycles of this innermost loop
+				PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
+
 				// to rotate about center calculate offset
 				int offset_i = i - num_rows/2;
 				int offset_j = j - num_cols/2;
+
+				int rowf = 0;
+				int colf = 0;
+
 				// rotate row/col values
+				#ifdef FIXED_POINT
 				row = offset_i*cosine-offset_j*sine + num_rows/2;
 				col = offset_i*sine+offset_j*cosine + num_cols/2;
 				//check bounds
 				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
 
+				rowf = (int)floorf(row);
+				colf = (int)floorf(col);
+
+				#else
+				row = offset_i*cosine-offset_j*sine + (num_rows<<shift_amt)/2;
+				col = offset_i*sine+offset_j*cosine + (num_cols<<shift_amt)/2;
+
+				rowf = row;
+				colf = col;
+
+				if(col>(num_cols<<shift_amt) || col<0 || row>(num_rows<<shift_amt) || row<0) continue;
+				#endif
+
 				// interpolation:
 				// truncate
-				int rowf = (int)floorf(row);
-				int colf = (int)floorf(col);
+				//int rowf = (int)floorf(row);
+				//int colf = (int)floorf(col);
 
+				#ifdef FIXED_POINT
+				alt_u32 row_fp = offset_i*cosine - offset_j*sine + ((num_rows/2)<<shift_amt);
+				alt_u32 col_fp = offset_i*sine + offset_j*cosine + ((num_cols/2)<<shift_amt);
+
+				alt_32 rfrac = row_fp-(rowf);
+				alt_32 cfrac = col_fp-(colf);
+
+				alt_32 weight1 = ((1<<shift_amt)-rfrac)*((1<<shift_amt)-cfrac);
+				alt_32 weight2 = rfrac*((1<<shift_amt)-cfrac);
+				alt_32 weight3 = rfrac*cfrac;
+				alt_32 weight4 = ((1<<shift_amt)-rfrac)*cfrac;
+				weight1 = weight1>>shift_amt;
+				weight2 = weight2>>shift_amt;
+				weight3 = weight3>>shift_amt;
+				weight4 = weight4>>shift_amt;
+
+				/*
+				alt_32 rfrac = row_fp-rowf*shift_amt;
+				alt_32 cfrac = col_fp-colf*shift_amt;
+
+				alt_32 weight1 = (1*shift_amt-rfrac)*(1*shift_amt-cfrac);
+				alt_32 weight2 = rfrac*(1*shift_amt-cfrac);
+				alt_32 weight3 = rfrac*cfrac;
+				alt_32 weight4 = (1*shift_amt-rfrac)*cfrac;
+				weight1 /= shift_amt;
+				weight2 /= shift_amt;
+				weight3 /= shift_amt;
+				weight4 /= shift_amt;
+				*/
+
+
+				#else
 				float rfrac = row-rowf;
 				float cfrac = col-colf;
 
@@ -136,10 +214,14 @@ int main()
 				float weight3 = rfrac*cfrac;
 				float weight4 = (1.0-rfrac)*cfrac;
 
+				#endif
+
 				int pixel1 = rowf*320*3 + colf*3;
 				int pixel2 = (rowf + 1)*320*3 + colf*3;
 				int pixel3 = (rowf + 1)*320*3 + (colf + 1)*3;
 				int pixel4 = rowf*320*3 + (colf + 1)*3;
+
+
 
 				//three colors
 				int in1 = (int) (weight1*my_image[pixel1] +
@@ -160,8 +242,17 @@ int main()
 
 
 				//draw_pixel
+				cycle_counter = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
+				PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
+				++iterations;
+				sum_of_cycles += cycle_counter;
+				//printf("# of Cycles:");
+				//printf("%d\n", average_cycles);
 				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
 			}
+			average_cycles = sum_of_cycles/iterations;
+			printf("Average # of Cycles:");
+			printf("%d\n", average_cycles);
 		}
 		rcount+=10;
 
@@ -172,6 +263,8 @@ int main()
 	// Repeat as fast as the processor can handle
 	else if (current_state == 6) {
 		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
+		printf("scount before drawing is:");
+		printf("%f\n", scount);
 		int i, j;
 		for(i=0; i<num_rows-1; i++){
 			//break if key press
@@ -227,17 +320,19 @@ int main()
 				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
 			}
 		}
-		if(bool_dec == 0) {
-			scount-=0.1f;
-			if (scount <=0.1) {
-				bool_dec = 1;
-			}
-		}
-
-		else if(bool_dec == 1) {
+		if(bool_dec == 1) {
 			scount+=0.1f;
-			if (scount >=1) {
+			printf("scount is decrementing to:");
+			printf("%f\n", scount);
+			if (scount >=1.9f) {
 				bool_dec = 0;
+			}
+		} else if(bool_dec == 0) {
+			scount-=0.1f;
+			printf("scount is incrementing to:");
+			printf("%f\n", scount);
+			if (scount <=1.0f) {
+				bool_dec = 1;
 			}
 		}
 

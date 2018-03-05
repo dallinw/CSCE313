@@ -17,7 +17,7 @@
    <frequency preferredWidth="246" />
   </columns>
  </clocktable>
- <window width="1302" height="1067" x="463" y="19" />
+ <window width="1302" height="1067" x="137" y="23" />
  <library
-   expandedCategories="Library,Project,Library/Interface Protocols/Ethernet,Library/Bridges/Memory Mapped,Library/Interface Protocols,Library/Bridges" />
+   expandedCategories="Library,Library/Peripherals/Debug and Performance,Library/Peripherals,Project" />
 </preferences>

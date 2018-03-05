@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lights
-Fri Feb 23 11:17:27 2018
+Fri Mar  2 09:33:14 2018
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Feb 23 11:17:27 2018 ;
+; EDA Netlist Writer Status ; Successful - Fri Mar  2 09:33:14 2018 ;
 ; Revision Name             ; lights                                ;
 ; Top-level Entity Name     ; lights                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Fri Feb 23 11:17:20 2018
+    Info: Processing started: Fri Mar  2 09:33:06 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off lights -c lights
 Info (204019): Generated file lights_7_1200mv_85c_slow.vho in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file lights_7_1200mv_0c_slow.vho in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
@@ -99,9 +99,9 @@ Info (204019): Generated file lights_7_1200mv_0c_vhd_slow.sdo in folder "/acct/w
 Info (204019): Generated file lights_min_1200mv_0c_vhd_fast.sdo in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file lights_vhd.sdo in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 410 megabytes
-    Info: Processing ended: Fri Feb 23 11:17:27 2018
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 389 megabytes
+    Info: Processing ended: Fri Mar  2 09:33:14 2018
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:06
 
 

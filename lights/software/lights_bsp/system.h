@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Fri Feb 23 11:18:22 EST 2018
+ * Generated: Fri Mar 02 09:35:33 EST 2018
  */
 
 /*
@@ -70,7 +70,7 @@
 #define ALT_CPU_DATA_ADDR_WIDTH 0x1d
 #define ALT_CPU_DCACHE_LINE_SIZE 32
 #define ALT_CPU_DCACHE_LINE_SIZE_LOG2 5
-#define ALT_CPU_DCACHE_SIZE 2048
+#define ALT_CPU_DCACHE_SIZE 4096
 #define ALT_CPU_EXCEPTION_ADDR 0x8000020
 #define ALT_CPU_FLUSHDA_SUPPORTED
 #define ALT_CPU_FREQ 50000000
@@ -104,7 +104,7 @@
 #define NIOS2_DATA_ADDR_WIDTH 0x1d
 #define NIOS2_DCACHE_LINE_SIZE 32
 #define NIOS2_DCACHE_LINE_SIZE_LOG2 5
-#define NIOS2_DCACHE_SIZE 2048
+#define NIOS2_DCACHE_SIZE 4096
 #define NIOS2_EXCEPTION_ADDR 0x8000020
 #define NIOS2_FLUSHDA_SUPPORTED
 #define NIOS2_HARDWARE_DIVIDE_PRESENT 0
@@ -131,6 +131,7 @@
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_LCD_16207
 #define __ALTERA_AVALON_NEW_SDRAM_CONTROLLER
+#define __ALTERA_AVALON_PERFORMANCE_COUNTER
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_SYSID
 #define __ALTERA_NIOS2
@@ -531,6 +532,21 @@
 
 
 /*
+ * performance_counter_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_performance_counter_0 altera_avalon_performance_counter
+#define PERFORMANCE_COUNTER_0_BASE 0x0
+#define PERFORMANCE_COUNTER_0_HOW_MANY_SECTIONS 1
+#define PERFORMANCE_COUNTER_0_IRQ -1
+#define PERFORMANCE_COUNTER_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PERFORMANCE_COUNTER_0_NAME "/dev/performance_counter_0"
+#define PERFORMANCE_COUNTER_0_SPAN 32
+#define PERFORMANCE_COUNTER_0_TYPE "altera_avalon_performance_counter"
+
+
+/*
  * sdram_0 configuration
  *
  */
@@ -595,7 +611,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1519402483u
+#define SYSID_TIMESTAMP 1520001003u
 #define SYSID_TYPE "altera_avalon_sysid"
 
 

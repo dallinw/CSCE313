@@ -45,9 +45,10 @@ set_global_assignment -name TCL_FILE [file join $::quartus(ip_rootpath) Universi
 set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) video_vga_controller_0.v]
 # cfi_flash_0
 # tri_state_bridge_0
+# performance_counter_0
 # null
 set_global_assignment -name SDC_FILE [file join $::quartus(ip_rootpath) altera/sopc_builder_ip/altera_avalon_clock_adapter/altera_avalon_clock_adapter.sdc]
-set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "005056C0000800000161C3721C77"
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "005056C0000800000161E71EEEA5"
 set_global_assignment -entity "nios_system" -name IP_TOOL_NAME "sopc"
 set_global_assignment -entity "nios_system" -name IP_TOOL_VERSION "12.0"
 set_global_assignment -entity "nios_system" -name IP_TOOL_ENV "sopc"
