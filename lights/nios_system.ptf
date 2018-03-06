@@ -207,7 +207,7 @@ SYSTEM nios_system
             Data_Width = "32";
             Address_Width = "8";
             Is_Custom_Instruction = "1";
-            Is_Enabled = "0";
+            Is_Enabled = "1";
             Max_Address_Width = "8";
             Base_Address = "N/A";
             Is_Visible = "0";
@@ -219,84 +219,238 @@ SYSTEM nios_system
                type = "dataa";
                width = "32";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT datab
             {
                type = "datab";
                width = "32";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT result
             {
                type = "result";
                width = "32";
                direction = "input";
+               Is_Enabled = "0";
             }
             PORT clk_en
             {
                type = "clk_en";
                width = "1";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT reset
             {
                type = "reset";
                width = "1";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT start
             {
                type = "start";
                width = "1";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT done
             {
                type = "done";
                width = "1";
                direction = "input";
+               Is_Enabled = "0";
             }
             PORT n
             {
                type = "n";
                width = "8";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT a
             {
                type = "a";
                width = "5";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT b
             {
                type = "b";
                width = "5";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT c
             {
                type = "c";
                width = "5";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT readra
             {
                type = "readra";
                width = "1";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT readrb
             {
                type = "readrb";
                width = "1";
                direction = "output";
+               Is_Enabled = "0";
             }
             PORT writerc
             {
                type = "writerc";
                width = "1";
                direction = "output";
+               Is_Enabled = "0";
+            }
+            PORT A_ci_multi_a
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_a";
+               width = "5";
+            }
+            PORT A_ci_multi_b
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_b";
+               width = "5";
+            }
+            PORT A_ci_multi_c
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_c";
+               width = "5";
+            }
+            PORT A_ci_multi_clk_en
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_clk_en";
+               width = "1";
+            }
+            PORT A_ci_multi_clock
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_clk";
+               width = "1";
+            }
+            PORT A_ci_multi_dataa
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_dataa";
+               width = "32";
+            }
+            PORT A_ci_multi_datab
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_datab";
+               width = "32";
+            }
+            PORT A_ci_multi_done
+            {
+               Is_Enabled = "1";
+               direction = "input";
+               type = "multi_done";
+               width = "1";
+            }
+            PORT A_ci_multi_estatus
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_estatus";
+               width = "1";
+            }
+            PORT A_ci_multi_ipending
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_ipending";
+               width = "32";
+            }
+            PORT A_ci_multi_n
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_n";
+               width = "8";
+            }
+            PORT A_ci_multi_readra
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_readra";
+               width = "1";
+            }
+            PORT A_ci_multi_readrb
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_readrb";
+               width = "1";
+            }
+            PORT A_ci_multi_reset
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_reset";
+               width = "1";
+            }
+            PORT A_ci_multi_result
+            {
+               Is_Enabled = "1";
+               direction = "input";
+               type = "multi_result";
+               width = "32";
+            }
+            PORT A_ci_multi_start
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_start";
+               width = "1";
+            }
+            PORT A_ci_multi_status
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_status";
+               width = "1";
+            }
+            PORT A_ci_multi_writerc
+            {
+               Is_Enabled = "1";
+               direction = "output";
+               type = "multi_writerc";
+               width = "1";
+            }
+            PORT clk
+            {
+               Is_Enabled = "1";
+               direction = "input";
+               type = "clk";
+               width = "1";
+            }
+            PORT reset_n
+            {
+               Is_Enabled = "1";
+               direction = "input";
+               type = "reset_n";
+               width = "1";
             }
          }
       }
@@ -415,25 +569,11 @@ SYSTEM nios_system
                direction = "input";
                Is_Enabled = "1";
             }
-            PORT clk
-            {
-               Is_Enabled = "1";
-               direction = "input";
-               type = "clk";
-               width = "1";
-            }
             PORT jtag_debug_module_resetrequest
             {
                Is_Enabled = "1";
                direction = "output";
                type = "resetrequest";
-               width = "1";
-            }
-            PORT reset_n
-            {
-               Is_Enabled = "1";
-               direction = "input";
-               type = "reset_n";
                width = "1";
             }
          }
@@ -1254,22 +1394,118 @@ SYSTEM nios_system
             SIGNAL aaq
             {
                format = "Logic";
-               name = "the_cpu_0_test_bench/W_pcb";
+               name = "A_ci_multi_dataa";
                radix = "hexadecimal";
             }
             SIGNAL aar
             {
                format = "Logic";
+               name = "A_ci_multi_datab";
+               radix = "hexadecimal";
+            }
+            SIGNAL aas
+            {
+               format = "Logic";
+               name = "A_ci_multi_ipending";
+               radix = "hexadecimal";
+            }
+            SIGNAL aat
+            {
+               format = "Logic";
+               name = "A_ci_multi_status";
+               radix = "hexadecimal";
+            }
+            SIGNAL aau
+            {
+               format = "Logic";
+               name = "A_ci_multi_estatus";
+               radix = "hexadecimal";
+            }
+            SIGNAL aav
+            {
+               format = "Logic";
+               name = "A_ci_multi_n";
+               radix = "hexadecimal";
+            }
+            SIGNAL aaw
+            {
+               format = "Logic";
+               name = "A_ci_multi_a";
+               radix = "hexadecimal";
+            }
+            SIGNAL aax
+            {
+               format = "Logic";
+               name = "A_ci_multi_b";
+               radix = "hexadecimal";
+            }
+            SIGNAL aay
+            {
+               format = "Logic";
+               name = "A_ci_multi_c";
+               radix = "hexadecimal";
+            }
+            SIGNAL aaz
+            {
+               format = "Logic";
+               name = "A_ci_multi_readra";
+               radix = "hexadecimal";
+            }
+            SIGNAL aba
+            {
+               format = "Logic";
+               name = "A_ci_multi_readrb";
+               radix = "hexadecimal";
+            }
+            SIGNAL abb
+            {
+               format = "Logic";
+               name = "A_ci_multi_writerc";
+               radix = "hexadecimal";
+            }
+            SIGNAL abc
+            {
+               format = "Logic";
+               name = "A_ci_multi_result";
+               radix = "hexadecimal";
+            }
+            SIGNAL abd
+            {
+               format = "Logic";
+               name = "A_ci_multi_clk_en";
+               radix = "hexadecimal";
+            }
+            SIGNAL abe
+            {
+               format = "Logic";
+               name = "A_ci_multi_start";
+               radix = "hexadecimal";
+            }
+            SIGNAL abf
+            {
+               format = "Logic";
+               name = "A_ci_multi_done";
+               radix = "hexadecimal";
+            }
+            SIGNAL abg
+            {
+               format = "Logic";
+               name = "the_cpu_0_test_bench/W_pcb";
+               radix = "hexadecimal";
+            }
+            SIGNAL abh
+            {
+               format = "Logic";
                name = "the_cpu_0_test_bench/W_vinst";
                radix = "ascii";
             }
-            SIGNAL aas
+            SIGNAL abi
             {
                format = "Logic";
                name = "the_cpu_0_test_bench/W_valid";
                radix = "hexadecimal";
             }
-            SIGNAL aat
+            SIGNAL abj
             {
                format = "Logic";
                name = "the_cpu_0_test_bench/W_iw";
@@ -1986,7 +2222,7 @@ SYSTEM nios_system
          Has_Clock = "1";
          View 
          {
-            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5A995FEB</b> (timestamp: Fri Mar 2, 2018 @9:30 AM)";
+            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5A9EB398</b> (timestamp: Tue Mar 6, 2018 @10:28 AM)";
             MESSAGES 
             {
             }
@@ -1995,7 +2231,7 @@ SYSTEM nios_system
       WIZARD_SCRIPT_ARGUMENTS 
       {
          id = "0u";
-         timestamp = "1520001003u";
+         timestamp = "1520350104u";
          regenerate_values = "0";
          MAKE 
          {
@@ -2004,7 +2240,7 @@ SYSTEM nios_system
                verifysysid 
                {
                   All_Depends_On = "0";
-                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x112050c8 --id=0 --timestamp=1520001003";
+                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x112050c8 --id=0 --timestamp=1520350104";
                   Is_Phony = "1";
                   Target_File = "dummy_verifysysid_file";
                }
@@ -6086,6 +6322,117 @@ SYSTEM nios_system
          Synthesis_Only_Files = "";
       }
       PORT_WIRING 
+      {
+      }
+   }
+   MODULE cpu_0_altera_nios_custom_instr_floating_point_inst
+   {
+      SLAVE s1
+      {
+         SYSTEM_BUILDER_INFO 
+         {
+            Bus_Type = "nios_custom_instruction";
+            Data_Width = "32";
+            Address_Width = "2";
+            Is_Custom_Instruction = "1";
+            Is_Enabled = "1";
+            ci_operands = "2";
+            ci_cycles = "1";
+            ci_inst_type = "variable multicycle";
+            Has_Base_Address = "1";
+            Base_Address = "0x000000fc";
+            ci_macro_name = "altera_nios_custom_instr_floating_point_inst";
+            MASTERED_BY cpu_0/custom_instruction_master
+            {
+               priority = "1";
+            }
+            IRQ_MASTER cpu_0/custom_instruction_master
+            {
+               IRQ_Number = "NC";
+            }
+            Address_Group = "0";
+         }
+         PORT_WIRING 
+         {
+            PORT clk
+            {
+               type = "clk";
+               width = "1";
+               direction = "input";
+            }
+            PORT clk_en
+            {
+               type = "clk_en";
+               width = "1";
+               direction = "input";
+            }
+            PORT dataa
+            {
+               type = "dataa";
+               width = "32";
+               direction = "input";
+            }
+            PORT datab
+            {
+               type = "datab";
+               width = "32";
+               direction = "input";
+            }
+            PORT n
+            {
+               type = "n";
+               width = "2";
+               direction = "input";
+            }
+            PORT reset
+            {
+               type = "reset";
+               width = "1";
+               direction = "input";
+            }
+            PORT start
+            {
+               type = "start";
+               width = "1";
+               direction = "input";
+            }
+            PORT done
+            {
+               type = "done";
+               width = "1";
+               direction = "output";
+            }
+            PORT result
+            {
+               type = "result";
+               width = "32";
+               direction = "output";
+            }
+         }
+      }
+      class = "no_legacy_module";
+      class_version = "7.08120";
+      gtf_class_name = "altera_nios_custom_instr_floating_point";
+      gtf_class_version = "12.0";
+      SYSTEM_BUILDER_INFO 
+      {
+         Do_Not_Generate = "1";
+         Instantiate_In_System_Module = "1";
+         Is_Bridge = "0";
+         Is_Enabled = "1";
+         Clock_Source = "sys_clk";
+         View 
+         {
+            MESSAGES 
+            {
+            }
+         }
+      }
+      HDL_INFO 
+      {
+         Simulation_HDL_Files = "/usr/local/3rdparty/altera/quartus12/ip/altera/nios2_ip/altera_nios_custom_instr_floating_point_qsys/fpoint_wrapper.v,/usr/local/3rdparty/altera/quartus12/ip/altera/nios2_ip/altera_nios_custom_instr_floating_point_qsys/fpoint_qsys.v,/usr/local/3rdparty/altera/quartus12/ip/altera/nios2_ip/altera_nios_custom_instr_floating_point_qsys/fpoint_hw_qsys.v,__PROJECT_DIRECTORY__/cpu_0_altera_nios_custom_instr_floating_point_inst.v";
+      }
+      WIZARD_SCRIPT_ARGUMENTS 
       {
       }
    }

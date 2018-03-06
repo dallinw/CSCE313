@@ -109,6 +109,9 @@ int main()
 	else if (current_state == 5) {
 		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
 		int i, j;
+		int iterations = 0;
+		int sum_of_cycles = 0;
+		int average_cycles = 0;
 
 
 		#ifdef FIXED_POINT
@@ -124,9 +127,7 @@ int main()
 
 		#endif
 
-		int iterations = 0;
-		int sum_of_cycles = 0;
-		int average_cycles = 0;
+
 
 		//reset performance counter
 		PERF_RESET(PERFORMANCE_COUNTER_0_BASE);
@@ -135,7 +136,7 @@ int main()
 			//break if key press
 			keys = keys=IORD_ALTERA_AVALON_PIO_DATA(KEYS_BASE);
 			if (keys != 7 && keys != 5) {
-			break;
+				break;
 			}
 			for(j=0; j<num_cols-1; j++) {
 				//start performance counter to record cycles of this innermost loop
@@ -145,33 +146,33 @@ int main()
 				int offset_i = i - num_rows/2;
 				int offset_j = j - num_cols/2;
 
-				int rowf = 0;
-				int colf = 0;
+				//int rowf = 0;
+				//int colf = 0;
 
 				// rotate row/col values
 				#ifdef FIXED_POINT
-				row = offset_i*cosine-offset_j*sine + num_rows/2;
-				col = offset_i*sine+offset_j*cosine + num_cols/2;
+
 				//check bounds
-				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
-
-				rowf = (int)floorf(row);
-				colf = (int)floorf(col);
-
-				#else
 				row = offset_i*cosine-offset_j*sine + (num_rows<<shift_amt)/2;
 				col = offset_i*sine+offset_j*cosine + (num_cols<<shift_amt)/2;
 
-				rowf = row;
-				colf = col;
+				if(col>(num_cols<<shift_amt) || col<0 || row>(num_rows<<shift_amt) || row<(0)) continue;
+				//if(col/512 > num_cols || col/512 < 0 || row/512 > num_rows || row/512 < 0) continue;
 
-				if(col>(num_cols<<shift_amt) || col<0 || row>(num_rows<<shift_amt) || row<0) continue;
+
+				#else
+				row = offset_i*cosine-offset_j*sine + num_rows/2.0f;
+				col = offset_i*sine+offset_j*cosine + num_cols/2.0f;
+
+				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
+
+
 				#endif
 
 				// interpolation:
 				// truncate
-				//int rowf = (int)floorf(row);
-				//int colf = (int)floorf(col);
+				int rowf = (int)floorf(row);
+				int colf = (int)floorf(col);
 
 				#ifdef FIXED_POINT
 				alt_u32 row_fp = offset_i*cosine - offset_j*sine + ((num_rows/2)<<shift_amt);

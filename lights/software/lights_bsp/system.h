@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Fri Mar 02 09:35:33 EST 2018
+ * Generated: Tue Mar 06 10:34:33 EST 2018
  */
 
 /*
@@ -123,6 +123,16 @@
 
 
 /*
+ * Custom instruction macros
+ *
+ */
+
+#define ALT_CI_ALTERA_NIOS_CUSTOM_INSTR_FLOATING_POINT_INST(n,A,B) __builtin_custom_inii(ALT_CI_ALTERA_NIOS_CUSTOM_INSTR_FLOATING_POINT_INST_N+(n&ALT_CI_ALTERA_NIOS_CUSTOM_INSTR_FLOATING_POINT_INST_N_MASK),(A),(B))
+#define ALT_CI_ALTERA_NIOS_CUSTOM_INSTR_FLOATING_POINT_INST_N 0xfc
+#define ALT_CI_ALTERA_NIOS_CUSTOM_INSTR_FLOATING_POINT_INST_N_MASK ((1<<2)-1)
+
+
+/*
  * Define for each module class mastered by the CPU
  *
  */
@@ -135,6 +145,7 @@
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_SYSID
 #define __ALTERA_NIOS2
+#define __ALTERA_NIOS_CUSTOM_INSTR_FLOATING_POINT
 #define __ALTERA_UP_AVALON_CLOCKS
 #define __ALTERA_UP_AVALON_SRAM
 #define __ALTERA_UP_AVALON_VIDEO_CHARACTER_BUFFER_WITH_DMA
@@ -611,7 +622,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1520001003u
+#define SYSID_TIMESTAMP 1520350104u
 #define SYSID_TYPE "altera_avalon_sysid"
 
 

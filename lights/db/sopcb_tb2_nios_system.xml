@@ -595,7 +595,7 @@
    <SOPCModuleParameter>
     <C>119</C>
     <Name>customInstSlavesSystemInfo</Name>
-    <Value><![CDATA[<info/>]]></Value>
+    <Value><![CDATA[<info><slave name="altera_nios_custom_instr_floating_point_inst" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /></info>]]></Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>120</C>
@@ -797,7 +797,7 @@
    <SOPCModuleParameter>
     <C>160</C>
     <Name>timestamp</Name>
-    <Value>1520001003</Value>
+    <Value>1520350104</Value>
    </SOPCModuleParameter>
   </SOPCModule>
   <SOPCModule>
@@ -1877,7 +1877,21 @@
     <Value>1</Value>
    </SOPCModuleParameter>
   </SOPCModule>
-  <SystemID>1730156245</SystemID>
+  <SOPCModule>
+   <C>381</C>
+   <ModuleType>altera_nios_custom_instr_floating_point</ModuleType>
+   <SOPCModuleParameter>
+    <C>382</C>
+    <Name>useDivider</Name>
+    <Value>0</Value>
+   </SOPCModuleParameter>
+   <SOPCModuleParameter>
+    <C>383</C>
+    <Name>AUTO_DEVICE_FAMILY</Name>
+    <Value>Cyclone IV E</Value>
+   </SOPCModuleParameter>
+  </SOPCModule>
+  <SystemID>2079257851</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2011-12-20</SchemaVersion>
 </ProgramExecution>

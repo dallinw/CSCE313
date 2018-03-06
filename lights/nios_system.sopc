@@ -6,7 +6,7 @@
    {
       datum _sortIndex
       {
-         value = "9";
+         value = "10";
          type = "int";
       }
       datum sopceditor_expanded
@@ -19,7 +19,7 @@
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "11";
          type = "int";
       }
       datum sopceditor_expanded
@@ -32,7 +32,7 @@
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "12";
          type = "int";
       }
       datum sopceditor_expanded
@@ -45,7 +45,7 @@
    {
       datum _sortIndex
       {
-         value = "12";
+         value = "13";
          type = "int";
       }
       datum sopceditor_expanded
@@ -58,7 +58,7 @@
    {
       datum _sortIndex
       {
-         value = "13";
+         value = "14";
          type = "int";
       }
       datum sopceditor_expanded
@@ -71,7 +71,7 @@
    {
       datum _sortIndex
       {
-         value = "14";
+         value = "15";
          type = "int";
       }
       datum sopceditor_expanded
@@ -84,7 +84,7 @@
    {
       datum _sortIndex
       {
-         value = "15";
+         value = "16";
          type = "int";
       }
       datum sopceditor_expanded
@@ -97,7 +97,7 @@
    {
       datum _sortIndex
       {
-         value = "16";
+         value = "17";
          type = "int";
       }
       datum sopceditor_expanded
@@ -196,7 +196,7 @@
    {
       datum _sortIndex
       {
-         value = "25";
+         value = "26";
          type = "int";
       }
       datum megawizard_uipreferences
@@ -209,7 +209,7 @@
    {
       datum _sortIndex
       {
-         value = "0";
+         value = "1";
          type = "int";
       }
    }
@@ -217,21 +217,8 @@
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "4";
          type = "int";
-      }
-   }
-   element sysid.control_slave
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330504";
-         type = "long";
       }
    }
    element performance_counter_0.control_slave
@@ -255,22 +242,43 @@
          type = "long";
       }
    }
+   element sysid.control_slave
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330504";
+         type = "long";
+      }
+   }
    element cpu_0
    {
       datum _sortIndex
       {
-         value = "1";
+         value = "2";
          type = "int";
       }
       datum megawizard_uipreferences
       {
-         value = "{}";
+         value = "{output_language=VERILOG, output_directory=/acct/wgunn/lights}";
          type = "String";
       }
       datum sopceditor_expanded
       {
          value = "1";
          type = "boolean";
+      }
+   }
+   element cpu_0_altera_nios_custom_instr_floating_point_inst
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
       }
    }
    element cpu_0.jtag_debug_module
@@ -290,7 +298,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "6";
          type = "int";
       }
    }
@@ -298,7 +306,7 @@
    {
       datum _sortIndex
       {
-         value = "7";
+         value = "8";
          type = "int";
       }
    }
@@ -306,7 +314,7 @@
    {
       datum _sortIndex
       {
-         value = "8";
+         value = "9";
          type = "int";
       }
       datum megawizard_uipreferences
@@ -319,7 +327,7 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "7";
          type = "int";
       }
    }
@@ -330,21 +338,8 @@
    {
       datum _sortIndex
       {
-         value = "27";
+         value = "28";
          type = "int";
-      }
-   }
-   element HEX1.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330368";
-         type = "long";
       }
    }
    element HEX5.s1
@@ -357,19 +352,6 @@
       datum baseAddress
       {
          value = "287330432";
-         type = "long";
-      }
-   }
-   element HEX7.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330464";
          type = "long";
       }
    }
@@ -386,6 +368,19 @@
          type = "long";
       }
    }
+   element HEX6.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330448";
+         type = "long";
+      }
+   }
    element sdram_0.s1
    {
       datum _lockedAddress
@@ -396,32 +391,6 @@
       datum baseAddress
       {
          value = "134217728";
-         type = "long";
-      }
-   }
-   element keys.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330320";
-         type = "long";
-      }
-   }
-   element HEX0.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330352";
          type = "long";
       }
    }
@@ -464,6 +433,19 @@
          type = "long";
       }
    }
+   element HEX1.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330368";
+         type = "long";
+      }
+   }
    element HEX4.s1
    {
       datum _lockedAddress
@@ -477,7 +459,7 @@
          type = "long";
       }
    }
-   element HEX6.s1
+   element keys.s1
    {
       datum _lockedAddress
       {
@@ -486,7 +468,33 @@
       }
       datum baseAddress
       {
-         value = "287330448";
+         value = "287330320";
+         type = "long";
+      }
+   }
+   element HEX7.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330464";
+         type = "long";
+      }
+   }
+   element HEX0.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330352";
          type = "long";
       }
    }
@@ -494,7 +502,7 @@
    {
       datum _sortIndex
       {
-         value = "2";
+         value = "3";
          type = "int";
       }
       datum megawizard_uipreferences
@@ -515,7 +523,7 @@
    {
       datum _sortIndex
       {
-         value = "17";
+         value = "18";
          type = "int";
       }
    }
@@ -531,7 +539,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "5";
          type = "int";
       }
    }
@@ -539,7 +547,7 @@
    {
       datum _sortIndex
       {
-         value = "26";
+         value = "27";
          type = "int";
       }
       datum megawizard_uipreferences
@@ -560,7 +568,7 @@
    {
       datum _sortIndex
       {
-         value = "22";
+         value = "23";
          type = "int";
       }
    }
@@ -568,7 +576,7 @@
    {
       datum _sortIndex
       {
-         value = "21";
+         value = "22";
          type = "int";
       }
    }
@@ -576,7 +584,7 @@
    {
       datum _sortIndex
       {
-         value = "23";
+         value = "24";
          type = "int";
       }
    }
@@ -584,7 +592,7 @@
    {
       datum _sortIndex
       {
-         value = "18";
+         value = "19";
          type = "int";
       }
    }
@@ -592,7 +600,7 @@
    {
       datum _sortIndex
       {
-         value = "19";
+         value = "20";
          type = "int";
       }
    }
@@ -600,7 +608,7 @@
    {
       datum _sortIndex
       {
-         value = "20";
+         value = "21";
          type = "int";
       }
    }
@@ -608,7 +616,7 @@
    {
       datum _sortIndex
       {
-         value = "24";
+         value = "25";
          type = "int";
       }
    }
@@ -626,8 +634,8 @@
  <parameter name="maxAdditionalLatency" value="0" />
  <parameter name="projectName" value="lights.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="27924616557" />
- <parameter name="timeStamp" value="1520001002711" />
+ <parameter name="systemHash" value="19638133773" />
+ <parameter name="timeStamp" value="1520350104343" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <module kind="clock_source" version="12.0" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
@@ -730,7 +738,7 @@
   <parameter name="dcache_bursts" value="false" />
   <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='performance_counter_0.control_slave' start='0x0' end='0x20' /><slave name='sdram_0.s1' start='0x8000000' end='0x10000000' /><slave name='cfi_flash_0.s1' start='0x10800000' end='0x11000000' /><slave name='sram_0.avalon_sram_slave' start='0x11000000' end='0x11200000' /><slave name='video_character_buffer_with_dma_0.avalon_char_buffer_slave' start='0x11202000' end='0x11204000' /><slave name='cpu_0.jtag_debug_module' start='0x11204800' end='0x11205000' /><slave name='leds.s1' start='0x11205000' end='0x11205010' /><slave name='keys.s1' start='0x11205010' end='0x11205020' /><slave name='lcd_0.control_slave' start='0x11205020' end='0x11205030' /><slave name='HEX0.s1' start='0x11205030' end='0x11205040' /><slave name='HEX1.s1' start='0x11205040' end='0x11205050' /><slave name='HEX2.s1' start='0x11205050' end='0x11205060' /><slave name='HEX3.s1' start='0x11205060' end='0x11205070' /><slave name='HEX4.s1' start='0x11205070' end='0x11205080' /><slave name='HEX5.s1' start='0x11205080' end='0x11205090' /><slave name='HEX6.s1' start='0x11205090' end='0x112050A0' /><slave name='HEX7.s1' start='0x112050A0' end='0x112050B0' /><slave name='video_pixel_buffer_dma_0.avalon_control_slave' start='0x112050B0' end='0x112050C0' /><slave name='sysid.control_slave' start='0x112050C8' end='0x112050D0' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x112050D0' end='0x112050D8' /><slave name='video_character_buffer_with_dma_0.avalon_char_control_slave' start='0x112050D8' end='0x112050E0' /><slave name='clocks_0.avalon_clocks_slave' start='0x112050E0' end='0x112050E2' /></address-map>]]></parameter>
   <parameter name="dataAddrWidth" value="29" />
-  <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
+  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="altera_nios_custom_instr_floating_point_inst" baseAddress="252" addressSpan="4" clockCycleType="VARIABLE" /></info>]]></parameter>
   <parameter name="cpuReset" value="false" />
   <parameter name="cpuID" value="0" />
   <parameter name="clockFrequency" value="50000000" />
@@ -1062,6 +1070,14 @@
    name="performance_counter_0">
   <parameter name="numberOfSections" value="1" />
  </module>
+ <module
+   kind="altera_nios_custom_instr_floating_point"
+   version="12.0"
+   enabled="1"
+   name="cpu_0_altera_nios_custom_instr_floating_point_inst">
+  <parameter name="useDivider" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+ </module>
  <connection
    kind="avalon"
    version="12.0"
@@ -1379,4 +1395,13 @@
    version="12.0"
    start="clocks_0.sys_clk"
    end="performance_counter_0.clk" />
+ <connection
+   kind="nios_custom_instruction"
+   version="12.0"
+   start="cpu_0.custom_instruction_master"
+   end="cpu_0_altera_nios_custom_instr_floating_point_inst.s1">
+  <parameter name="CIName">altera_nios_custom_instr_floating_point_inst</parameter>
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="252" />
+ </connection>
 </system>
