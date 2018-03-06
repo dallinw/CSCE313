@@ -21,6 +21,7 @@ const int num_cols = 320; //from 240
 float row;
 float col;
 int shift_amt = 9;
+int div_amt = 512.0f;
 
 int rcount;
 int bool_dec;
@@ -189,6 +190,33 @@ int main()
 				weight2 = weight2>>shift_amt;
 				weight3 = weight3>>shift_amt;
 				weight4 = weight4>>shift_amt;
+
+
+				/*
+				//same as above but div/mult instead of bit shift
+
+
+				int rowf = (int)floorf(row);
+				int colf = (int)floorf(col);
+
+				#ifdef FIXED_POINT
+				alt_u32 row_fp = offset_i*cosine - offset_j*sine + ((num_rows/2)*div_amt);
+				alt_u32 col_fp = offset_i*sine + offset_j*cosine + ((num_cols/2)*div_amt);
+
+				alt_32 rfrac = row_fp-(rowf);
+				alt_32 cfrac = col_fp-(colf);
+
+				alt_32 weight1 = ((1*div_amt)-rfrac)*((1*div_amt)-cfrac);
+				alt_32 weight2 = rfrac*((1*div_amt)-cfrac);
+				alt_32 weight3 = rfrac*cfrac;
+				alt_32 weight4 = ((1*div_amt)-rfrac)*cfrac;
+				weight1 = weight1/div_amt;
+				weight2 = weight2/div_amt;
+				weight3 = weight3/div_amt;
+				weight4 = weight4/div_amt;
+
+				*/
+
 
 				/*
 				alt_32 rfrac = row_fp-rowf*shift_amt;
