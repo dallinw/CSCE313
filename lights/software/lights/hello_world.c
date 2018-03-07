@@ -21,6 +21,7 @@ const int num_cols = 320; //from 240
 float row;
 float col;
 int shift_amt = 9;
+int div_amt = 512;
 
 int rcount;
 int bool_dec;
@@ -116,8 +117,8 @@ int main()
 
 		#ifdef FIXED_POINT
 
-		alt_32 sine = (alt_32)(sinf(rcount*(M_PI/180))*512.0f);
-		alt_32 cosine = (alt_32)(cosf(rcount*(M_PI/180))*512.0f);
+		alt_32 sine = (alt_32)(sinf(rcount*(M_PI/180))*div_amt);
+		alt_32 cosine = (alt_32)(cosf(rcount*(M_PI/180))*div_amt);
 
 
 		#else
@@ -146,18 +147,47 @@ int main()
 				int offset_i = i - num_rows/2;
 				int offset_j = j - num_cols/2;
 
-				//int rowf = 0;
-				//int colf = 0;
+				int rowf = 0;
+				int colf = 0;
 
-				// rotate row/col values
+
 				#ifdef FIXED_POINT
+				row = offset_i*cosine/div_amt - offset_j*sine/div_amt + num_rows/2.0f;
+				col = offset_i*sine/div_amt + offset_j*cosine/div_amt + num_cols/2.0f;
 
-				//check bounds
-				row = offset_i*cosine-offset_j*sine + (num_rows<<shift_amt)/2;
-				col = offset_i*sine+offset_j*cosine + (num_cols<<shift_amt)/2;
+				rowf = (int)floorf(row);
+				colf = (int)floorf(col);
+				rowf *= div_amt;
+				colf *= div_amt;
 
-				if(col>(num_cols<<shift_amt) || col<0 || row>(num_rows<<shift_amt) || row<(0)) continue;
-				//if(col/512 > num_cols || col/512 < 0 || row/512 > num_rows || row/512 < 0) continue;
+				row = offset_i*cosine-offset_j*sine + num_rows*div_amt/2;
+				col = offset_i*sine+offset_j*cosine + num_cols*div_amt/2;
+
+				if(col>(num_cols*div_amt) || col<0 || row>(num_rows*div_amt) || row<(0)) continue;
+
+
+
+				alt_32 rfrac = (row-rowf)/div_amt;
+				alt_32 cfrac = (col-colf)/div_amt;
+
+
+
+				alt_32 weight1 = (div_amt-rfrac)*(1*div_amt-cfrac);
+				alt_32 weight2 = rfrac*(div_amt-cfrac);
+				alt_32 weight3 = rfrac*cfrac;
+				alt_32 weight4 = (div_amt-rfrac)*cfrac;
+				weight1 /= div_amt*div_amt;
+				weight2 /= div_amt*div_amt;
+				weight3 /= div_amt*div_amt;
+				weight4 /= div_amt*div_amt;
+
+				rowf /= div_amt;
+				colf /= div_amt;
+
+				row /= div_amt;
+				col /= div_amt;
+
+
 
 
 				#else
@@ -166,46 +196,9 @@ int main()
 
 				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
 
+				rowf = (int)floorf(row);
+				colf = (int)floorf(col);
 
-				#endif
-
-				// interpolation:
-				// truncate
-				int rowf = (int)floorf(row);
-				int colf = (int)floorf(col);
-
-				#ifdef FIXED_POINT
-				alt_u32 row_fp = offset_i*cosine - offset_j*sine + ((num_rows/2)<<shift_amt);
-				alt_u32 col_fp = offset_i*sine + offset_j*cosine + ((num_cols/2)<<shift_amt);
-
-				alt_32 rfrac = row_fp-(rowf);
-				alt_32 cfrac = col_fp-(colf);
-
-				alt_32 weight1 = ((1<<shift_amt)-rfrac)*((1<<shift_amt)-cfrac);
-				alt_32 weight2 = rfrac*((1<<shift_amt)-cfrac);
-				alt_32 weight3 = rfrac*cfrac;
-				alt_32 weight4 = ((1<<shift_amt)-rfrac)*cfrac;
-				weight1 = weight1>>shift_amt;
-				weight2 = weight2>>shift_amt;
-				weight3 = weight3>>shift_amt;
-				weight4 = weight4>>shift_amt;
-
-				/*
-				alt_32 rfrac = row_fp-rowf*shift_amt;
-				alt_32 cfrac = col_fp-colf*shift_amt;
-
-				alt_32 weight1 = (1*shift_amt-rfrac)*(1*shift_amt-cfrac);
-				alt_32 weight2 = rfrac*(1*shift_amt-cfrac);
-				alt_32 weight3 = rfrac*cfrac;
-				alt_32 weight4 = (1*shift_amt-rfrac)*cfrac;
-				weight1 /= shift_amt;
-				weight2 /= shift_amt;
-				weight3 /= shift_amt;
-				weight4 /= shift_amt;
-				*/
-
-
-				#else
 				float rfrac = row-rowf;
 				float cfrac = col-colf;
 
