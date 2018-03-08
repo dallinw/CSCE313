@@ -1,0 +1,255 @@
+!SESSION 2018-03-08 14:18:21.434 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data /acct/dallinw/git/CSCE313/lights/software -os linux -ws gtk -arch x86 --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-08 14:18:51.690
+!MESSAGE Indexed 'lights' (1 sources, 60 headers) in 0.67 sec: 3,028 declarations; 2,920 references; 6 unresolved inclusions; 2 syntax errors; 23 unresolved names (0.39%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-03-08 14:19:10.791
+!MESSAGE Indexed 'lights_bsp' (89 sources, 132 headers) in 0.96 sec: 4,763 declarations; 9,083 references; 0 unresolved inclusions; 3 syntax errors; 29 unresolved names (0.21%)
+!SESSION 2018-03-08 14:20:54.394 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os linux -ws gtk -arch x86 --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:21:08.831
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:21:10.419
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:21:32.737
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:21:35.290
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:23:42.610
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:23:45.357
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:24:10.945
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:24:13.489
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:30:50.011
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:30:52.643
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:31:11.578
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:31:14.206
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:33:19.634
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:33:22.512
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:33:37.911
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:33:38.685
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:33:40.407
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:33:58.265
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:33:59.020
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:34:00.891
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:34:20.815
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:34:21.396
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:34:23.236
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:35:01.570
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:35:02.346
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:35:05.075
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:36:05.535
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:36:08.193
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:36:46.937
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:36:49.665
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:37:20.908
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:37:22.558
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:37:54.580
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:37:57.209
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:38:22.487
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:38:25.194
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:38:55.006
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:38:55.774
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:38:58.514
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:41:46.432
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:41:49.126
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:42:05.291
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:42:07.969
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:43:49.824
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:43:52.535
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:47:10.690
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-08 14:47:15.740
+!MESSAGE The system console model is invalid. Cannot launch.
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-08 14:47:48.046
+!MESSAGE The system console model is invalid. Cannot launch.
+!SESSION 2018-03-08 14:48:04.109 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os linux -ws gtk -arch x86 --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-03-08 14:48:04.862
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:48:11.206
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:48:13.901
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:48:45.770
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:48:46.372
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:48:48.987
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:50:28.140
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:50:30.778
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:52:13.221
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:52:13.788
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:52:15.384
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:52:57.105
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:52:57.872
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:53:00.568
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:53:25.726
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:53:26.297
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:53:28.882
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:54:08.803
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:54:09.374
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:54:12.052
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:54:40.464
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:54:41.255
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:54:43.785
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:55:37.521
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:55:38.304
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1520524296]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 14:55:40.990
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1520524296 /acct/dallinw/git/CSCE313/lights/software/lights/lights.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-08 15:04:29.087
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-08 15:04:34.129
+!MESSAGE The system console model is invalid. Cannot launch.

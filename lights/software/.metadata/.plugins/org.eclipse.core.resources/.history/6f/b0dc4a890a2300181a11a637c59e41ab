@@ -1,0 +1,331 @@
+/*
+ * PROJECT 2: WYLIE GUNN AND DALLIN WILLIAMS
+ */
+
+#include <stdio.h>
+#include <unistd.h>
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "alt_types.h"
+#include <altera_up_avalon_video_character_buffer_with_dma.h>  // to write characters to video
+#include <altera_up_avalon_video_pixel_buffer_dma.h> // to swap front and back buffer
+#include <math.h>  // for trigonometry functions
+#include <stdlib.h>  // for file I/O
+#include <altera_avalon_performance_counter.h>
+
+#define FIXED_POINT
+
+alt_up_pixel_buffer_dma_dev *my_pixel_buffer; //declare global var
+const int num_rows = 240;  //from 320
+const int num_cols = 320; //from 240
+float row;
+float col;
+int shift_amt = 9;
+int div_amt = 512.0f;
+//int div_amt = 512.0f;
+
+
+int rcount;
+int bool_dec;
+float scount;
+
+int main()
+{
+
+	// open the .dat file
+	FILE *myfile;
+	//myfile = fopen("my_fs/myfile.dat","rb");
+	myfile=fopen("my_fs/myfile.dat","rb");
+	if(myfile==NULL) perror ("error opening datafile");
+
+	//allocate memory and read image data
+
+	alt_u32 keys;
+	alt_u32 current_value = 1;
+	alt_u32 current_state = 3;
+	alt_u8 *my_image;
+	alt_u8 cycle_counter = 0;
+	my_image = (alt_u8 *)malloc(320*240*3);
+	fread(my_image,sizeof(alt_u8),320*240*3,myfile);
+
+
+	//pixel buffer
+
+	//alt_up_pixel_buffer_dma_dev *my_pixel_buffer; //declare global var
+	my_pixel_buffer=alt_up_pixel_buffer_dma_open_dev("/dev/video_pixel_buffer_dma_0"); //assign it
+	alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);//clear_screen();
+
+	//character buffer
+	alt_up_char_buffer_dev *my_char_buffer; //declare global var
+	my_char_buffer = alt_up_char_buffer_open_dev("/dev/video_character_buffer_with_dma_0");
+	if(!my_char_buffer) printf ("error opening character buffer\n");
+	alt_up_char_buffer_clear(my_char_buffer);
+
+	//write_text("Video works!");
+
+	while (1) {
+	keys=IORD_ALTERA_AVALON_PIO_DATA(KEYS_BASE);
+
+	// detect key press
+	if ((keys != 7) && (keys != current_state)) {
+		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
+		if (keys == 3)  printf("key 3 pressed\n");
+		else if (keys == 5) {
+			rcount = 10;
+			alt_up_char_buffer_clear(my_char_buffer);
+			printf("key 2 pressed\n");
+		}
+
+		else if (keys == 6) {
+			bool_dec = 1;
+			scount = 1.0f;
+			alt_up_char_buffer_clear(my_char_buffer);
+			printf("key 1 pressed\n");
+		}
+		current_state=keys;
+	}
+
+	//default state: display image and text
+	if (current_state == 3) {
+		// Display the unaltered image to the VGA
+
+		alt_up_char_buffer_string(my_char_buffer, "Original Image!",0,59);
+		int i, j;
+
+		for(i=0; i<239; i++){
+			//break if key press
+			keys = keys=IORD_ALTERA_AVALON_PIO_DATA(KEYS_BASE);
+			if (keys != 7 && keys != 3) {
+				break;
+			}
+			for(j=0; j<320; j++) {
+				//draw_pixel(i,j);
+				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(my_image[(i*320*3+j*3+2)]) +(my_image[(i*320*3+j*3+1)]<<8) +(my_image[(i*320*3+j*3+0)]<<16),j,i);
+				//alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(my_image[(0.9*i*320*3+0.9*j*3+2)]) +(my_image[(0.9*i*320*3+0.9*j*3+1)]<<8) +(my_image[(0.9*i*320*3+0.9*j*3+0)]<<16),j,i);
+
+			}
+		}
+	}
+
+	// Continuously rotate the image clockwise; 10 degree increments
+	// As fast as the processor can handle
+	else if (current_state == 5) {
+		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
+		int i, j;
+		int iterations = 0;
+		int initial_counter = 0;
+		int sum_of_cycles = 0;
+		int average_cycles = 0;
+
+		#ifdef FIXED_POINT
+
+		alt_32 sine = (alt_32)(sinf(rcount*(M_PI/180))*div_amt);
+		alt_32 cosine = (alt_32)(cosf(rcount*(M_PI/180))*div_amt);
+
+		#else
+
+		float sine = sinf(rcount*(M_PI/180));
+		float cosine = cosf(rcount*(M_PI/180));
+
+		#endif
+
+
+
+		//reset performance counter
+		PERF_RESET(PERFORMANCE_COUNTER_0_BASE);
+
+		for(i=0; i<num_rows-1; i++){
+			//break if key press
+			keys = keys=IORD_ALTERA_AVALON_PIO_DATA(KEYS_BASE);
+			if (keys != 7 && keys != 5) {
+				break;
+			}
+
+
+
+			for(j=0; j<num_cols-1; j++) {
+				//start performance counter to record cycles of this innermost loop
+
+				//PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
+
+				initial_counter = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
+				//printf("%d\n", initial_counter);
+
+				// to rotate about center calculate offset
+				int offset_i = i - num_rows/2;
+				int offset_j = j - num_cols/2;
+
+				int rowf = 0;
+				int colf = 0;
+
+
+				#ifdef FIXED_POINT
+
+				row = offset_i*cosine-offset_j*sine + num_rows*div_amt/2;
+				col = offset_i*sine+offset_j*cosine + num_cols*div_amt/2;
+
+				if(col>(num_cols*div_amt) || col<0 || row>(num_rows*div_amt) || row<(0)) continue;
+
+				rowf = (row/div_amt*div_amt);
+				colf = (col/div_amt*div_amt);
+
+
+				int rfrac = (row-rowf);
+				int cfrac = (col-colf);
+
+				int weight1 = (div_amt-rfrac)*(div_amt-cfrac);
+				int weight2 = rfrac*(div_amt-cfrac);
+				int weight3 = rfrac*cfrac;
+				int weight4 = (div_amt-rfrac)*cfrac;
+
+				weight1 /= div_amt*div_amt;
+				weight2 /= div_amt*div_amt;
+				weight3 /= div_amt*div_amt;
+				weight4 /= div_amt*div_amt;
+
+				rowf /= div_amt;
+				colf /= div_amt;
+
+				#else
+				row = offset_i*cosine-offset_j*sine + num_rows/2.0f;
+				col = offset_i*sine+offset_j*cosine + num_cols/2.0f;
+
+				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
+
+				rowf = (int)floorf(row);
+				colf = (int)floorf(col);
+
+				float rfrac = row-rowf;
+				float cfrac = col-colf;
+
+				//weight for each pixel
+				float weight1 = (1.0-rfrac)*(1.0-cfrac);
+				float weight2 = rfrac*(1.0-cfrac);
+				float weight3 = rfrac*cfrac;
+				float weight4 = (1.0-rfrac)*cfrac;
+
+				#endif
+
+				int pixel1 = rowf*320*3 + colf*3;
+				int pixel2 = (rowf + 1)*320*3 + colf*3;
+				int pixel3 = (rowf + 1)*320*3 + (colf + 1)*3;
+				int pixel4 = rowf*320*3 + (colf + 1)*3;
+
+
+				//three colors
+				int in1 = (int) (weight1*my_image[pixel1] +
+						weight2*my_image[pixel2] +
+						weight3*my_image[pixel3] +
+						weight4*my_image[pixel4]);
+
+				int in2 = (int) (weight1*my_image[pixel1+1] +
+						weight2*my_image[pixel2+1] +
+						weight3*my_image[pixel3+1] +
+						weight4*my_image[pixel4+1]);
+
+				int in3 = (int) (weight1*my_image[pixel1+2] +
+						weight2*my_image[pixel2+2] +
+						weight3*my_image[pixel3+2] +
+						weight4*my_image[pixel4+2]);
+
+
+				cycle_counter = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
+				//printf("%d cycle_counter: \n", cycle_counter);
+				PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
+
+				++iterations;
+				sum_of_cycles += cycle_counter;
+				printf("# of Cycles:");
+				printf("%d\n", average_cycles);
+				//draw_pixel
+				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
+			}
+			average_cycles = sum_of_cycles/iterations;
+			printf("Average # of Cycles:");
+			printf("%d\n", average_cycles);
+		}
+		rcount+=10;
+
+
+	}
+	// Shrink the image in 10% increments until it is 10% of the original
+	// Grow the image back to original size
+	// Repeat as fast as the processor can handle
+	else if (current_state == 6) {
+		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
+		printf("scount before drawing is:");
+		printf("%f\n", scount);
+		int i, j;
+		for(i=0; i<num_rows-1; i++){
+			//break if key press
+			keys=IORD_ALTERA_AVALON_PIO_DATA(KEYS_BASE);
+			if (keys != 7 && keys != 6) {
+				break;
+			}
+			for(j=0; j<num_cols-1; j++) {
+				//center transformation
+				int offset_i = i - num_rows/2;
+				int offset_j = j - num_cols/2;
+				//shrink/grow 10%
+				row = offset_i*scount+num_rows/2;
+				col = offset_j*scount+num_cols/2;
+
+				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
+
+
+				//interpolation: cut and pasted from above; should be put in a function
+				int rowf = (int)floorf(row);
+				int colf = (int)floorf(col);
+				float rfrac = row-rowf;
+				float cfrac = col-colf;
+
+
+				float weight1 = (1.0-rfrac)*(1.0-cfrac);
+				float weight2 = rfrac*(1.0-cfrac);
+				float weight3 = rfrac*cfrac;
+				float weight4 = (1.0-rfrac)*cfrac;
+
+
+				int pixel1 = (rowf*320*3 + colf*3);
+				int pixel2 = ((rowf + 1)*320*3 + colf*3);
+				int pixel3 = ((rowf + 1)*320*3 + (colf + 1)*3);
+				int pixel4 = (rowf*320*3 + (colf + 1)*3);
+
+				int in1 = (int) (weight1*my_image[pixel1] +
+						weight2*my_image[pixel2] +
+						weight3*my_image[pixel3] +
+						weight4*my_image[pixel4]);
+
+				int in2 = (int) (weight1*my_image[pixel1+1] +
+						weight2*my_image[pixel2+1] +
+						weight3*my_image[pixel3+1] +
+						weight4*my_image[pixel4+1]);
+
+				int in3 = (int) (weight1*my_image[pixel1+2] +
+						weight2*my_image[pixel2+2] +
+						weight3*my_image[pixel3+2] +
+						weight4*my_image[pixel4+2]);
+
+				//draw_pixel(row, col, my_image);
+				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
+			}
+		}
+		if(bool_dec == 1) {
+			scount+=0.1f;
+			printf("scount is decrementing to:");
+			printf("%f\n", scount);
+			if (scount >=1.9f) {
+				bool_dec = 0;
+			}
+		} else if(bool_dec == 0) {
+			scount-=0.1f;
+			printf("scount is incrementing to:");
+			printf("%f\n", scount);
+			if (scount <=1.0f) {
+				bool_dec = 1;
+			}
+		}
+
+		}
+	}
+}
