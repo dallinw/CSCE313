@@ -221,11 +221,16 @@
          type = "int";
       }
    }
-   element performance_counter_0.control_slave
+   element sysid.control_slave
    {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
       datum baseAddress
       {
-         value = "0";
+         value = "287330504";
          type = "long";
       }
    }
@@ -242,16 +247,11 @@
          type = "long";
       }
    }
-   element sysid.control_slave
+   element performance_counter_0.control_slave
    {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
       datum baseAddress
       {
-         value = "287330504";
+         value = "0";
          type = "long";
       }
    }
@@ -342,7 +342,7 @@
          type = "int";
       }
    }
-   element HEX5.s1
+   element cfi_flash_0.s1
    {
       datum _lockedAddress
       {
@@ -351,11 +351,11 @@
       }
       datum baseAddress
       {
-         value = "287330432";
+         value = "276824064";
          type = "long";
       }
    }
-   element leds.s1
+   element HEX0.s1
    {
       datum _lockedAddress
       {
@@ -364,33 +364,7 @@
       }
       datum baseAddress
       {
-         value = "287330304";
-         type = "long";
-      }
-   }
-   element HEX6.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330448";
-         type = "long";
-      }
-   }
-   element sdram_0.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "134217728";
+         value = "287330352";
          type = "long";
       }
    }
@@ -407,6 +381,19 @@
          type = "long";
       }
    }
+   element sdram_0.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "134217728";
+         type = "long";
+      }
+   }
    element HEX2.s1
    {
       datum _lockedAddress
@@ -420,7 +407,7 @@
          type = "long";
       }
    }
-   element cfi_flash_0.s1
+   element HEX7.s1
    {
       datum _lockedAddress
       {
@@ -429,7 +416,7 @@
       }
       datum baseAddress
       {
-         value = "276824064";
+         value = "287330464";
          type = "long";
       }
    }
@@ -443,6 +430,19 @@
       datum baseAddress
       {
          value = "287330368";
+         type = "long";
+      }
+   }
+   element leds.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330304";
          type = "long";
       }
    }
@@ -472,7 +472,7 @@
          type = "long";
       }
    }
-   element HEX7.s1
+   element HEX6.s1
    {
       datum _lockedAddress
       {
@@ -481,11 +481,11 @@
       }
       datum baseAddress
       {
-         value = "287330464";
+         value = "287330448";
          type = "long";
       }
    }
-   element HEX0.s1
+   element HEX5.s1
    {
       datum _lockedAddress
       {
@@ -494,7 +494,7 @@
       }
       datum baseAddress
       {
-         value = "287330352";
+         value = "287330432";
          type = "long";
       }
    }
@@ -634,8 +634,8 @@
  <parameter name="maxAdditionalLatency" value="0" />
  <parameter name="projectName" value="lights.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="19638133773" />
- <parameter name="timeStamp" value="1520350104343" />
+ <parameter name="systemHash" value="18606872947" />
+ <parameter name="timeStamp" value="1520524296404" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <module kind="clock_source" version="12.0" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
@@ -730,7 +730,7 @@
   <parameter name="debug_debugReqSignals" value="false" />
   <parameter name="debug_assignJtagInstanceID" value="false" />
   <parameter name="debug_OCIOnchipTrace" value="_128" />
-  <parameter name="dcache_size" value="_4096" />
+  <parameter name="dcache_size" value="_16384" />
   <parameter name="dcache_ramBlockType" value="Automatic" />
   <parameter name="dcache_omitDataMaster" value="false" />
   <parameter name="dcache_numTCDM" value="_0" />

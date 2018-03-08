@@ -1,0 +1,394 @@
+					int offset_i = i - num_rows/2;
+ 80005bc:	d0e00017 	ldw	r3,-32768(gp)
+ 80005c0:	1804d7fa 	srli	r2,r3,31
+ 80005c4:	10c5883a 	add	r2,r2,r3
+ 80005c8:	1005d07a 	srai	r2,r2,1
+ 80005cc:	1007883a 	mov	r3,r2
+ 80005d0:	e0bff617 	ldw	r2,-40(fp)
+ 80005d4:	10c5c83a 	sub	r2,r2,r3
+ 80005d8:	e0bfef15 	stw	r2,-68(fp)
+				int offset_j = j - num_cols/2;
+ 80005dc:	d0e00117 	ldw	r3,-32764(gp)
+ 80005e0:	1804d7fa 	srli	r2,r3,31
+ 80005e4:	10c5883a 	add	r2,r2,r3
+ 80005e8:	1005d07a 	srai	r2,r2,1
+ 80005ec:	1007883a 	mov	r3,r2
+ 80005f0:	e0bff517 	ldw	r2,-44(fp)
+ 80005f4:	10c5c83a 	sub	r2,r2,r3
+ 80005f8:	e0bfee15 	stw	r2,-72(fp)
+
+				int rowf = 0;
+ 80005fc:	e03fed15 	stw	zero,-76(fp)
+				int colf = 0;
+ 8000600:	e03fec15 	stw	zero,-80(fp)
+				rowf *= div_amt;
+				colf *= div_amt;
+				*/
+
+
+				row = offset_i*cosine-offset_j*sine + num_rows*div_amt/2;
+ 8000604:	e0ffef17 	ldw	r3,-68(fp)
+ 8000608:	e0bff017 	ldw	r2,-64(fp)
+ 800060c:	1889383a 	mul	r4,r3,r2
+ 8000610:	e0ffee17 	ldw	r3,-72(fp)
+ 8000614:	e0bff117 	ldw	r2,-60(fp)
+ 8000618:	1885383a 	mul	r2,r3,r2
+ 800061c:	2089c83a 	sub	r4,r4,r2
+ 8000620:	d0e00017 	ldw	r3,-32768(gp)
+ 8000624:	d0a00317 	ldw	r2,-32756(gp)
+ 8000628:	1887383a 	mul	r3,r3,r2
+ 800062c:	1804d7fa 	srli	r2,r3,31
+ 8000630:	10c5883a 	add	r2,r2,r3
+ 8000634:	1005d07a 	srai	r2,r2,1
+ 8000638:	2089883a 	add	r4,r4,r2
+ 800063c:	80032dc0 	call	80032dc <__floatsisf>
+ 8000640:	d0a76d15 	stw	r2,-25164(gp)
+				col = offset_i*sine+offset_j*cosine + num_cols*div_amt/2;
+ 8000644:	e0ffef17 	ldw	r3,-68(fp)
+ 8000648:	e0bff117 	ldw	r2,-60(fp)
+ 800064c:	1889383a 	mul	r4,r3,r2
+ 8000650:	e0ffee17 	ldw	r3,-72(fp)
+ 8000654:	e0bff017 	ldw	r2,-64(fp)
+ 8000658:	1885383a 	mul	r2,r3,r2
+ 800065c:	2089883a 	add	r4,r4,r2
+ 8000660:	d0e00117 	ldw	r3,-32764(gp)
+ 8000664:	d0a00317 	ldw	r2,-32756(gp)
+ 8000668:	1887383a 	mul	r3,r3,r2
+ 800066c:	1804d7fa 	srli	r2,r3,31
+ 8000670:	10c5883a 	add	r2,r2,r3
+ 8000674:	1005d07a 	srai	r2,r2,1
+ 8000678:	2089883a 	add	r4,r4,r2
+ 800067c:	80032dc0 	call	80032dc <__floatsisf>
+ 8000680:	d0a76a15 	stw	r2,-25176(gp)
+
+
+				if(col>(num_cols*div_amt) || col<0 || row>(num_rows*div_amt) || row<(0)) continue;
+ 8000684:	d0e00117 	ldw	r3,-32764(gp)
+ 8000688:	d0a00317 	ldw	r2,-32756(gp)
+ 800068c:	1889383a 	mul	r4,r3,r2
+ 8000690:	80032dc0 	call	80032dc <__floatsisf>
+ 8000694:	d0e76a17 	ldw	r3,-25176(gp)
+ 8000698:	1009883a 	mov	r4,r2
+ 800069c:	180b883a 	mov	r5,r3
+ 80006a0:	80031ec0 	call	80031ec <__ltsf2>
+ 80006a4:	1004803a 	cmplt	r2,r2,zero
+ 80006a8:	1001291e 	bne	r2,zero,8000b50 <main+0x950>
+ 80006ac:	d0a76a17 	ldw	r2,-25176(gp)
+ 80006b0:	1009883a 	mov	r4,r2
+ 80006b4:	000b883a 	mov	r5,zero
+ 80006b8:	80031ec0 	call	80031ec <__ltsf2>
+ 80006bc:	1004803a 	cmplt	r2,r2,zero
+ 80006c0:	1001231e 	bne	r2,zero,8000b50 <main+0x950>
+ 80006c4:	d0e00017 	ldw	r3,-32768(gp)
+ 80006c8:	d0a00317 	ldw	r2,-32756(gp)
+ 80006cc:	1889383a 	mul	r4,r3,r2
+ 80006d0:	80032dc0 	call	80032dc <__floatsisf>
+ 80006d4:	d0e76d17 	ldw	r3,-25164(gp)
+ 80006d8:	1009883a 	mov	r4,r2
+ 80006dc:	180b883a 	mov	r5,r3
+ 80006e0:	80031ec0 	call	80031ec <__ltsf2>
+ 80006e4:	1004803a 	cmplt	r2,r2,zero
+ 80006e8:	1001191e 	bne	r2,zero,8000b50 <main+0x950>
+ 80006ec:	d0a76d17 	ldw	r2,-25164(gp)
+ 80006f0:	1009883a 	mov	r4,r2
+ 80006f4:	000b883a 	mov	r5,zero
+ 80006f8:	80031ec0 	call	80031ec <__ltsf2>
+ 80006fc:	1004803a 	cmplt	r2,r2,zero
+ 8000700:	1001131e 	bne	r2,zero,8000b50 <main+0x950>
+
+				rowf = (row/div_amt*div_amt);
+ 8000704:	d4276d17 	ldw	r16,-25164(gp)
+ 8000708:	d1200317 	ldw	r4,-32756(gp)
+ 800070c:	80032dc0 	call	80032dc <__floatsisf>
+ 8000710:	8009883a 	mov	r4,r16
+ 8000714:	100b883a 	mov	r5,r2
+ 8000718:	8002f100 	call	8002f10 <__divsf3>
+ 800071c:	1021883a 	mov	r16,r2
+ 8000720:	d1200317 	ldw	r4,-32756(gp)
+ 8000724:	80032dc0 	call	80032dc <__floatsisf>
+ 8000728:	8085ff32 	custom	252,r2,r16,r2
+ 800072c:	1009883a 	mov	r4,r2
+ 8000730:	80033740 	call	8003374 <__fixsfsi>
+ 8000734:	e0bfed15 	stw	r2,-76(fp)
+				colf = (col/div_amt*div_amt);
+ 8000738:	d4276a17 	ldw	r16,-25176(gp)
+ 800073c:	d1200317 	ldw	r4,-32756(gp)
+ 8000740:	80032dc0 	call	80032dc <__floatsisf>
+ 8000744:	8009883a 	mov	r4,r16
+ 8000748:	100b883a 	mov	r5,r2
+ 800074c:	8002f100 	call	8002f10 <__divsf3>
+ 8000750:	1021883a 	mov	r16,r2
+ 8000754:	d1200317 	ldw	r4,-32756(gp)
+ 8000758:	80032dc0 	call	80032dc <__floatsisf>
+ 800075c:	8085ff32 	custom	252,r2,r16,r2
+ 8000760:	1009883a 	mov	r4,r2
+ 8000764:	80033740 	call	8003374 <__fixsfsi>
+ 8000768:	e0bfec15 	stw	r2,-80(fp)
+
+
+				alt_32 rfrac = (row-rowf)/div_amt;
+ 800076c:	d4276d17 	ldw	r16,-25164(gp)
+ 8000770:	e13fed17 	ldw	r4,-76(fp)
+ 8000774:	80032dc0 	call	80032dc <__floatsisf>
+ 8000778:	80a1ffb2 	custom	254,r16,r16,r2
+ 800077c:	d1200317 	ldw	r4,-32756(gp)
+ 8000780:	80032dc0 	call	80032dc <__floatsisf>
+ 8000784:	8009883a 	mov	r4,r16
+ 8000788:	100b883a 	mov	r5,r2
+ 800078c:	8002f100 	call	8002f10 <__divsf3>
+ 8000790:	1009883a 	mov	r4,r2
+ 8000794:	80033740 	call	8003374 <__fixsfsi>
+ 8000798:	e0bfeb15 	stw	r2,-84(fp)
+				alt_32 cfrac = (col-colf)/div_amt;
+ 800079c:	d4276a17 	ldw	r16,-25176(gp)
+ 80007a0:	e13fec17 	ldw	r4,-80(fp)
+ 80007a4:	80032dc0 	call	80032dc <__floatsisf>
+ 80007a8:	80a1ffb2 	custom	254,r16,r16,r2
+ 80007ac:	d1200317 	ldw	r4,-32756(gp)
+ 80007b0:	80032dc0 	call	80032dc <__floatsisf>
+ 80007b4:	8009883a 	mov	r4,r16
+ 80007b8:	100b883a 	mov	r5,r2
+ 80007bc:	8002f100 	call	8002f10 <__divsf3>
+ 80007c0:	1009883a 	mov	r4,r2
+ 80007c4:	80033740 	call	8003374 <__fixsfsi>
+ 80007c8:	e0bfea15 	stw	r2,-88(fp)
+				printf("cfrac: ");
+				printf("%d\n", cfrac);
+*/
+
+
+				alt_32 weight1 = (div_amt-rfrac)*(div_amt-cfrac);
+ 80007cc:	d0e00317 	ldw	r3,-32756(gp)
+ 80007d0:	e0bfeb17 	ldw	r2,-84(fp)
+ 80007d4:	1889c83a 	sub	r4,r3,r2
+ 80007d8:	d0e00317 	ldw	r3,-32756(gp)
+ 80007dc:	e0bfea17 	ldw	r2,-88(fp)
+ 80007e0:	1885c83a 	sub	r2,r3,r2
+ 80007e4:	2085383a 	mul	r2,r4,r2
+ 80007e8:	e0bfe915 	stw	r2,-92(fp)
+				alt_32 weight2 = rfrac*(div_amt-cfrac);
+ 80007ec:	d0e00317 	ldw	r3,-32756(gp)
+ 80007f0:	e0bfea17 	ldw	r2,-88(fp)
+ 80007f4:	1887c83a 	sub	r3,r3,r2
+ 80007f8:	e0bfeb17 	ldw	r2,-84(fp)
+ 80007fc:	1885383a 	mul	r2,r3,r2
+ 8000800:	e0bfe815 	stw	r2,-96(fp)
+				alt_32 weight3 = rfrac*cfrac;
+ 8000804:	e0ffeb17 	ldw	r3,-84(fp)
+ 8000808:	e0bfea17 	ldw	r2,-88(fp)
+ 800080c:	1885383a 	mul	r2,r3,r2
+ 8000810:	e0bfe715 	stw	r2,-100(fp)
+				alt_32 weight4 = (div_amt-rfrac)*cfrac;
+ 8000814:	d0e00317 	ldw	r3,-32756(gp)
+ 8000818:	e0bfeb17 	ldw	r2,-84(fp)
+ 800081c:	1887c83a 	sub	r3,r3,r2
+ 8000820:	e0bfea17 	ldw	r2,-88(fp)
+ 8000824:	1885383a 	mul	r2,r3,r2
+ 8000828:	e0bfe615 	stw	r2,-104(fp)
+
+				weight1 /= div_amt*div_amt;
+ 800082c:	d0e00317 	ldw	r3,-32756(gp)
+ 8000830:	d0a00317 	ldw	r2,-32756(gp)
+ 8000834:	188b383a 	mul	r5,r3,r2
+ 8000838:	e13fe917 	ldw	r4,-92(fp)
+ 800083c:	80035100 	call	8003510 <__divsi3>
+ 8000840:	e0bfe915 	stw	r2,-92(fp)
+				weight2 /= div_amt*div_amt;
+ 8000844:	d0e00317 	ldw	r3,-32756(gp)
+ 8000848:	d0a00317 	ldw	r2,-32756(gp)
+ 800084c:	188b383a 	mul	r5,r3,r2
+ 8000850:	e13fe817 	ldw	r4,-96(fp)
+ 8000854:	80035100 	call	8003510 <__divsi3>
+ 8000858:	e0bfe815 	stw	r2,-96(fp)
+				weight3 /= div_amt*div_amt;
+ 800085c:	d0e00317 	ldw	r3,-32756(gp)
+ 8000860:	d0a00317 	ldw	r2,-32756(gp)
+ 8000864:	188b383a 	mul	r5,r3,r2
+ 8000868:	e13fe717 	ldw	r4,-100(fp)
+ 800086c:	80035100 	call	8003510 <__divsi3>
+ 8000870:	e0bfe715 	stw	r2,-100(fp)
+				weight4 /= div_amt*div_amt;
+ 8000874:	d0e00317 	ldw	r3,-32756(gp)
+ 8000878:	d0a00317 	ldw	r2,-32756(gp)
+ 800087c:	188b383a 	mul	r5,r3,r2
+ 8000880:	e13fe617 	ldw	r4,-104(fp)
+ 8000884:	80035100 	call	8003510 <__divsi3>
+ 8000888:	e0bfe615 	stw	r2,-104(fp)
+
+				rowf /= div_amt;
+ 800088c:	d1600317 	ldw	r5,-32756(gp)
+ 8000890:	e13fed17 	ldw	r4,-76(fp)
+ 8000894:	80035100 	call	8003510 <__divsi3>
+ 8000898:	e0bfed15 	stw	r2,-76(fp)
+				colf /= div_amt;
+ 800089c:	d1600317 	ldw	r5,-32756(gp)
+ 80008a0:	e13fec17 	ldw	r4,-80(fp)
+ 80008a4:	80035100 	call	8003510 <__divsi3>
+ 80008a8:	e0bfec15 	stw	r2,-80(fp)
+
+				int pixel1 = rowf*320*3 + colf*3;
+ 80008ac:	e0bfed17 	ldw	r2,-76(fp)
+ 80008b0:	1100f024 	muli	r4,r2,960
+ 80008b4:	e0ffec17 	ldw	r3,-80(fp)
+ 80008b8:	1805883a 	mov	r2,r3
+ 80008bc:	1085883a 	add	r2,r2,r2
+ 80008c0:	10c5883a 	add	r2,r2,r3
+ 80008c4:	2085883a 	add	r2,r4,r2
+ 80008c8:	e0bfe515 	stw	r2,-108(fp)
+				int pixel2 = (rowf + 1)*320*3 + colf*3;
+ 80008cc:	e0bfed17 	ldw	r2,-76(fp)
+ 80008d0:	1100f024 	muli	r4,r2,960
+ 80008d4:	e0ffec17 	ldw	r3,-80(fp)
+ 80008d8:	1805883a 	mov	r2,r3
+ 80008dc:	1085883a 	add	r2,r2,r2
+ 80008e0:	10c5883a 	add	r2,r2,r3
+ 80008e4:	2085883a 	add	r2,r4,r2
+ 80008e8:	1080f004 	addi	r2,r2,960
+ 80008ec:	e0bfe415 	stw	r2,-112(fp)
+				int pixel3 = (rowf + 1)*320*3 + (colf + 1)*3;
+ 80008f0:	e0bfed17 	ldw	r2,-76(fp)
+ 80008f4:	1100f024 	muli	r4,r2,960
+ 80008f8:	e0ffec17 	ldw	r3,-80(fp)
+ 80008fc:	1805883a 	mov	r2,r3
+ 8000900:	1085883a 	add	r2,r2,r2
+ 8000904:	10c5883a 	add	r2,r2,r3
+ 8000908:	2085883a 	add	r2,r4,r2
+ 800090c:	1080f0c4 	addi	r2,r2,963
+ 8000910:	e0bfe315 	stw	r2,-116(fp)
+				int pixel4 = rowf*320*3 + (colf + 1)*3;
+ 8000914:	e0ffec17 	ldw	r3,-80(fp)
+ 8000918:	1805883a 	mov	r2,r3
+ 800091c:	1085883a 	add	r2,r2,r2
+ 8000920:	10c7883a 	add	r3,r2,r3
+ 8000924:	e0bfed17 	ldw	r2,-76(fp)
+ 8000928:	1080f024 	muli	r2,r2,960
+ 800092c:	1885883a 	add	r2,r3,r2
+ 8000930:	108000c4 	addi	r2,r2,3
+ 8000934:	e0bfe215 	stw	r2,-120(fp)
+
+				//three colors
+				int in1 = ((weight1*my_image[pixel1] +
+						weight2*my_image[pixel2] +
+						weight3*my_image[pixel3] +
+						weight4*my_image[pixel4]));
+ 8000938:	e0bfe517 	ldw	r2,-108(fp)
+ 800093c:	1007883a 	mov	r3,r2
+ 8000940:	e0bffb17 	ldw	r2,-20(fp)
+ 8000944:	1885883a 	add	r2,r3,r2
+ 8000948:	10800003 	ldbu	r2,0(r2)
+ 800094c:	10c03fcc 	andi	r3,r2,255
+ 8000950:	e0bfe917 	ldw	r2,-92(fp)
+ 8000954:	1889383a 	mul	r4,r3,r2
+ 8000958:	e0bfe417 	ldw	r2,-112(fp)
+ 800095c:	1007883a 	mov	r3,r2
+ 8000960:	e0bffb17 	ldw	r2,-20(fp)
+ 8000964:	1885883a 	add	r2,r3,r2
+ 8000968:	10800003 	ldbu	r2,0(r2)
+ 800096c:	10c03fcc 	andi	r3,r2,255
+ 8000970:	e0bfe817 	ldw	r2,-96(fp)
+ 8000974:	1885383a 	mul	r2,r3,r2
+ 8000978:	208b883a 	add	r5,r4,r2
+ 800097c:	e0bfe217 	ldw	r2,-120(fp)
+ 8000980:	1007883a 	mov	r3,r2
+ 8000984:	e0bffb17 	ldw	r2,-20(fp)
+ 8000988:	1885883a 	add	r2,r3,r2
+ 800098c:	10800003 	ldbu	r2,0(r2)
+ 8000990:	10c03fcc 	andi	r3,r2,255
+ 8000994:	e0bfe617 	ldw	r2,-104(fp)
+ 8000998:	1889383a 	mul	r4,r3,r2
+ 800099c:	e0bfe317 	ldw	r2,-116(fp)
+ 80009a0:	1007883a 	mov	r3,r2
+ 80009a4:	e0bffb17 	ldw	r2,-20(fp)
+ 80009a8:	1885883a 	add	r2,r3,r2
+ 80009ac:	10800003 	ldbu	r2,0(r2)
+ 80009b0:	10c03fcc 	andi	r3,r2,255
+ 80009b4:	e0bfe717 	ldw	r2,-100(fp)
+ 80009b8:	1885383a 	mul	r2,r3,r2
+ 80009bc:	2085883a 	add	r2,r4,r2
+ 80009c0:	2885883a 	add	r2,r5,r2
+ 80009c4:	e0bfe115 	stw	r2,-124(fp)
+
+				int in2 = ((weight1*my_image[pixel1+1] +
+						weight2*my_image[pixel2+1] +
+						weight3*my_image[pixel3+1] +
+						weight4*my_image[pixel4+1]));
+ 80009c8:	e0ffe517 	ldw	r3,-108(fp)
+ 80009cc:	e0bffb17 	ldw	r2,-20(fp)
+ 80009d0:	1885883a 	add	r2,r3,r2
+ 80009d4:	10800044 	addi	r2,r2,1
+ 80009d8:	10800003 	ldbu	r2,0(r2)
+ 80009dc:	10c03fcc 	andi	r3,r2,255
+ 80009e0:	e0bfe917 	ldw	r2,-92(fp)
+ 80009e4:	1889383a 	mul	r4,r3,r2
+ 80009e8:	e0ffe417 	ldw	r3,-112(fp)
+ 80009ec:	e0bffb17 	ldw	r2,-20(fp)
+ 80009f0:	1885883a 	add	r2,r3,r2
+ 80009f4:	10800044 	addi	r2,r2,1
+ 80009f8:	10800003 	ldbu	r2,0(r2)
+ 80009fc:	10c03fcc 	andi	r3,r2,255
+ 8000a00:	e0bfe817 	ldw	r2,-96(fp)
+ 8000a04:	1885383a 	mul	r2,r3,r2
+ 8000a08:	208b883a 	add	r5,r4,r2
+ 8000a0c:	e0ffe217 	ldw	r3,-120(fp)
+ 8000a10:	e0bffb17 	ldw	r2,-20(fp)
+ 8000a14:	1885883a 	add	r2,r3,r2
+ 8000a18:	10800044 	addi	r2,r2,1
+ 8000a1c:	10800003 	ldbu	r2,0(r2)
+ 8000a20:	10c03fcc 	andi	r3,r2,255
+ 8000a24:	e0bfe617 	ldw	r2,-104(fp)
+ 8000a28:	1889383a 	mul	r4,r3,r2
+ 8000a2c:	e0ffe317 	ldw	r3,-116(fp)
+ 8000a30:	e0bffb17 	ldw	r2,-20(fp)
+ 8000a34:	1885883a 	add	r2,r3,r2
+ 8000a38:	10800044 	addi	r2,r2,1
+ 8000a3c:	10800003 	ldbu	r2,0(r2)
+ 8000a40:	10c03fcc 	andi	r3,r2,255
+ 8000a44:	e0bfe717 	ldw	r2,-100(fp)
+ 8000a48:	1885383a 	mul	r2,r3,r2
+ 8000a4c:	2085883a 	add	r2,r4,r2
+ 8000a50:	2885883a 	add	r2,r5,r2
+ 8000a54:	e0bfe015 	stw	r2,-128(fp)
+
+				int in3 = ((weight1*my_image[pixel1+2] +
+						weight2*my_image[pixel2+2] +
+						weight3*my_image[pixel3+2] +
+						weight4*my_image[pixel4+2]));
+ 8000a58:	e0ffe517 	ldw	r3,-108(fp)
+ 8000a5c:	e0bffb17 	ldw	r2,-20(fp)
+ 8000a60:	1885883a 	add	r2,r3,r2
+ 8000a64:	10800084 	addi	r2,r2,2
+ 8000a68:	10800003 	ldbu	r2,0(r2)
+ 8000a6c:	10c03fcc 	andi	r3,r2,255
+ 8000a70:	e0bfe917 	ldw	r2,-92(fp)
+ 8000a74:	1889383a 	mul	r4,r3,r2
+ 8000a78:	e0ffe417 	ldw	r3,-112(fp)
+ 8000a7c:	e0bffb17 	ldw	r2,-20(fp)
+ 8000a80:	1885883a 	add	r2,r3,r2
+ 8000a84:	10800084 	addi	r2,r2,2
+ 8000a88:	10800003 	ldbu	r2,0(r2)
+ 8000a8c:	10c03fcc 	andi	r3,r2,255
+ 8000a90:	e0bfe817 	ldw	r2,-96(fp)
+ 8000a94:	1885383a 	mul	r2,r3,r2
+ 8000a98:	208b883a 	add	r5,r4,r2
+ 8000a9c:	e0ffe217 	ldw	r3,-120(fp)
+ 8000aa0:	e0bffb17 	ldw	r2,-20(fp)
+ 8000aa4:	1885883a 	add	r2,r3,r2
+ 8000aa8:	10800084 	addi	r2,r2,2
+ 8000aac:	10800003 	ldbu	r2,0(r2)
+ 8000ab0:	10c03fcc 	andi	r3,r2,255
+ 8000ab4:	e0bfe617 	ldw	r2,-104(fp)
+ 8000ab8:	1889383a 	mul	r4,r3,r2
+ 8000abc:	e0ffe317 	ldw	r3,-116(fp)
+ 8000ac0:	e0bffb17 	ldw	r2,-20(fp)
+ 8000ac4:	1885883a 	add	r2,r3,r2
+ 8000ac8:	10800084 	addi	r2,r2,2
+ 8000acc:	10800003 	ldbu	r2,0(r2)
+ 8000ad0:	10c03fcc 	andi	r3,r2,255
+ 8000ad4:	e0bfe717 	ldw	r2,-100(fp)
+ 8000ad8:	1885383a 	mul	r2,r3,r2
+ 8000adc:	2085883a 	add	r2,r4,r2
+ 8000ae0:	2885883a 	add	r2,r5,r2
+ 8000ae4:	e0bfdf15 	stw	r2,-132(fp)
+						weight4*my_image[pixel4+2]);
+
+				#endif

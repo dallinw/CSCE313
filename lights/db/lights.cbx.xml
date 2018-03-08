@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="lights">
-		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_dc_data_module:cpu_0_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_2jf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_dc_data_module:cpu_0_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ujf1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_u972.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_qbf1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0_altera_nios_custom_instr_floating_point_inst:the_cpu_0_altera_nios_custom_instr_floating_point_inst|fpoint_wrapper:cpu_0_altera_nios_custom_instr_floating_point_inst|fpoint_qsys:fpoint_instance|fpoint_qsys_addsub_single:the_fp_addsub|lpm_add_sub:man_2comp_res_lower" CBX_FILE_NAME="add_sub_glh.tdf"/>
@@ -20,7 +20,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0_altera_nios_custom_instr_floating_point_inst:the_cpu_0_altera_nios_custom_instr_floating_point_inst|fpoint_wrapper:cpu_0_altera_nios_custom_instr_floating_point_inst|fpoint_qsys:fpoint_instance|fpoint_qsys_mult_single:the_fp_mult|lpm_add_sub:man_round_adder" CBX_FILE_NAME="add_sub_ptb.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|video_scaler_0:the_video_scaler_0|altera_up_video_scaler_multiply_height:Multiply_Height|scfifo:Multiply_Height_FIFO" CBX_FILE_NAME="scfifo_ci31.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_bht_module:cpu_0_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_qtf1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_dc_tag_module:cpu_0_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ulf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_dc_tag_module:cpu_0_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_olf1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_dc_victim_module:cpu_0_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_r3d1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_0a02.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|lights|nios_system:my_system|cpu_0_altera_nios_custom_instr_floating_point_inst:the_cpu_0_altera_nios_custom_instr_floating_point_inst|fpoint_wrapper:cpu_0_altera_nios_custom_instr_floating_point_inst|fpoint_qsys:fpoint_instance|fpoint_qsys_addsub_single:the_fp_addsub|lpm_add_sub:man_2comp_res_upper1" CBX_FILE_NAME="add_sub_l6h.tdf"/>

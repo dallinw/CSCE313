@@ -13,7 +13,7 @@
 #include <stdlib.h>  // for file I/O
 #include <altera_avalon_performance_counter.h>
 
-#define FIXED_POINT
+//#define FIXED_POINT
 
 alt_up_pixel_buffer_dma_dev *my_pixel_buffer; //declare global var
 const int num_rows = 240;  //from 320
@@ -22,6 +22,8 @@ float row;
 float col;
 int shift_amt = 9;
 int div_amt = 512;
+//int div_amt = 512.0f;
+
 
 int rcount;
 int bool_dec;
@@ -111,9 +113,9 @@ int main()
 		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
 		int i, j;
 		int iterations = 0;
+		int initial_counter = 0;
 		int sum_of_cycles = 0;
 		int average_cycles = 0;
-
 
 		#ifdef FIXED_POINT
 
@@ -139,43 +141,64 @@ int main()
 			if (keys != 7 && keys != 5) {
 				break;
 			}
+
+
+
 			for(j=0; j<num_cols-1; j++) {
 				//start performance counter to record cycles of this innermost loop
-				PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
+
+				//PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
+
+				initial_counter = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
+				//printf("%d\n", initial_counter);
 
 				// to rotate about center calculate offset
-				int offset_i = i - num_rows/2;
-				int offset_j = j - num_cols/2;
+				alt_u32 offset_i = i - num_rows/2;
+				alt_u32 offset_j = j - num_cols/2;
 
-				int rowf = 0;
-				int colf = 0;
+				alt_u32 rowf = 0;
+				alt_u32 colf = 0;
 
 
 				#ifdef FIXED_POINT
+				/*
 				row = offset_i*cosine/div_amt - offset_j*sine/div_amt + num_rows/2.0f;
 				col = offset_i*sine/div_amt + offset_j*cosine/div_amt + num_cols/2.0f;
 
 				rowf = (int)floorf(row);
 				colf = (int)floorf(col);
+
 				rowf *= div_amt;
 				colf *= div_amt;
+				*/
+
 
 				row = offset_i*cosine-offset_j*sine + num_rows*div_amt/2;
 				col = offset_i*sine+offset_j*cosine + num_cols*div_amt/2;
 
+
 				if(col>(num_cols*div_amt) || col<0 || row>(num_rows*div_amt) || row<(0)) continue;
 
+				rowf = (row/div_amt*div_amt);
+				colf = (col/div_amt*div_amt);
 
 
-				alt_32 rfrac = (row-rowf)/div_amt;
-				alt_32 cfrac = (col-colf)/div_amt;
+				alt_u32 rfrac = (row-rowf)/div_amt;
+				alt_u32 cfrac = (col-colf)/div_amt;
+
+/*
+				printf("rfrac: ");
+				printf("%d   ", rfrac);
+				printf("cfrac: ");
+				printf("%d\n", cfrac);
+*/
 
 
-
-				alt_32 weight1 = (div_amt-rfrac)*(1*div_amt-cfrac);
+				alt_32 weight1 = (div_amt-rfrac)*(div_amt-cfrac);
 				alt_32 weight2 = rfrac*(div_amt-cfrac);
 				alt_32 weight3 = rfrac*cfrac;
 				alt_32 weight4 = (div_amt-rfrac)*cfrac;
+
 				weight1 /= div_amt*div_amt;
 				weight2 /= div_amt*div_amt;
 				weight3 /= div_amt*div_amt;
@@ -184,10 +207,44 @@ int main()
 				rowf /= div_amt;
 				colf /= div_amt;
 
-				row /= div_amt;
-				col /= div_amt;
+				alt_u32 pixel1 = rowf*320*3 + colf*3;
+				alt_u32 pixel2 = (rowf + 1)*320*3 + colf*3;
+				alt_u32 pixel3 = (rowf + 1)*320*3 + (colf + 1)*3;
+				alt_u32 pixel4 = rowf*320*3 + (colf + 1)*3;
 
+				/*
+				pixel1 /= div_amt;
+				pixel2 /= div_amt;
+				pixel3 /= div_amt;
+				pixel4 /= div_amt;
+				*/
 
+				/*
+				printf("p1: ");
+				printf("%d   ", pixel1);
+				printf("p2 ");
+				printf("%d ", pixel2);
+				printf("p3: ");
+				printf("%d   ", pixel3);
+				printf("p4 ");
+				printf("%d\n", pixel4);
+				*/
+
+				//three colors
+				alt_u32 in1 = ((weight1*my_image[pixel1] +
+						weight2*my_image[pixel2] +
+						weight3*my_image[pixel3] +
+						weight4*my_image[pixel4]));
+
+				alt_u32 in2 = ((weight1*my_image[pixel1+1] +
+						weight2*my_image[pixel2+1] +
+						weight3*my_image[pixel3+1] +
+						weight4*my_image[pixel4+1]));
+
+				alt_u32 in3 = ((weight1*my_image[pixel1+2] +
+						weight2*my_image[pixel2+2] +
+						weight3*my_image[pixel3+2] +
+						weight4*my_image[pixel4+2]));
 
 
 				#else
@@ -202,20 +259,36 @@ int main()
 				float rfrac = row-rowf;
 				float cfrac = col-colf;
 
+				/*
+				printf("in else ");
+				printf("rfrac: ");
+				printf("%f   ", rfrac);
+				printf("cfrac: ");
+				printf("%f\n", cfrac);
+				*/
+
 				//weight for each pixel
 				float weight1 = (1.0-rfrac)*(1.0-cfrac);
 				float weight2 = rfrac*(1.0-cfrac);
 				float weight3 = rfrac*cfrac;
 				float weight4 = (1.0-rfrac)*cfrac;
 
-				#endif
 
 				int pixel1 = rowf*320*3 + colf*3;
 				int pixel2 = (rowf + 1)*320*3 + colf*3;
 				int pixel3 = (rowf + 1)*320*3 + (colf + 1)*3;
 				int pixel4 = rowf*320*3 + (colf + 1)*3;
 
-
+				/*
+				printf("p1: ");
+				printf("%d   ", pixel1);
+				printf("p2 ");
+				printf("%d ", pixel2);
+				printf("p3: ");
+				printf("%d   ", pixel3);
+				printf("p4 ");
+				printf("%d\n", pixel4);
+				*/
 
 				//three colors
 				int in1 = (int) (weight1*my_image[pixel1] +
@@ -233,15 +306,17 @@ int main()
 						weight3*my_image[pixel3+2] +
 						weight4*my_image[pixel4+2]);
 
-
+				#endif
 
 				//draw_pixel
 				cycle_counter = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
+				//printf("%d cycle_counter: \n", cycle_counter);
 				PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
+
 				++iterations;
 				sum_of_cycles += cycle_counter;
-				//printf("# of Cycles:");
-				//printf("%d\n", average_cycles);
+				printf("# of Cycles:");
+				printf("%d\n", average_cycles);
 				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
 			}
 			average_cycles = sum_of_cycles/iterations;
