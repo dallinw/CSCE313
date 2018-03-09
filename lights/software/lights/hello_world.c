@@ -44,7 +44,6 @@ int main()
 	alt_u32 current_value = 1;
 	alt_u32 current_state = 3;
 	alt_u8 *my_image;
-	alt_u8 cycle_counter = 0;
 	my_image = (alt_u8 *)malloc(320*240*3);
 	fread(my_image,sizeof(alt_u8),320*240*3,myfile);
 
@@ -112,15 +111,12 @@ int main()
 	else if (current_state == 5) {
 		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
 		int i, j;
-		int iterations = 0;
-		int initial_counter = 0;
-		int sum_of_cycles = 0;
-		int average_cycles = 0;
+
 
 		#ifdef FIXED_POINT
 
-		alt_32 sine = (alt_32)(sinf(rcount*(M_PI/180))*div_amt);
-		alt_32 cosine = (alt_32)(cosf(rcount*(M_PI/180))*div_amt);
+		int sine = (int) (sinf(rcount*(M_PI/180))*div_amt);
+		int cosine = (int)(cosf(rcount*(M_PI/180))*div_amt);
 
 		#else
 
@@ -133,7 +129,7 @@ int main()
 
 		//reset performance counter
 		PERF_RESET(PERFORMANCE_COUNTER_0_BASE);
-
+		PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
 		for(i=0; i<num_rows-1; i++){
 			//break if key press
 			keys = keys=IORD_ALTERA_AVALON_PIO_DATA(KEYS_BASE);
@@ -148,7 +144,7 @@ int main()
 
 				//PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
 
-				initial_counter = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
+				//initial_counter = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
 				//printf("%d\n", initial_counter);
 
 				// to rotate about center calculate offset
@@ -161,42 +157,52 @@ int main()
 
 				#ifdef FIXED_POINT
 				//calcuate row&col value from fixed point sine/cosine
-				row = offset_i*cosine-offset_j*sine + (num_rows*div_amt)/2;
-				col = offset_i*sine+offset_j*cosine + (num_cols*div_amt)/2;
+				alt_u32 rowi = (offset_i*cosine-offset_j*sine + (num_rows*512)/2);
+				alt_u32 coli = (offset_i*sine+offset_j*cosine + (num_cols*512)/2);
 				//check bounds
-				if(col>(num_cols*div_amt) || col<0 || row>(num_rows*div_amt) || row<(0)) continue;
-				//'floor' for interpolation; subtract from row&col value
-				rowf = (row/div_amt*div_amt);
-				colf = (col/div_amt*div_amt);
+				if(coli>(num_cols*512) || coli<0 || rowi>(num_rows*512) || rowi<(0)) continue;
+				//'floor' for interpolation
+				rowf = rowi/512*512;
+				colf = coli/512*512;
 
-				int rfrac = (row-rowf);
-				int cfrac = (col-colf);
+				alt_u32 rfrac = (rowi-rowf)/512;
+				alt_u32 cfrac = (coli-colf)/512;
 
 				//calculate weights; divide by 512^2
-				int weight1 = (div_amt-rfrac)*(div_amt-cfrac);
-				int weight2 = rfrac*(div_amt-cfrac);
-				int weight3 = rfrac*cfrac;
-				int weight4 = (div_amt-rfrac)*cfrac;
 
-				weight1 /= div_amt*div_amt;
-				weight2 /= div_amt*div_amt;
-				weight3 /= div_amt*div_amt;
-				weight4 /= div_amt*div_amt;
+				alt_u32 weight1 = (512-rfrac)*(512-cfrac);
+				alt_u32 weight2 = rfrac*(512-cfrac);
+				alt_u32 weight3 = rfrac*cfrac;
+				alt_u32 weight4 = (512-rfrac)*cfrac;
+
+
+				weight1 /= 512*512;
+				//printf("weight1: %d\n" , weight1);
+				weight2 /= 512*512;
+				weight3 /= 512*512;
+				weight4 /= 512*512;
 				//reset rowf&colf values for pixel calculations
-				rowf /= div_amt;
-				colf /= div_amt;
+				rowf /= 512;
+				colf /= 512;
 
 				#else
 				row = offset_i*cosine-offset_j*sine + num_rows/2.0f;
 				col = offset_i*sine+offset_j*cosine + num_cols/2.0f;
+				//printf("row: %f\n", offset_i*cosine-offset_j*sine + (num_rows*512)/2);
+				//printf("col: %f\n", offset_i*sine+offset_j*cosine + (num_cols*512)/2);
 
 				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
 
 				rowf = (int)floorf(row);
 				colf = (int)floorf(col);
+				//printf("rowf: %d\n", rowf);
+				//printf("colf: %d\n", colf);
+
 
 				float rfrac = row-rowf;
 				float cfrac = col-colf;
+				//printf("rfrac: %f\n", rfrac);
+				//printf("cfrac: %f\n", cfrac);
 
 				//weight for each pixel
 				float weight1 = (1.0-rfrac)*(1.0-cfrac);
@@ -229,21 +235,14 @@ int main()
 						weight4*my_image[pixel4+2]);
 
 
-				cycle_counter = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
-				//printf("%d cycle_counter: \n", cycle_counter);
-				PERF_START_MEASURING(PERFORMANCE_COUNTER_0_BASE);
 
-				++iterations;
-				sum_of_cycles += cycle_counter;
-				printf("# of Cycles:");
-				printf("%d\n", average_cycles);
 				//draw_pixel
 				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
 			}
-			average_cycles = sum_of_cycles/iterations;
-			printf("Average # of Cycles:");
-			printf("%d\n", average_cycles);
 		}
+		int time = perf_get_total_time ((void*) PERFORMANCE_COUNTER_0_BASE);
+		printf("Average time %d\n", time/(320*240));
+
 		rcount+=10;
 
 

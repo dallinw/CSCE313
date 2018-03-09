@@ -1,355 +1,323 @@
-				int offset_i = i - num_rows/2;
- 800058c:	d0e00017 	ldw	r3,-32768(gp)
- 8000590:	1804d7fa 	srli	r2,r3,31
- 8000594:	10c5883a 	add	r2,r2,r3
- 8000598:	1005d07a 	srai	r2,r2,1
- 800059c:	1007883a 	mov	r3,r2
- 80005a0:	e0bff617 	ldw	r2,-40(fp)
- 80005a4:	10c5c83a 	sub	r2,r2,r3
- 80005a8:	e0bfef15 	stw	r2,-68(fp)
-				int offset_j = j - num_cols/2;
- 80005ac:	d0e00117 	ldw	r3,-32764(gp)
- 80005b0:	1804d7fa 	srli	r2,r3,31
- 80005b4:	10c5883a 	add	r2,r2,r3
- 80005b8:	1005d07a 	srai	r2,r2,1
- 80005bc:	1007883a 	mov	r3,r2
- 80005c0:	e0bff517 	ldw	r2,-44(fp)
- 80005c4:	10c5c83a 	sub	r2,r2,r3
- 80005c8:	e0bfee15 	stw	r2,-72(fp)
-
-				int rowf = 0;
- 80005cc:	e03fed15 	stw	zero,-76(fp)
-				int colf = 0;
- 80005d0:	e03fec15 	stw	zero,-80(fp)
-						weight3*my_image[pixel3+2] +
-						weight4*my_image[pixel4+2]));
-
-
-				#else
-				row = offset_i*cosine-offset_j*sine + num_rows/2.0f;
- 80005d4:	e13fef17 	ldw	r4,-68(fp)
- 80005d8:	80032340 	call	8003234 <__floatsisf>
- 80005dc:	1007883a 	mov	r3,r2
- 80005e0:	e0bff017 	ldw	r2,-64(fp)
- 80005e4:	18a1ff32 	custom	252,r16,r3,r2
- 80005e8:	e13fee17 	ldw	r4,-72(fp)
- 80005ec:	80032340 	call	8003234 <__floatsisf>
- 80005f0:	1007883a 	mov	r3,r2
- 80005f4:	e0bff117 	ldw	r2,-60(fp)
- 80005f8:	1885ff32 	custom	252,r2,r3,r2
- 80005fc:	80a1ffb2 	custom	254,r16,r16,r2
- 8000600:	d1200017 	ldw	r4,-32768(gp)
- 8000604:	80032340 	call	8003234 <__floatsisf>
- 8000608:	1009883a 	mov	r4,r2
- 800060c:	01500034 	movhi	r5,16384
- 8000610:	8002e680 	call	8002e68 <__divsf3>
- 8000614:	8085ff72 	custom	253,r2,r16,r2
- 8000618:	d0a76d15 	stw	r2,-25164(gp)
-				col = offset_i*sine+offset_j*cosine + num_cols/2.0f;
- 800061c:	e13fef17 	ldw	r4,-68(fp)
- 8000620:	80032340 	call	8003234 <__floatsisf>
- 8000624:	1007883a 	mov	r3,r2
- 8000628:	e0bff117 	ldw	r2,-60(fp)
- 800062c:	18a1ff32 	custom	252,r16,r3,r2
- 8000630:	e13fee17 	ldw	r4,-72(fp)
- 8000634:	80032340 	call	8003234 <__floatsisf>
- 8000638:	1007883a 	mov	r3,r2
- 800063c:	e0bff017 	ldw	r2,-64(fp)
- 8000640:	1885ff32 	custom	252,r2,r3,r2
- 8000644:	80a1ff72 	custom	253,r16,r16,r2
- 8000648:	d1200117 	ldw	r4,-32764(gp)
- 800064c:	80032340 	call	8003234 <__floatsisf>
- 8000650:	1009883a 	mov	r4,r2
- 8000654:	01500034 	movhi	r5,16384
- 8000658:	8002e680 	call	8002e68 <__divsf3>
- 800065c:	8085ff72 	custom	253,r2,r16,r2
- 8000660:	d0a76a15 	stw	r2,-25176(gp)
-
-				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
- 8000664:	d1200117 	ldw	r4,-32764(gp)
- 8000668:	80032340 	call	8003234 <__floatsisf>
- 800066c:	d0e76a17 	ldw	r3,-25176(gp)
- 8000670:	1009883a 	mov	r4,r2
- 8000674:	180b883a 	mov	r5,r3
- 8000678:	80031440 	call	8003144 <__ltsf2>
- 800067c:	1004803a 	cmplt	r2,r2,zero
- 8000680:	1001091e 	bne	r2,zero,8000aa8 <main+0x8a8>
- 8000684:	d0a76a17 	ldw	r2,-25176(gp)
- 8000688:	1009883a 	mov	r4,r2
- 800068c:	000b883a 	mov	r5,zero
- 8000690:	80031440 	call	8003144 <__ltsf2>
- 8000694:	1004803a 	cmplt	r2,r2,zero
- 8000698:	1001031e 	bne	r2,zero,8000aa8 <main+0x8a8>
- 800069c:	d1200017 	ldw	r4,-32768(gp)
- 80006a0:	80032340 	call	8003234 <__floatsisf>
- 80006a4:	d0e76d17 	ldw	r3,-25164(gp)
- 80006a8:	1009883a 	mov	r4,r2
- 80006ac:	180b883a 	mov	r5,r3
- 80006b0:	80031440 	call	8003144 <__ltsf2>
- 80006b4:	1004803a 	cmplt	r2,r2,zero
- 80006b8:	1000fb1e 	bne	r2,zero,8000aa8 <main+0x8a8>
- 80006bc:	d0a76d17 	ldw	r2,-25164(gp)
- 80006c0:	1009883a 	mov	r4,r2
- 80006c4:	000b883a 	mov	r5,zero
- 80006c8:	80031440 	call	8003144 <__ltsf2>
- 80006cc:	1004803a 	cmplt	r2,r2,zero
- 80006d0:	1000f51e 	bne	r2,zero,8000aa8 <main+0x8a8>
-
-				rowf = (int)floorf(row);
- 80006d4:	d0a76d17 	ldw	r2,-25164(gp)
- 80006d8:	1009883a 	mov	r4,r2
- 80006dc:	80012440 	call	8001244 <floorf>
- 80006e0:	1009883a 	mov	r4,r2
- 80006e4:	80032cc0 	call	80032cc <__fixsfsi>
- 80006e8:	e0bfed15 	stw	r2,-76(fp)
-				colf = (int)floorf(col);
- 80006ec:	d0a76a17 	ldw	r2,-25176(gp)
- 80006f0:	1009883a 	mov	r4,r2
- 80006f4:	80012440 	call	8001244 <floorf>
- 80006f8:	1009883a 	mov	r4,r2
- 80006fc:	80032cc0 	call	80032cc <__fixsfsi>
- 8000700:	e0bfec15 	stw	r2,-80(fp)
-
-				float rfrac = row-rowf;
- 8000704:	d4276d17 	ldw	r16,-25164(gp)
- 8000708:	e13fed17 	ldw	r4,-76(fp)
- 800070c:	80032340 	call	8003234 <__floatsisf>
- 8000710:	8085ffb2 	custom	254,r2,r16,r2
- 8000714:	e0bfeb15 	stw	r2,-84(fp)
-				float cfrac = col-colf;
- 8000718:	d4276a17 	ldw	r16,-25176(gp)
- 800071c:	e13fec17 	ldw	r4,-80(fp)
- 8000720:	80032340 	call	8003234 <__floatsisf>
- 8000724:	8085ffb2 	custom	254,r2,r16,r2
- 8000728:	e0bfea15 	stw	r2,-88(fp)
-				printf("cfrac: ");
-				printf("%f\n", cfrac);
-				*/
-
-				//weight for each pixel
-				float weight1 = (1.0-rfrac)*(1.0-cfrac);
- 800072c:	00cfe034 	movhi	r3,16256
- 8000730:	e0bfeb17 	ldw	r2,-84(fp)
- 8000734:	1889ffb2 	custom	254,r4,r3,r2
- 8000738:	00cfe034 	movhi	r3,16256
- 800073c:	e0bfea17 	ldw	r2,-88(fp)
- 8000740:	1885ffb2 	custom	254,r2,r3,r2
- 8000744:	2085ff32 	custom	252,r2,r4,r2
- 8000748:	e0bfe915 	stw	r2,-92(fp)
-				float weight2 = rfrac*(1.0-cfrac);
- 800074c:	00cfe034 	movhi	r3,16256
- 8000750:	e0bfea17 	ldw	r2,-88(fp)
- 8000754:	1887ffb2 	custom	254,r3,r3,r2
- 8000758:	e0bfeb17 	ldw	r2,-84(fp)
- 800075c:	1885ff32 	custom	252,r2,r3,r2
- 8000760:	e0bfe815 	stw	r2,-96(fp)
-				float weight3 = rfrac*cfrac;
- 8000764:	e0ffeb17 	ldw	r3,-84(fp)
- 8000768:	e0bfea17 	ldw	r2,-88(fp)
- 800076c:	1885ff32 	custom	252,r2,r3,r2
- 8000770:	e0bfe715 	stw	r2,-100(fp)
-				float weight4 = (1.0-rfrac)*cfrac;
- 8000774:	00cfe034 	movhi	r3,16256
- 8000778:	e0bfeb17 	ldw	r2,-84(fp)
- 800077c:	1887ffb2 	custom	254,r3,r3,r2
- 8000780:	e0bfea17 	ldw	r2,-88(fp)
- 8000784:	1885ff32 	custom	252,r2,r3,r2
- 8000788:	e0bfe615 	stw	r2,-104(fp)
-
-				//#endif
-
-				int pixel1 = rowf*320*3 + colf*3;
- 800078c:	e0bfed17 	ldw	r2,-76(fp)
- 8000790:	1100f024 	muli	r4,r2,960
- 8000794:	e0ffec17 	ldw	r3,-80(fp)
- 8000798:	1805883a 	mov	r2,r3
- 800079c:	1085883a 	add	r2,r2,r2
- 80007a0:	10c5883a 	add	r2,r2,r3
- 80007a4:	2085883a 	add	r2,r4,r2
- 80007a8:	e0bfe515 	stw	r2,-108(fp)
-				int pixel2 = (rowf + 1)*320*3 + colf*3;
- 80007ac:	e0bfed17 	ldw	r2,-76(fp)
- 80007b0:	1100f024 	muli	r4,r2,960
- 80007b4:	e0ffec17 	ldw	r3,-80(fp)
- 80007b8:	1805883a 	mov	r2,r3
- 80007bc:	1085883a 	add	r2,r2,r2
- 80007c0:	10c5883a 	add	r2,r2,r3
- 80007c4:	2085883a 	add	r2,r4,r2
- 80007c8:	1080f004 	addi	r2,r2,960
- 80007cc:	e0bfe415 	stw	r2,-112(fp)
-				int pixel3 = (rowf + 1)*320*3 + (colf + 1)*3;
- 80007d0:	e0bfed17 	ldw	r2,-76(fp)
- 80007d4:	1100f024 	muli	r4,r2,960
- 80007d8:	e0ffec17 	ldw	r3,-80(fp)
- 80007dc:	1805883a 	mov	r2,r3
- 80007e0:	1085883a 	add	r2,r2,r2
- 80007e4:	10c5883a 	add	r2,r2,r3
- 80007e8:	2085883a 	add	r2,r4,r2
- 80007ec:	1080f0c4 	addi	r2,r2,963
- 80007f0:	e0bfe315 	stw	r2,-116(fp)
-				int pixel4 = rowf*320*3 + (colf + 1)*3;
- 80007f4:	e0ffec17 	ldw	r3,-80(fp)
- 80007f8:	1805883a 	mov	r2,r3
- 80007fc:	1085883a 	add	r2,r2,r2
- 8000800:	10c7883a 	add	r3,r2,r3
- 8000804:	e0bfed17 	ldw	r2,-76(fp)
- 8000808:	1080f024 	muli	r2,r2,960
- 800080c:	1885883a 	add	r2,r3,r2
- 8000810:	108000c4 	addi	r2,r2,3
- 8000814:	e0bfe215 	stw	r2,-120(fp)
-
-				//three colors
-				int in1 = (int) (weight1*my_image[pixel1] +
-						weight2*my_image[pixel2] +
-						weight3*my_image[pixel3] +
-						weight4*my_image[pixel4]);
- 8000818:	e0bfe517 	ldw	r2,-108(fp)
- 800081c:	1007883a 	mov	r3,r2
- 8000820:	e0bffb17 	ldw	r2,-20(fp)
- 8000824:	1885883a 	add	r2,r3,r2
- 8000828:	10800003 	ldbu	r2,0(r2)
- 800082c:	11003fcc 	andi	r4,r2,255
- 8000830:	80032340 	call	8003234 <__floatsisf>
- 8000834:	1007883a 	mov	r3,r2
- 8000838:	e0bfe917 	ldw	r2,-92(fp)
- 800083c:	18a1ff32 	custom	252,r16,r3,r2
- 8000840:	e0bfe417 	ldw	r2,-112(fp)
- 8000844:	1007883a 	mov	r3,r2
- 8000848:	e0bffb17 	ldw	r2,-20(fp)
- 800084c:	1885883a 	add	r2,r3,r2
- 8000850:	10800003 	ldbu	r2,0(r2)
- 8000854:	11003fcc 	andi	r4,r2,255
- 8000858:	80032340 	call	8003234 <__floatsisf>
- 800085c:	1007883a 	mov	r3,r2
- 8000860:	e0bfe817 	ldw	r2,-96(fp)
- 8000864:	1885ff32 	custom	252,r2,r3,r2
- 8000868:	80a1ff72 	custom	253,r16,r16,r2
- 800086c:	e0bfe317 	ldw	r2,-116(fp)
- 8000870:	1007883a 	mov	r3,r2
- 8000874:	e0bffb17 	ldw	r2,-20(fp)
- 8000878:	1885883a 	add	r2,r3,r2
- 800087c:	10800003 	ldbu	r2,0(r2)
- 8000880:	11003fcc 	andi	r4,r2,255
- 8000884:	80032340 	call	8003234 <__floatsisf>
- 8000888:	1007883a 	mov	r3,r2
- 800088c:	e0bfe717 	ldw	r2,-100(fp)
- 8000890:	1885ff32 	custom	252,r2,r3,r2
- 8000894:	80a1ff72 	custom	253,r16,r16,r2
- 8000898:	e0bfe217 	ldw	r2,-120(fp)
- 800089c:	1007883a 	mov	r3,r2
- 80008a0:	e0bffb17 	ldw	r2,-20(fp)
- 80008a4:	1885883a 	add	r2,r3,r2
- 80008a8:	10800003 	ldbu	r2,0(r2)
- 80008ac:	11003fcc 	andi	r4,r2,255
- 80008b0:	80032340 	call	8003234 <__floatsisf>
- 80008b4:	1007883a 	mov	r3,r2
- 80008b8:	e0bfe617 	ldw	r2,-104(fp)
- 80008bc:	1885ff32 	custom	252,r2,r3,r2
- 80008c0:	8085ff72 	custom	253,r2,r16,r2
- 80008c4:	1009883a 	mov	r4,r2
- 80008c8:	80032cc0 	call	80032cc <__fixsfsi>
- 80008cc:	e0bfe115 	stw	r2,-124(fp)
-
-				int in2 = (int) (weight1*my_image[pixel1+1] +
-						weight2*my_image[pixel2+1] +
-						weight3*my_image[pixel3+1] +
-						weight4*my_image[pixel4+1]);
- 80008d0:	e0ffe517 	ldw	r3,-108(fp)
- 80008d4:	e0bffb17 	ldw	r2,-20(fp)
- 80008d8:	1885883a 	add	r2,r3,r2
- 80008dc:	10800044 	addi	r2,r2,1
- 80008e0:	10800003 	ldbu	r2,0(r2)
- 80008e4:	11003fcc 	andi	r4,r2,255
- 80008e8:	80032340 	call	8003234 <__floatsisf>
- 80008ec:	1007883a 	mov	r3,r2
- 80008f0:	e0bfe917 	ldw	r2,-92(fp)
- 80008f4:	18a1ff32 	custom	252,r16,r3,r2
- 80008f8:	e0ffe417 	ldw	r3,-112(fp)
- 80008fc:	e0bffb17 	ldw	r2,-20(fp)
- 8000900:	1885883a 	add	r2,r3,r2
- 8000904:	10800044 	addi	r2,r2,1
- 8000908:	10800003 	ldbu	r2,0(r2)
- 800090c:	11003fcc 	andi	r4,r2,255
- 8000910:	80032340 	call	8003234 <__floatsisf>
- 8000914:	1007883a 	mov	r3,r2
- 8000918:	e0bfe817 	ldw	r2,-96(fp)
- 800091c:	1885ff32 	custom	252,r2,r3,r2
- 8000920:	80a1ff72 	custom	253,r16,r16,r2
- 8000924:	e0ffe317 	ldw	r3,-116(fp)
- 8000928:	e0bffb17 	ldw	r2,-20(fp)
- 800092c:	1885883a 	add	r2,r3,r2
- 8000930:	10800044 	addi	r2,r2,1
- 8000934:	10800003 	ldbu	r2,0(r2)
- 8000938:	11003fcc 	andi	r4,r2,255
- 800093c:	80032340 	call	8003234 <__floatsisf>
- 8000940:	1007883a 	mov	r3,r2
- 8000944:	e0bfe717 	ldw	r2,-100(fp)
- 8000948:	1885ff32 	custom	252,r2,r3,r2
- 800094c:	80a1ff72 	custom	253,r16,r16,r2
- 8000950:	e0ffe217 	ldw	r3,-120(fp)
- 8000954:	e0bffb17 	ldw	r2,-20(fp)
- 8000958:	1885883a 	add	r2,r3,r2
- 800095c:	10800044 	addi	r2,r2,1
- 8000960:	10800003 	ldbu	r2,0(r2)
- 8000964:	11003fcc 	andi	r4,r2,255
- 8000968:	80032340 	call	8003234 <__floatsisf>
- 800096c:	1007883a 	mov	r3,r2
- 8000970:	e0bfe617 	ldw	r2,-104(fp)
- 8000974:	1885ff32 	custom	252,r2,r3,r2
- 8000978:	8085ff72 	custom	253,r2,r16,r2
- 800097c:	1009883a 	mov	r4,r2
- 8000980:	80032cc0 	call	80032cc <__fixsfsi>
- 8000984:	e0bfe015 	stw	r2,-128(fp)
-
-				int in3 = (int) (weight1*my_image[pixel1+2] +
-						weight2*my_image[pixel2+2] +
-						weight3*my_image[pixel3+2] +
-						weight4*my_image[pixel4+2]);
- 8000988:	e0ffe517 	ldw	r3,-108(fp)
- 800098c:	e0bffb17 	ldw	r2,-20(fp)
- 8000990:	1885883a 	add	r2,r3,r2
- 8000994:	10800084 	addi	r2,r2,2
- 8000998:	10800003 	ldbu	r2,0(r2)
- 800099c:	11003fcc 	andi	r4,r2,255
- 80009a0:	80032340 	call	8003234 <__floatsisf>
- 80009a4:	1007883a 	mov	r3,r2
- 80009a8:	e0bfe917 	ldw	r2,-92(fp)
- 80009ac:	18a1ff32 	custom	252,r16,r3,r2
- 80009b0:	e0ffe417 	ldw	r3,-112(fp)
- 80009b4:	e0bffb17 	ldw	r2,-20(fp)
- 80009b8:	1885883a 	add	r2,r3,r2
- 80009bc:	10800084 	addi	r2,r2,2
- 80009c0:	10800003 	ldbu	r2,0(r2)
- 80009c4:	11003fcc 	andi	r4,r2,255
- 80009c8:	80032340 	call	8003234 <__floatsisf>
- 80009cc:	1007883a 	mov	r3,r2
- 80009d0:	e0bfe817 	ldw	r2,-96(fp)
- 80009d4:	1885ff32 	custom	252,r2,r3,r2
- 80009d8:	80a1ff72 	custom	253,r16,r16,r2
- 80009dc:	e0ffe317 	ldw	r3,-116(fp)
- 80009e0:	e0bffb17 	ldw	r2,-20(fp)
- 80009e4:	1885883a 	add	r2,r3,r2
- 80009e8:	10800084 	addi	r2,r2,2
- 80009ec:	10800003 	ldbu	r2,0(r2)
- 80009f0:	11003fcc 	andi	r4,r2,255
- 80009f4:	80032340 	call	8003234 <__floatsisf>
- 80009f8:	1007883a 	mov	r3,r2
- 80009fc:	e0bfe717 	ldw	r2,-100(fp)
- 8000a00:	1885ff32 	custom	252,r2,r3,r2
- 8000a04:	80a1ff72 	custom	253,r16,r16,r2
- 8000a08:	e0ffe217 	ldw	r3,-120(fp)
- 8000a0c:	e0bffb17 	ldw	r2,-20(fp)
- 8000a10:	1885883a 	add	r2,r3,r2
- 8000a14:	10800084 	addi	r2,r2,2
- 8000a18:	10800003 	ldbu	r2,0(r2)
- 8000a1c:	11003fcc 	andi	r4,r2,255
- 8000a20:	80032340 	call	8003234 <__floatsisf>
- 8000a24:	1007883a 	mov	r3,r2
- 8000a28:	e0bfe617 	ldw	r2,-104(fp)
- 8000a2c:	1885ff32 	custom	252,r2,r3,r2
- 8000a30:	8085ff72 	custom	253,r2,r16,r2
- 8000a34:	1009883a 	mov	r4,r2
- 8000a38:	80032cc0 	call	80032cc <__fixsfsi>
- 8000a3c:	e0bfdf15 	stw	r2,-132(fp)
-
-				#endif
+int offset_i = i - num_rows/2;
+0800057c:   ldw r3,-32768(gp)
+08000580:   srli r2,r3,31
+08000584:   add r2,r2,r3
+08000588:   srai r2,r2,1
+0800058c:   mov r3,r2
+08000590:   ldw r2,-36(fp)
+08000594:   sub r2,r2,r3
+08000598:   stw r2,-56(fp)
+152       				int offset_j = j - num_cols/2;
+0800059c:   ldw r3,-32764(gp)
+080005a0:   srli r2,r3,31
+080005a4:   add r2,r2,r3
+080005a8:   srai r2,r2,1
+080005ac:   mov r3,r2
+080005b0:   ldw r2,-40(fp)
+080005b4:   sub r2,r2,r3
+080005b8:   stw r2,-60(fp)
+154       				int rowf = 0;
+080005bc:   stw zero,-64(fp)
+155       				int colf = 0;
+080005c0:   stw zero,-68(fp)
+189       				row = offset_i*cosine-offset_j*sine + num_rows/2.0f;
+080005c4:   ldw r4,-56(fp)
+080005c8:   call 0x80031f4 <__floatsisf>
+080005cc:   mov r3,r2
+080005d0:   ldw r2,-48(fp)
+080005d4:   custom 252,r16,r3,r2
+080005d8:   ldw r4,-60(fp)
+080005dc:   call 0x80031f4 <__floatsisf>
+080005e0:   mov r3,r2
+080005e4:   ldw r2,-44(fp)
+080005e8:   custom 252,r2,r3,r2
+080005ec:   custom 254,r16,r16,r2
+080005f0:   ldw r4,-32768(gp)
+080005f4:   call 0x80031f4 <__floatsisf>
+080005f8:   mov r4,r2
+080005fc:   movhi r5,16384
+08000600:   call 0x8002e28 <__divsf3>
+08000604:   custom 253,r2,r16,r2
+08000608:   stw r2,-25164(gp)
+190       				col = offset_i*sine+offset_j*cosine + num_cols/2.0f;
+0800060c:   ldw r4,-56(fp)
+08000610:   call 0x80031f4 <__floatsisf>
+08000614:   mov r3,r2
+08000618:   ldw r2,-44(fp)
+0800061c:   custom 252,r16,r3,r2
+08000620:   ldw r4,-60(fp)
+08000624:   call 0x80031f4 <__floatsisf>
+08000628:   mov r3,r2
+0800062c:   ldw r2,-48(fp)
+08000630:   custom 252,r2,r3,r2
+08000634:   custom 253,r16,r16,r2
+08000638:   ldw r4,-32764(gp)
+0800063c:   call 0x80031f4 <__floatsisf>
+08000640:   mov r4,r2
+08000644:   movhi r5,16384
+08000648:   call 0x8002e28 <__divsf3>
+0800064c:   custom 253,r2,r16,r2
+08000650:   stw r2,-25176(gp)
+194       				if(col>num_cols || col<0 || row>num_rows || row<0) continue;
+08000654:   ldw r4,-32764(gp)
+08000658:   call 0x80031f4 <__floatsisf>
+0800065c:   ldw r3,-25176(gp)
+08000660:   mov r4,r2
+08000664:   mov r5,r3
+08000668:   call 0x8003104 <__ltsf2>
+0800066c:   cmplt r2,r2,zero
+08000670:   bne r2,zero,0x8000a60 <main+2144>
+08000674:   ldw r2,-25176(gp)
+08000678:   mov r4,r2
+0800067c:   mov r5,zero
+08000680:   call 0x8003104 <__ltsf2>
+08000684:   cmplt r2,r2,zero
+08000688:   bne r2,zero,0x8000a60 <main+2144>
+0800068c:   ldw r4,-32768(gp)
+08000690:   call 0x80031f4 <__floatsisf>
+08000694:   ldw r3,-25164(gp)
+08000698:   mov r4,r2
+0800069c:   mov r5,r3
+080006a0:   call 0x8003104 <__ltsf2>
+080006a4:   cmplt r2,r2,zero
+080006a8:   bne r2,zero,0x8000a60 <main+2144>
+080006ac:   ldw r2,-25164(gp)
+080006b0:   mov r4,r2
+080006b4:   mov r5,zero
+080006b8:   call 0x8003104 <__ltsf2>
+080006bc:   cmplt r2,r2,zero
+080006c0:   bne r2,zero,0x8000a60 <main+2144>
+196       				rowf = (int)floorf(row);
+080006c4:   ldw r2,-25164(gp)
+080006c8:   mov r4,r2
+080006cc:   call 0x8001204 <floorf>
+080006d0:   mov r4,r2
+080006d4:   call 0x800328c <__fixsfsi>
+080006d8:   stw r2,-64(fp)
+197       				colf = (int)floorf(col);
+080006dc:   ldw r2,-25176(gp)
+080006e0:   mov r4,r2
+080006e4:   call 0x8001204 <floorf>
+080006e8:   mov r4,r2
+080006ec:   call 0x800328c <__fixsfsi>
+080006f0:   stw r2,-68(fp)
+202       				float rfrac = row-rowf;
+080006f4:   ldw r16,-25164(gp)
+080006f8:   ldw r4,-64(fp)
+080006fc:   call 0x80031f4 <__floatsisf>
+08000700:   custom 254,r2,r16,r2
+08000704:   stw r2,-72(fp)
+203       				float cfrac = col-colf;
+08000708:   ldw r16,-25176(gp)
+0800070c:   ldw r4,-68(fp)
+08000710:   call 0x80031f4 <__floatsisf>
+08000714:   custom 254,r2,r16,r2
+08000718:   stw r2,-76(fp)
+208       				float weight1 = (1.0-rfrac)*(1.0-cfrac);
+0800071c:   movhi r3,16256
+08000720:   ldw r2,-72(fp)
+08000724:   custom 254,r4,r3,r2
+08000728:   movhi r3,16256
+0800072c:   ldw r2,-76(fp)
+08000730:   custom 254,r2,r3,r2
+08000734:   custom 252,r2,r4,r2
+08000738:   stw r2,-80(fp)
+209       				float weight2 = rfrac*(1.0-cfrac);
+0800073c:   movhi r3,16256
+08000740:   ldw r2,-76(fp)
+08000744:   custom 254,r3,r3,r2
+08000748:   ldw r2,-72(fp)
+0800074c:   custom 252,r2,r3,r2
+08000750:   stw r2,-84(fp)
+210       				float weight3 = rfrac*cfrac;
+08000754:   ldw r3,-72(fp)
+08000758:   ldw r2,-76(fp)
+0800075c:   custom 252,r2,r3,r2
+08000760:   stw r2,-88(fp)
+211       				float weight4 = (1.0-rfrac)*cfrac;
+08000764:   movhi r3,16256
+08000768:   ldw r2,-72(fp)
+0800076c:   custom 254,r3,r3,r2
+08000770:   ldw r2,-76(fp)
+08000774:   custom 252,r2,r3,r2
+08000778:   stw r2,-92(fp)
+215       				int pixel1 = rowf*320*3 + colf*3;
+0800077c:   ldw r2,-64(fp)
+08000780:   muli r4,r2,960
+08000784:   ldw r3,-68(fp)
+08000788:   mov r2,r3
+0800078c:   add r2,r2,r2
+08000790:   add r2,r2,r3
+08000794:   add r2,r4,r2
+08000798:   stw r2,-96(fp)
+216       				int pixel2 = (rowf + 1)*320*3 + colf*3;
+0800079c:   ldw r2,-64(fp)
+080007a0:   muli r4,r2,960
+080007a4:   ldw r3,-68(fp)
+080007a8:   mov r2,r3
+080007ac:   add r2,r2,r2
+080007b0:   add r2,r2,r3
+080007b4:   add r2,r4,r2
+080007b8:   addi r2,r2,960
+080007bc:   stw r2,-100(fp)
+217       				int pixel3 = (rowf + 1)*320*3 + (colf + 1)*3;
+080007c0:   ldw r2,-64(fp)
+080007c4:   muli r4,r2,960
+080007c8:   ldw r3,-68(fp)
+080007cc:   mov r2,r3
+080007d0:   add r2,r2,r2
+080007d4:   add r2,r2,r3
+080007d8:   add r2,r4,r2
+080007dc:   addi r2,r2,963
+080007e0:   stw r2,-104(fp)
+218       				int pixel4 = rowf*320*3 + (colf + 1)*3;
+080007e4:   ldw r3,-68(fp)
+080007e8:   mov r2,r3
+080007ec:   add r2,r2,r2
+080007f0:   add r3,r2,r3
+080007f4:   ldw r2,-64(fp)
+080007f8:   muli r2,r2,960
+080007fc:   add r2,r3,r2
+08000800:   addi r2,r2,3
+08000804:   stw r2,-108(fp)
+225       						weight4*my_image[pixel4]);
+08000808:   ldw r2,-96(fp)
+0800080c:   mov r3,r2
+08000810:   ldw r2,-20(fp)
+08000814:   add r2,r3,r2
+08000818:   ldbu r2,0(r2)
+0800081c:   andi r4,r2,255
+08000820:   call 0x80031f4 <__floatsisf>
+08000824:   mov r3,r2
+08000828:   ldw r2,-80(fp)
+0800082c:   custom 252,r16,r3,r2
+08000830:   ldw r2,-100(fp)
+08000834:   mov r3,r2
+08000838:   ldw r2,-20(fp)
+0800083c:   add r2,r3,r2
+08000840:   ldbu r2,0(r2)
+08000844:   andi r4,r2,255
+08000848:   call 0x80031f4 <__floatsisf>
+0800084c:   mov r3,r2
+08000850:   ldw r2,-84(fp)
+08000854:   custom 252,r2,r3,r2
+08000858:   custom 253,r16,r16,r2
+0800085c:   ldw r2,-104(fp)
+08000860:   mov r3,r2
+08000864:   ldw r2,-20(fp)
+08000868:   add r2,r3,r2
+0800086c:   ldbu r2,0(r2)
+08000870:   andi r4,r2,255
+08000874:   call 0x80031f4 <__floatsisf>
+08000878:   mov r3,r2
+0800087c:   ldw r2,-88(fp)
+08000880:   custom 252,r2,r3,r2
+08000884:   custom 253,r16,r16,r2
+08000888:   ldw r2,-108(fp)
+0800088c:   mov r3,r2
+08000890:   ldw r2,-20(fp)
+08000894:   add r2,r3,r2
+08000898:   ldbu r2,0(r2)
+0800089c:   andi r4,r2,255
+080008a0:   call 0x80031f4 <__floatsisf>
+080008a4:   mov r3,r2
+080008a8:   ldw r2,-92(fp)
+080008ac:   custom 252,r2,r3,r2
+080008b0:   custom 253,r2,r16,r2
+080008b4:   mov r4,r2
+080008b8:   call 0x800328c <__fixsfsi>
+080008bc:   stw r2,-112(fp)
+230       						weight4*my_image[pixel4+1]);
+080008c0:   ldw r3,-96(fp)
+080008c4:   ldw r2,-20(fp)
+080008c8:   add r2,r3,r2
+080008cc:   addi r2,r2,1
+080008d0:   ldbu r2,0(r2)
+080008d4:   andi r4,r2,255
+080008d8:   call 0x80031f4 <__floatsisf>
+080008dc:   mov r3,r2
+080008e0:   ldw r2,-80(fp)
+080008e4:   custom 252,r16,r3,r2
+080008e8:   ldw r3,-100(fp)
+080008ec:   ldw r2,-20(fp)
+080008f0:   add r2,r3,r2
+080008f4:   addi r2,r2,1
+080008f8:   ldbu r2,0(r2)
+080008fc:   andi r4,r2,255
+08000900:   call 0x80031f4 <__floatsisf>
+08000904:   mov r3,r2
+08000908:   ldw r2,-84(fp)
+0800090c:   custom 252,r2,r3,r2
+08000910:   custom 253,r16,r16,r2
+08000914:   ldw r3,-104(fp)
+08000918:   ldw r2,-20(fp)
+0800091c:   add r2,r3,r2
+08000920:   addi r2,r2,1
+08000924:   ldbu r2,0(r2)
+08000928:   andi r4,r2,255
+0800092c:   call 0x80031f4 <__floatsisf>
+08000930:   mov r3,r2
+08000934:   ldw r2,-88(fp)
+08000938:   custom 252,r2,r3,r2
+0800093c:   custom 253,r16,r16,r2
+08000940:   ldw r3,-108(fp)
+08000944:   ldw r2,-20(fp)
+08000948:   add r2,r3,r2
+0800094c:   addi r2,r2,1
+08000950:   ldbu r2,0(r2)
+08000954:   andi r4,r2,255
+08000958:   call 0x80031f4 <__floatsisf>
+0800095c:   mov r3,r2
+08000960:   ldw r2,-92(fp)
+08000964:   custom 252,r2,r3,r2
+08000968:   custom 253,r2,r16,r2
+0800096c:   mov r4,r2
+08000970:   call 0x800328c <__fixsfsi>
+08000974:   stw r2,-116(fp)
+235       						weight4*my_image[pixel4+2]);
+08000978:   ldw r3,-96(fp)
+0800097c:   ldw r2,-20(fp)
+08000980:   add r2,r3,r2
+08000984:   addi r2,r2,2
+08000988:   ldbu r2,0(r2)
+0800098c:   andi r4,r2,255
+08000990:   call 0x80031f4 <__floatsisf>
+08000994:   mov r3,r2
+08000998:   ldw r2,-80(fp)
+0800099c:   custom 252,r16,r3,r2
+080009a0:   ldw r3,-100(fp)
+080009a4:   ldw r2,-20(fp)
+080009a8:   add r2,r3,r2
+080009ac:   addi r2,r2,2
+080009b0:   ldbu r2,0(r2)
+080009b4:   andi r4,r2,255
+080009b8:   call 0x80031f4 <__floatsisf>
+080009bc:   mov r3,r2
+080009c0:   ldw r2,-84(fp)
+080009c4:   custom 252,r2,r3,r2
+080009c8:   custom 253,r16,r16,r2
+080009cc:   ldw r3,-104(fp)
+080009d0:   ldw r2,-20(fp)
+080009d4:   add r2,r3,r2
+080009d8:   addi r2,r2,2
+080009dc:   ldbu r2,0(r2)
+080009e0:   andi r4,r2,255
+080009e4:   call 0x80031f4 <__floatsisf>
+080009e8:   mov r3,r2
+080009ec:   ldw r2,-88(fp)
+080009f0:   custom 252,r2,r3,r2
+080009f4:   custom 253,r16,r16,r2
+080009f8:   ldw r3,-108(fp)
+080009fc:   ldw r2,-20(fp)
+08000a00:   add r2,r3,r2
+08000a04:   addi r2,r2,2
+08000a08:   ldbu r2,0(r2)
+08000a0c:   andi r4,r2,255
+08000a10:   call 0x80031f4 <__floatsisf>
+08000a14:   mov r3,r2
+08000a18:   ldw r2,-92(fp)
+08000a1c:   custom 252,r2,r3,r2
+08000a20:   custom 253,r2,r16,r2
+08000a24:   mov r4,r2
+08000a28:   call 0x800328c <__fixsfsi>
+08000a2c:   stw r2,-120(fp)

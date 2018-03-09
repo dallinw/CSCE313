@@ -221,19 +221,6 @@
          type = "int";
       }
    }
-   element sysid.control_slave
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330504";
-         type = "long";
-      }
-   }
    element lcd_0.control_slave
    {
       datum _lockedAddress
@@ -244,6 +231,19 @@
       datum baseAddress
       {
          value = "287330336";
+         type = "long";
+      }
+   }
+   element sysid.control_slave
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330504";
          type = "long";
       }
    }
@@ -264,7 +264,7 @@
       }
       datum megawizard_uipreferences
       {
-         value = "{output_language=VERILOG, output_directory=/acct/wgunn/lights}";
+         value = "{}";
          type = "String";
       }
       datum sopceditor_expanded
@@ -342,32 +342,6 @@
          type = "int";
       }
    }
-   element cfi_flash_0.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "276824064";
-         type = "long";
-      }
-   }
-   element HEX0.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330352";
-         type = "long";
-      }
-   }
    element HEX3.s1
    {
       datum _lockedAddress
@@ -378,32 +352,6 @@
       datum baseAddress
       {
          value = "287330400";
-         type = "long";
-      }
-   }
-   element sdram_0.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "134217728";
-         type = "long";
-      }
-   }
-   element HEX2.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330384";
          type = "long";
       }
    }
@@ -420,7 +368,7 @@
          type = "long";
       }
    }
-   element HEX1.s1
+   element cfi_flash_0.s1
    {
       datum _lockedAddress
       {
@@ -429,11 +377,11 @@
       }
       datum baseAddress
       {
-         value = "287330368";
+         value = "276824064";
          type = "long";
       }
    }
-   element leds.s1
+   element sdram_0.s1
    {
       datum _lockedAddress
       {
@@ -442,20 +390,7 @@
       }
       datum baseAddress
       {
-         value = "287330304";
-         type = "long";
-      }
-   }
-   element HEX4.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "287330416";
+         value = "134217728";
          type = "long";
       }
    }
@@ -472,7 +407,7 @@
          type = "long";
       }
    }
-   element HEX6.s1
+   element HEX0.s1
    {
       datum _lockedAddress
       {
@@ -481,7 +416,33 @@
       }
       datum baseAddress
       {
-         value = "287330448";
+         value = "287330352";
+         type = "long";
+      }
+   }
+   element leds.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330304";
+         type = "long";
+      }
+   }
+   element HEX1.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330368";
          type = "long";
       }
    }
@@ -495,6 +456,45 @@
       datum baseAddress
       {
          value = "287330432";
+         type = "long";
+      }
+   }
+   element HEX4.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330416";
+         type = "long";
+      }
+   }
+   element HEX2.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330384";
+         type = "long";
+      }
+   }
+   element HEX6.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "287330448";
          type = "long";
       }
    }
@@ -635,7 +635,7 @@
  <parameter name="projectName" value="lights.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
  <parameter name="systemHash" value="18606872947" />
- <parameter name="timeStamp" value="1520524296404" />
+ <parameter name="timeStamp" value="1520617547607" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <module kind="clock_source" version="12.0" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />

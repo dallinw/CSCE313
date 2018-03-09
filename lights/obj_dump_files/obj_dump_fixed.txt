@@ -1,0 +1,88 @@
+for(j=0; j<num_cols-1; j++) {
+080007d4:   ldw r2,56(sp)
+080007d8:   ldw r6,44(sp)
+080007dc:   addi r21,r21,1
+080007e0:   add r20,r20,r2
+080007e4:   movi r2,319
+080007e8:   add r19,r19,r6
+080007ec:   beq r21,r2,0x800095c <main+1884>
+163       				if(coli>(num_cols*512) || coli<0 || rowi>(num_rows*512) || rowi<(0)) continue;
+080007f0:   movhi r2,3
+080007f4:   addi r2,r2,-32768
+080007f8:   bltu r2,r19,0x80007d4 <main+1492>
+165       				rowf = rowi/512*512;
+080007fc:   srli r4,r20,9
+166       				colf = coli/512*512;
+08000800:   srli r7,r19,9
+173       				alt_u32 weight1 = (512-rfrac)*(512-cfrac);
+08000804:   movi r5,512
+165       				rowf = rowi/512*512;
+08000808:   slli r4,r4,9
+166       				colf = coli/512*512;
+0800080c:   slli r7,r7,9
+240       				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
+08000810:   mov r6,r21
+168       				alt_u32 rfrac = (rowi-rowf)/512;
+08000814:   sub r3,r20,r4
+169       				alt_u32 cfrac = (coli-colf)/512;
+08000818:   sub r2,r19,r7
+0800081c:   srli r2,r2,9
+168       				alt_u32 rfrac = (rowi-rowf)/512;
+08000820:   srli r3,r3,9
+215       				int pixel1 = rowf*320*3 + colf*3;
+08000824:   mov r9,r4
+173       				alt_u32 weight1 = (512-rfrac)*(512-cfrac);
+08000828:   sub r8,r5,r3
+0800082c:   sub r5,r5,r2
+176       				alt_u32 weight4 = (512-rfrac)*cfrac;
+08000830:   mul r12,r2,r8
+174       				alt_u32 weight2 = rfrac*(512-cfrac);
+08000834:   mul r15,r3,r5
+175       				alt_u32 weight3 = rfrac*cfrac;
+08000838:   mul r3,r3,r2
+163       				if(coli>(num_cols*512) || coli<0 || rowi>(num_rows*512) || rowi<(0)) continue;
+0800083c:   movhi r2,2
+08000840:   addi r2,r2,-8192
+173       				alt_u32 weight1 = (512-rfrac)*(512-cfrac);
+08000844:   mul r5,r8,r5
+215       				int pixel1 = rowf*320*3 + colf*3;
+08000848:   mov r8,r7
+240       				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
+0800084c:   ldw r7,28(sp)
+163       				if(coli>(num_cols*512) || coli<0 || rowi>(num_rows*512) || rowi<(0)) continue;
+08000850:   bltu r2,r20,0x80007d4 <main+1492>
+240       				alt_up_pixel_buffer_dma_draw(my_pixel_buffer,(in3 +(in2<<8) +(in1<<16)),j,i);
+08000854:   ldw r4,-24912(gp)
+179       				weight1 /= 512*512;
+08000858:   srli r23,r5,18
+181       				weight2 /= 512*512;
+0800085c:   srli ra,r15,18
+182       				weight3 /= 512*512;
+08000860:   srli fp,r3,18
+183       				weight4 /= 512*512;
+08000864:   srli r22,r12,18
+215       				int pixel1 = rowf*320*3 + colf*3;
+08000868:   blt r9,zero,0x80009e0 <main+2016>
+0800086c:   srai r2,r9,9
+08000870:   muli r5,r2,960
+08000874:   blt r8,zero,0x80009f0 <main+2032>
+08000878:   srai r2,r8,9
+142       			for(j=0; j<num_cols-1; j++) {
+0800087c:   addi r21,r21,1
+215       				int pixel1 = rowf*320*3 + colf*3;
+08000880:   add r3,r2,r2
+08000884:   add r3,r3,r2
+08000888:   add r3,r5,r3
+230       						weight4*my_image[pixel4+1]);
+0800088c:   ldw r5,0(sp)
+216       				int pixel2 = (rowf + 1)*320*3 + colf*3;
+08000890:   addi r10,r3,960
+217       				int pixel3 = (rowf + 1)*320*3 + (colf + 1)*3;
+08000894:   addi r11,r3,963
+218       				int pixel4 = rowf*320*3 + (colf + 1)*3;
+08000898:   addi r9,r3,3
+230       						weight4*my_image[pixel4+1]);
+0800089c:   add r10,r5,r10
+080008a0:   add r9,r5,r9
+080008a4:   add r11,r5,r11
+080008a8:   add r3,r5,r3
