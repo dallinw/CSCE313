@@ -1,5 +1,5 @@
 Flow report for lights
-Fri Mar  9 12:48:51 2018
+Thu Mar 29 10:30:37 2018
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -38,21 +38,21 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Flow Summary                                                                   ;
 +------------------------------------+-------------------------------------------+
-; Flow Status                        ; Successful - Fri Mar  9 12:48:51 2018     ;
+; Flow Status                        ; Successful - Thu Mar 29 10:30:37 2018     ;
 ; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; lights                                    ;
 ; Top-level Entity Name              ; lights                                    ;
 ; Family                             ; Cyclone IV E                              ;
 ; Device                             ; EP4CE115F29C7                             ;
 ; Timing Models                      ; Final                                     ;
-; Total logic elements               ; 7,203 / 114,480 ( 6 % )                   ;
-;     Total combinational functions  ; 6,164 / 114,480 ( 5 % )                   ;
-;     Dedicated logic registers      ; 4,641 / 114,480 ( 4 % )                   ;
-; Total registers                    ; 4810                                      ;
+; Total logic elements               ; 13,968 / 114,480 ( 12 % )                 ;
+;     Total combinational functions  ; 12,104 / 114,480 ( 11 % )                 ;
+;     Dedicated logic registers      ; 8,233 / 114,480 ( 7 % )                   ;
+; Total registers                    ; 8402                                      ;
 ; Total pins                         ; 288 / 529 ( 54 % )                        ;
 ; Total virtual pins                 ; 0                                         ;
-; Total memory bits                  ; 273,296 / 3,981,312 ( 7 % )               ;
-; Embedded Multiplier 9-bit elements ; 11 / 532 ( 2 % )                          ;
+; Total memory bits                  ; 260,256 / 3,981,312 ( 7 % )               ;
+; Embedded Multiplier 9-bit elements ; 22 / 532 ( 4 % )                          ;
 ; Total PLLs                         ; 1 / 4 ( 25 % )                            ;
 +------------------------------------+-------------------------------------------+
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/09/2018 12:47:24 ;
+; Start date & time ; 03/29/2018 10:28:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lights              ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.152061764409130            ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.152233368426711            ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                         ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)       ; <None>        ; --          ; --             ;
 ; IP_TOOL_ENV                         ; sopc                         ; --            ; nios_system ; --             ;
@@ -85,7 +85,7 @@ applicable agreement for further details.
 ; PARTITION_COLOR                     ; 16764057                     ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; --          ; Top            ;
-; SOPC_BUILDER_SIGNATURE_ID           ; 005056C00008000001620BDEBF1E ; --            ; --          ; --             ;
+; SOPC_BUILDER_SIGNATURE_ID           ; 005056C000010000016272260899 ; --            ; --          ; --             ;
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
 
 
@@ -94,12 +94,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; --                  ; 00:00:24                           ;
-; Fitter                    ; 00:00:37     ; 2.3                     ; --                  ; 00:00:46                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; --                  ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 5.0                     ; --                  ; 00:00:07                           ;
-; EDA Netlist Writer        ; 00:00:09     ; 1.0                     ; --                  ; 00:00:08                           ;
-; Total                     ; 00:01:24     ; --                      ; --                  ; 00:01:30                           ;
+; Analysis & Synthesis      ; 00:00:54     ; 1.0                     ; --                  ; 00:00:47                           ;
+; Fitter                    ; 00:01:01     ; 2.2                     ; --                  ; 00:01:15                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; --                  ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; --                  ; 00:00:12                           ;
+; EDA Netlist Writer        ; 00:00:15     ; 1.0                     ; --                  ; 00:00:14                           ;
+; Total                     ; 00:02:26     ; --                      ; --                  ; 00:02:34                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,11 +108,11 @@ applicable agreement for further details.
 +---------------------------+------------------+----------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; cocsce-l3d22-18  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-; Fitter                    ; cocsce-l3d22-18  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-; Assembler                 ; cocsce-l3d22-18  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-; TimeQuest Timing Analyzer ; cocsce-l3d22-18  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
-; EDA Netlist Writer        ; cocsce-l3d22-18  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; Analysis & Synthesis      ; cocsce-l3d22-08  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; Fitter                    ; cocsce-l3d22-08  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; Assembler                 ; cocsce-l3d22-08  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; TimeQuest Timing Analyzer ; cocsce-l3d22-08  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; cocsce-l3d22-08  ; Ubuntu 16.04.3 ; 16         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
 
 

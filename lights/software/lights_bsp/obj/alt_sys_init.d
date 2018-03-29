@@ -12,6 +12,8 @@ obj/alt_sys_init.o: alt_sys_init.c system.h linker.h \
   drivers/inc/altera_avalon_jtag_uart_fd.h HAL/inc/sys/alt_dev.h \
   drivers/inc/altera_avalon_lcd_16207.h \
   drivers/inc/altera_avalon_lcd_16207_fd.h \
+  drivers/inc/altera_avalon_mailbox.h HAL/inc/priv/alt_dev_llist.h \
+  drivers/inc/altera_avalon_mutex.h HAL/inc/sys/alt_errno.h \
   drivers/inc/altera_avalon_performance_counter.h HAL/inc/io.h \
   HAL/inc/alt_types.h drivers/inc/altera_avalon_sysid.h \
   drivers/inc/altera_ro_zipfs.h \
@@ -76,6 +78,14 @@ HAL/inc/sys/alt_dev.h:
 drivers/inc/altera_avalon_lcd_16207.h:
 
 drivers/inc/altera_avalon_lcd_16207_fd.h:
+
+drivers/inc/altera_avalon_mailbox.h:
+
+HAL/inc/priv/alt_dev_llist.h:
+
+drivers/inc/altera_avalon_mutex.h:
+
+HAL/inc/sys/alt_errno.h:
 
 drivers/inc/altera_avalon_performance_counter.h:
 
