@@ -4,7 +4,7 @@
  <systemtable filter="Default">
   <columns>
    <opcodeName visible="0" />
-   <connections preferredWidth="207" />
+   <connections preferredWidth="127" />
    <irq preferredWidth="47" />
    <export visible="0" />
    <name preferredWidth="227" />
@@ -17,7 +17,7 @@
    <frequency preferredWidth="395" />
   </columns>
  </clocktable>
- <window width="1737" height="1019" x="48" y="53" />
+ <window width="1737" height="1019" x="18" y="29" />
  <library
    expandedCategories="Library/Peripherals/Multiprocessor Coordination,Project,Library/Peripherals,Library" />
 </preferences>

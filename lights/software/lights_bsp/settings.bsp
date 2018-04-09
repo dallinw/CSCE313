@@ -2,9 +2,9 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 29, 2018 10:32:27 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1522333947750</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>/acct/wgunn/lights/software/lights_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>Apr 9, 2018 9:24:56 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1523280296113</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>/acct/dallinw/git/CSCE313/lights/software/lights_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../nios_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
@@ -893,52 +893,16 @@
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>mailbox_0</slaveDescriptor>
-                <addressRange>0x00000030 - 0x0000003F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>mailbox_1</slaveDescriptor>
-                <addressRange>0x00000040 - 0x0000004F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
-                <addressRange>0x00003000 - 0x000031FF</addressRange>
-                <addressSpan>512</addressSpan>
-                <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>onchip_memory2_1</slaveDescriptor>
-                <addressRange>0x00004000 - 0x000041FF</addressRange>
-                <addressSpan>512</addressSpan>
-                <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>sdram_0</slaveDescriptor>
                 <addressRange>0x08000000 - 0x0FFFFFFF</addressRange>
                 <addressSpan>134217728</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>cfi_flash_0</slaveDescriptor>
-                <addressRange>0x10800000 - 0x10FFFFFF</addressRange>
-                <addressSpan>8388608</addressSpan>
-                <attributes>flash, memory, non-volatile</attributes>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>sram_0</slaveDescriptor>
                 <addressRange>0x11000000 - 0x111FFFFF</addressRange>
                 <addressSpan>2097152</addressSpan>
                 <attributes>memory</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>video_character_buffer_with_dma_0_avalon_char_buffer_slave</slaveDescriptor>
-                <addressRange>0x11202000 - 0x11203FFF</addressRange>
-                <addressSpan>8192</addressSpan>
-                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>leds</slaveDescriptor>
@@ -951,12 +915,6 @@
                 <addressRange>0x11205010 - 0x1120501F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>lcd_0</slaveDescriptor>
-                <addressRange>0x11205020 - 0x1120502F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>HEX0</slaveDescriptor>
@@ -1023,12 +981,6 @@
                 <addressRange>0x112050D0 - 0x112050D7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>video_character_buffer_with_dma_0_avalon_char_control_slave</slaveDescriptor>
-                <addressRange>0x112050D8 - 0x112050DF</addressRange>
-                <addressSpan>8</addressSpan>
-                <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>clocks_0</slaveDescriptor>

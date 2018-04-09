@@ -1,0 +1,22 @@
+
+**** Build of configuration Nios II for project lights_cpu1 ****
+
+make all 
+Info: Building ../lights_cpu1_bsp/
+make --no-print-directory -C ../lights_cpu1_bsp/
+Makefile not up to date.
+settings.bsp has been modified since the BSP Makefile was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+make[1]: *** [Makefile] Error 1
+To generate from Eclipse:
+make: *** [../lights_cpu1_bsp/-recurs-make-lib] Error 2
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+Makefile:585: recipe for target 'Makefile' failed
+Makefile:902: recipe for target '../lights_cpu1_bsp/-recurs-make-lib' failed

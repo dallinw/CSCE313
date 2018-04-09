@@ -16,6 +16,7 @@ obj/alt_sys_init.o: alt_sys_init.c system.h linker.h \
   drivers/inc/altera_avalon_mutex.h HAL/inc/sys/alt_errno.h \
   drivers/inc/altera_avalon_performance_counter.h HAL/inc/io.h \
   HAL/inc/alt_types.h drivers/inc/altera_avalon_sysid.h \
+  drivers/inc/altera_ro_zipfs.h \
   drivers/inc/altera_up_avalon_video_character_buffer_with_dma.h \
   HAL/inc/alt_types.h HAL/inc/sys/alt_dev.h \
   drivers/inc/altera_up_avalon_video_pixel_buffer_dma.h
@@ -93,6 +94,8 @@ HAL/inc/io.h:
 HAL/inc/alt_types.h:
 
 drivers/inc/altera_avalon_sysid.h:
+
+drivers/inc/altera_ro_zipfs.h:
 
 drivers/inc/altera_up_avalon_video_character_buffer_with_dma.h:
 

@@ -2,4 +2,4 @@
 **** Build of configuration Nios II for project lights_bsp ****
 
 make all 
-[BSP build complete]
+make: Nothing to be done for 'all'.

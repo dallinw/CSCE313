@@ -4,27 +4,13 @@
 make all 
 Info: Building ../lights_bsp/
 make --no-print-directory -C ../lights_bsp/
-[BSP build complete]
-Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../lights_bsp//HAL/inc -I../lights_bsp/ -I../lights_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DRO_ZIPFS    -O3 -g -Wall   -EL -mno-hw-div -mcustom-fpu-cfg=60-1 -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
-hello_world.c: In function 'main':
-hello_world.c:97: warning: operation on 'keys' may be undefined
-hello_world.c:139: warning: operation on 'keys' may be undefined
-hello_world.c:44: warning: unused variable 'current_value'
-Info: Linking lights.elf
-nios2-elf-g++  -T'../lights_bsp//linker.x' -msys-crt0='../lights_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../lights_bsp/  -mcustom-fpu-cfg=60-1  -Wl,-Map=lights.map   -O3 -g -Wall   -EL -mno-hw-div -mcustom-fpu-cfg=60-1 -mhw-mul -mno-hw-mulx  -o lights.elf obj/default/hello_world.o -lm 
-nios2-elf-insert lights.elf --thread_model hal --cpu_name cpu_0 --simulation_enabled true --id 0 --sidp 0x112050c8 --timestamp 1520524296 --stderr_dev lcd_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "/acct/dallinw/git/CSCE313/lights" --jdi /acct/dallinw/git/CSCE313/lights/software/lights_bsp/../../lights.jdi --sopcinfo /acct/dallinw/git/CSCE313/lights/software/lights_bsp/../../nios_system.sopcinfo
-Picked up _JAVA_OPTIONS: -Duser.home=/acct/dallinw
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "en_US",
-	LANG = "C"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
-Info: (lights.elf) 103 KBytes program size (code + initialized data).
-Info:              130960 KBytes free for stack + heap.
-Info: Creating lights.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source lights.elf >lights.objdump
-[lights build complete]
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED -DRO_ZIPFS    -O0 -g -Wall  -EL -mno-hw-div -mcustom-fpu-cfg=60-1 -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+HAL/src/alt_main.c: In function 'alt_main':
+Makefile:587: recipe for target 'obj/HAL/src/alt_main.o' failed
+HAL/src/alt_main.c:120: error: 'ALT_STDERR' undeclared (first use in this function)
+HAL/src/alt_main.c:120: error: (Each undeclared identifier is reported only once
+HAL/src/alt_main.c:120: error: for each function it appears in.)
+make[1]: *** [obj/HAL/src/alt_main.o] Error 1
+Makefile:902: recipe for target '../lights_bsp/-recurs-make-lib' failed
+make: *** [../lights_bsp/-recurs-make-lib] Error 2

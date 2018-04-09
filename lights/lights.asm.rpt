@@ -1,5 +1,5 @@
 Assembler report for lights
-Thu Mar 29 10:30:16 2018
+Mon Apr  9 09:19:28 2018
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Mar 29 10:30:16 2018 ;
+; Assembler Status      ; Successful - Mon Apr  9 09:19:28 2018 ;
 ; Revision Name         ; lights                                ;
 ; Top-level Entity Name ; lights                                ;
 ; Family                ; Cyclone IV E                          ;
@@ -105,7 +105,7 @@ applicable agreement for further details.
 +----------------+---------------------+
 ; Device         ; EP4CE115F29C7       ;
 ; JTAG usercode  ; 0xFFFFFFFF          ;
-; Checksum       ; 0x00F8DFD4          ;
+; Checksum       ; 0x00A2E87D          ;
 +----------------+---------------------+
 
 
@@ -115,14 +115,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Thu Mar 29 10:30:10 2018
+    Info: Processing started: Mon Apr  9 09:19:23 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lights -c lights
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 390 megabytes
-    Info: Processing ended: Thu Mar 29 10:30:16 2018
+    Info: Peak virtual memory: 374 megabytes
+    Info: Processing ended: Mon Apr  9 09:19:29 2018
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

@@ -42,13 +42,13 @@ output   [9:0]	VGA_G,      //VGA Green[7:0]
 output   [9:0]	VGA_B,      //VGA Blue[7:0]
 
 ////////////////////////Flash Interface////////////////////////
-inout			[7:0]	FL_DQ,      //FLASH Data bus 8 Bits
-output	[22:0]	FL_ADDR,    //FLASH Address bus 22 Bits
-output          FL_WE_N,    //FLASH Write Enable
-output          FL_RST_N,   //FLASH Reset
-output          FL_OE_N,    //FLASH Output Enable
-output          FL_CE_N,    //FLASH Chip Enable
-output 			 FL_WP_N,    //for DE2-115 only
+//inout			[7:0]	FL_DQ,      //FLASH Data bus 8 Bits
+//output	[22:0]	FL_ADDR,    //FLASH Address bus 22 Bits
+//output          FL_WE_N,    //FLASH Write Enable
+//output          FL_RST_N,   //FLASH Reset
+//output          FL_OE_N,    //FLASH Output Enable
+//output          FL_CE_N,    //FLASH Chip Enable
+//output 			 FL_WP_N,    //for DE2-115 only
 
 
 // DRAM interface signals
@@ -61,17 +61,17 @@ output           DRAM_RAS_N,
 output           DRAM_CS_N,
 output  [1:0]    DRAM_BA,
 output           DRAM_CLK,
-output           DRAM_CKE,
+output           DRAM_CKE);
 
 
 
 //LCD interface signals
-inout  [7:0]     LCD_DATA,
-output           LCD_ON,
-output           LCD_BLON,
-output           LCD_RW,
-output           LCD_EN,
-output           LCD_RS);
+//inout  [7:0]     LCD_DATA,
+//output           LCD_ON,
+//output           LCD_BLON,
+//output           LCD_RW,
+//output           LCD_EN,
+//output           LCD_RS);
 
 
 wire             clk_0;
@@ -86,8 +86,8 @@ wire             sys_clk;
 //
 assign FL_RST_N = 1'b1;
 assign FL_WP_N = 1'b1;
-assign LCD_ON    =	1'b1;
-assign LCD_BLON  =	1'b1;
+//assign LCD_ON    =	1'b1;
+//assign LCD_BLON  =	1'b1;
 assign LEDR      = out_port_from_the_leds[25 : 8];
 assign LEDG      = out_port_from_the_leds[ 7 : 0];
 assign DRAM_CLK  = sdram_clk;
@@ -107,10 +107,10 @@ my_system
 .out_port_from_the_HEX5(HEX5),
 .out_port_from_the_HEX6(HEX6),
 .out_port_from_the_HEX7(HEX7),
-.LCD_E_from_the_lcd_0           (LCD_EN),
-.LCD_RS_from_the_lcd_0          (LCD_RS),
-.LCD_RW_from_the_lcd_0          (LCD_RW),
-.LCD_data_to_and_from_the_lcd_0 (LCD_DATA),
+//.LCD_E_from_the_lcd_0           (LCD_EN),
+//.LCD_RS_from_the_lcd_0          (LCD_RS),
+//.LCD_RW_from_the_lcd_0          (LCD_RW),
+//.LCD_data_to_and_from_the_lcd_0 (LCD_DATA),
 .clk_0                          (clk_0),
 .in_port_to_the_keys				  (in_port_to_the_keys),
 .out_port_from_the_leds			  (out_port_from_the_leds),
@@ -124,11 +124,11 @@ my_system
 .SRAM_OE_N_from_the_sram_0                 (SRAM_OE_N),
 .SRAM_UB_N_from_the_sram_0                 (SRAM_UB_N),
 .SRAM_WE_N_from_the_sram_0                 (SRAM_WE_N),
-.address_to_the_cfi_flash_0                (FL_ADDR),
-.data_to_and_from_the_cfi_flash_0          (FL_DQ),
-.read_n_to_the_cfi_flash_0                 (FL_OE_N),
-.select_n_to_the_cfi_flash_0               (FL_CE_N),
-.write_n_to_the_cfi_flash_0                (FL_WE_N),
+//.address_to_the_cfi_flash_0                (FL_ADDR),
+//.data_to_and_from_the_cfi_flash_0          (FL_DQ),
+//.read_n_to_the_cfi_flash_0                 (FL_OE_N),
+//.select_n_to_the_cfi_flash_0               (FL_CE_N),
+//.write_n_to_the_cfi_flash_0                (FL_WE_N),
 .VGA_BLANK_from_the_video_vga_controller_0 (VGA_BLANK),
 .VGA_B_from_the_video_vga_controller_0     (VGA_B),
 .VGA_CLK_from_the_video_vga_controller_0   (VGA_CLK),

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lights
-Thu Mar 29 10:30:37 2018
+Mon Apr  9 09:19:39 2018
 Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Mar 29 10:30:37 2018 ;
+; EDA Netlist Writer Status ; Successful - Mon Apr  9 09:19:39 2018 ;
 ; Revision Name             ; lights                                ;
 ; Top-level Entity Name     ; lights                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,20 +66,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+--------------------------------------------------------------------------+
-; Simulation Generated Files                                               ;
-+--------------------------------------------------------------------------+
-; Generated Files                                                          ;
-+--------------------------------------------------------------------------+
-; /acct/wgunn/lights/simulation/modelsim/lights_7_1200mv_85c_slow.vho      ;
-; /acct/wgunn/lights/simulation/modelsim/lights_7_1200mv_0c_slow.vho       ;
-; /acct/wgunn/lights/simulation/modelsim/lights_min_1200mv_0c_fast.vho     ;
-; /acct/wgunn/lights/simulation/modelsim/lights.vho                        ;
-; /acct/wgunn/lights/simulation/modelsim/lights_7_1200mv_85c_vhd_slow.sdo  ;
-; /acct/wgunn/lights/simulation/modelsim/lights_7_1200mv_0c_vhd_slow.sdo   ;
-; /acct/wgunn/lights/simulation/modelsim/lights_min_1200mv_0c_vhd_fast.sdo ;
-; /acct/wgunn/lights/simulation/modelsim/lights_vhd.sdo                    ;
-+--------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                             ;
++----------------------------------------------------------------------------------------+
+; Generated Files                                                                        ;
++----------------------------------------------------------------------------------------+
+; /acct/dallinw/git/CSCE313/lights/simulation/modelsim/lights_7_1200mv_85c_slow.vho      ;
+; /acct/dallinw/git/CSCE313/lights/simulation/modelsim/lights_7_1200mv_0c_slow.vho       ;
+; /acct/dallinw/git/CSCE313/lights/simulation/modelsim/lights_min_1200mv_0c_fast.vho     ;
+; /acct/dallinw/git/CSCE313/lights/simulation/modelsim/lights.vho                        ;
+; /acct/dallinw/git/CSCE313/lights/simulation/modelsim/lights_7_1200mv_85c_vhd_slow.sdo  ;
+; /acct/dallinw/git/CSCE313/lights/simulation/modelsim/lights_7_1200mv_0c_vhd_slow.sdo   ;
+; /acct/dallinw/git/CSCE313/lights/simulation/modelsim/lights_min_1200mv_0c_vhd_fast.sdo ;
+; /acct/dallinw/git/CSCE313/lights/simulation/modelsim/lights_vhd.sdo                    ;
++----------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +88,20 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Thu Mar 29 10:30:22 2018
+    Info: Processing started: Mon Apr  9 09:19:31 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off lights -c lights
-Info (204019): Generated file lights_7_1200mv_85c_slow.vho in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lights_7_1200mv_0c_slow.vho in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lights_min_1200mv_0c_fast.vho in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lights.vho in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lights_7_1200mv_85c_vhd_slow.sdo in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lights_7_1200mv_0c_vhd_slow.sdo in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lights_min_1200mv_0c_vhd_fast.sdo in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file lights_vhd.sdo in folder "/acct/wgunn/lights/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lights_7_1200mv_85c_slow.vho in folder "/acct/dallinw/git/CSCE313/lights/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lights_7_1200mv_0c_slow.vho in folder "/acct/dallinw/git/CSCE313/lights/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lights_min_1200mv_0c_fast.vho in folder "/acct/dallinw/git/CSCE313/lights/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lights.vho in folder "/acct/dallinw/git/CSCE313/lights/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lights_7_1200mv_85c_vhd_slow.sdo in folder "/acct/dallinw/git/CSCE313/lights/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lights_7_1200mv_0c_vhd_slow.sdo in folder "/acct/dallinw/git/CSCE313/lights/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lights_min_1200mv_0c_vhd_fast.sdo in folder "/acct/dallinw/git/CSCE313/lights/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file lights_vhd.sdo in folder "/acct/dallinw/git/CSCE313/lights/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 450 megabytes
-    Info: Processing ended: Thu Mar 29 10:30:38 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 414 megabytes
+    Info: Processing ended: Mon Apr  9 09:19:39 2018
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 
