@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Mon Apr 09 09:21:56 EDT 2018
+ * Generated: Wed Apr 11 08:27:47 EDT 2018
  */
 
 /*
@@ -62,7 +62,6 @@
 #include "altera_avalon_jtag_uart.h"
 #include "altera_avalon_performance_counter.h"
 #include "altera_avalon_sysid.h"
-#include "altera_ro_zipfs.h"
 #include "altera_up_avalon_video_pixel_buffer_dma.h"
 
 /*
@@ -73,7 +72,6 @@ ALTERA_NIOS2_IRQ_INSTANCE ( CPU_0, cpu_0);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART_0, jtag_uart_0);
 ALTERA_AVALON_PERFORMANCE_COUNTER_INSTANCE ( PERFORMANCE_COUNTER_0, performance_counter_0);
 ALTERA_AVALON_SYSID_INSTANCE ( SYSID, sysid);
-ALTERA_RO_ZIPFS_INSTANCE ( ALTERA_RO_ZIPFS, altera_ro_zipfs);
 ALTERA_UP_AVALON_VIDEO_PIXEL_BUFFER_DMA_INSTANCE ( VIDEO_PIXEL_BUFFER_DMA_0, video_pixel_buffer_dma_0);
 
 /*
@@ -100,6 +98,5 @@ void alt_sys_init( void )
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
     ALTERA_AVALON_PERFORMANCE_COUNTER_INIT ( PERFORMANCE_COUNTER_0, performance_counter_0);
     ALTERA_AVALON_SYSID_INIT ( SYSID, sysid);
-    ALTERA_RO_ZIPFS_INIT ( ALTERA_RO_ZIPFS, altera_ro_zipfs);
     ALTERA_UP_AVALON_VIDEO_PIXEL_BUFFER_DMA_INIT ( VIDEO_PIXEL_BUFFER_DMA_0, video_pixel_buffer_dma_0);
 }

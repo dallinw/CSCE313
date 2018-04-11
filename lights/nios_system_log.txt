@@ -11,25 +11,26 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:31 (*) mk_custom_sdk starting
-# 2018.04.09 09:16:31 (*) Reading project /acct/dallinw/git/CSCE313/lights/nios_system.ptf.
+# 2018.04.11 08:23:36 (*) mk_custom_sdk starting
+# 2018.04.11 08:23:36 (*) Reading project /acct/dallinw/git/CSCE313/lights/nios_system.ptf.
 
-# 2018.04.09 09:16:31 (*) Finding all CPUs
-# 2018.04.09 09:16:31 (*) Finding all available components
-# 2018.04.09 09:16:31 (*) Reading /acct/dallinw/git/CSCE313/lights/.sopc_builder/install.ptf
+# 2018.04.11 08:23:36 (*) Finding all CPUs
+# 2018.04.11 08:23:36 (*) Finding all available components
+# 2018.04.11 08:23:36 (*) Reading /acct/dallinw/git/CSCE313/lights/.sopc_builder/install.ptf
 
-# 2018.04.09 09:16:31 (*) Found 63 components
+# 2018.04.11 08:23:36 (*) Found 63 components
 
-# 2018.04.09 09:16:31 (*) Finding all peripherals
+# 2018.04.11 08:23:36 (*) Finding all peripherals
 
-# 2018.04.09 09:16:31 (*) Finding software components
+# 2018.04.11 08:23:37 (*) Finding software components
 
-# 2018.04.09 09:16:31 (*) (Legacy SDK Generation Skipped)
-# 2018.04.09 09:16:31 (*) (All TCL Script Generation Skipped)
-# 2018.04.09 09:16:31 (*) (No Libraries Built)
-# 2018.04.09 09:16:31 (*) (Contents Generation Skipped)
-# 2018.04.09 09:16:31 (*) mk_custom_sdk finishing
-# 2018.04.09 09:16:31 (*) Starting generation for system: nios_system.
+# 2018.04.11 08:23:37 (*) (Legacy SDK Generation Skipped)
+# 2018.04.11 08:23:37 (*) (All TCL Script Generation Skipped)
+# 2018.04.11 08:23:37 (*) (No Libraries Built)
+# 2018.04.11 08:23:37 (*) (Contents Generation Skipped)
+# 2018.04.11 08:23:37 (*) mk_custom_sdk finishing
+
+# 2018.04.11 08:23:37 (*) Starting generation for system: nios_system.
 
 .
 .
@@ -39,7 +40,7 @@ perl: warning: Falling back to the standard locale ("C").
 .
 ...
 
-# 2018.04.09 09:16:32 (*) Running Generator Program for cpu_0
+# 2018.04.11 08:23:37 (*) Running Generator Program for cpu_0
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -49,7 +50,7 @@ perl: warning: Please check that your locale settings:
 	LANG = "C"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
-# 2018.04.09 09:16:32 (*)   IP functional simulation model enabled: Uncheck System Generation Simulation box for faster generation if HDL Simulation not required.
+# 2018.04.11 08:23:37 (*)   IP functional simulation model enabled: Uncheck System Generation Simulation box for faster generation if HDL Simulation not required.
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
 	LANGUAGE = (unset),
@@ -58,44 +59,33 @@ perl: warning: Please check that your locale settings:
 	LANG = "C"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
-# 2018.04.09 09:16:33 (*) Starting Nios II generation
-# 2018.04.09 09:16:33 (*)   Checking for plaintext license.
-# 2018.04.09 09:16:33 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/quartus12/quartus
-# 2018.04.09 09:16:33 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-# 2018.04.09 09:16:33 (*)   Plaintext license not found.
-# 2018.04.09 09:16:33 (*)   Checking for encrypted license (non-evaluation).
-# 2018.04.09 09:16:34 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/quartus12/quartus
-# 2018.04.09 09:16:34 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-# 2018.04.09 09:16:34 (*)   Encrypted license found.  SOF will not be time-limited.
-# 2018.04.09 09:16:34 (*)   Getting CPU configuration settings
-# 2018.04.09 09:16:34 (*)   Elaborating CPU configuration settings
-# 2018.04.09 09:16:34 (*)   Creating all objects for CPU
-# 2018.04.09 09:16:34 (*)     Testbench
-# 2018.04.09 09:16:34 (*)     Instruction decoding
-# 2018.04.09 09:16:34 (*)       Instruction fields
-# 2018.04.09 09:16:34 (*)       Instruction decodes
-# 2018.04.09 09:16:35 (*)       Signals for RTL simulation waveforms
-# 2018.04.09 09:16:35 (*)       Instruction controls
-# 2018.04.09 09:16:35 (*)     Pipeline frontend
-# 2018.04.09 09:16:35 (*)     Pipeline backend
-# 2018.04.09 09:16:37 (*)   Creating '/acct/dallinw/git/CSCE313/lights/nios_system_sim/cpu_0.do'
-# 2018.04.09 09:16:37 (*)   Generating HDL from CPU objects
-# 2018.04.09 09:16:38 (*)   Creating encrypted HDL
-# 2018.04.09 09:16:39 (*)   Creating IP functional simulation model
-# 2018.04.09 09:16:46 (*) Done Nios II generation
+# 2018.04.11 08:23:38 (*) Starting Nios II generation
+# 2018.04.11 08:23:38 (*)   Checking for plaintext license.
+# 2018.04.11 08:23:39 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/quartus12/quartus
+# 2018.04.11 08:23:39 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2018.04.11 08:23:39 (*)   Plaintext license not found.
+# 2018.04.11 08:23:39 (*)   Checking for encrypted license (non-evaluation).
+# 2018.04.11 08:23:39 (*)   Couldn't query license setup in Quartus directory /usr/local/3rdparty/altera/quartus12/quartus
+# 2018.04.11 08:23:39 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+# 2018.04.11 08:23:39 (*)   Encrypted license found.  SOF will not be time-limited.
+# 2018.04.11 08:23:39 (*)   Getting CPU configuration settings
+# 2018.04.11 08:23:40 (*)   Elaborating CPU configuration settings
+# 2018.04.11 08:23:40 (*)   Creating all objects for CPU
+# 2018.04.11 08:23:40 (*)     Testbench
+# 2018.04.11 08:23:40 (*)     Instruction decoding
+# 2018.04.11 08:23:40 (*)       Instruction fields
+# 2018.04.11 08:23:40 (*)       Instruction decodes
+# 2018.04.11 08:23:40 (*)       Signals for RTL simulation waveforms
+# 2018.04.11 08:23:40 (*)       Instruction controls
+# 2018.04.11 08:23:40 (*)     Pipeline frontend
+# 2018.04.11 08:23:40 (*)     Pipeline backend
+# 2018.04.11 08:23:42 (*)   Creating '/acct/dallinw/git/CSCE313/lights/nios_system_sim/cpu_0.do'
+# 2018.04.11 08:23:42 (*)   Generating HDL from CPU objects
+# 2018.04.11 08:23:43 (*)   Creating encrypted HDL
+# 2018.04.11 08:23:44 (*)   Creating IP functional simulation model
+# 2018.04.11 08:23:51 (*) Done Nios II generation
 
-# 2018.04.09 09:16:46 (*) Running Generator Program for sdram_0
-
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "en_US",
-	LANG = "C"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
-
-# 2018.04.09 09:16:47 (*) Running Generator Program for sysid
+# 2018.04.11 08:23:52 (*) Running Generator Program for sdram_0
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -106,7 +96,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:47 (*) Running Generator Program for jtag_uart_0
+# 2018.04.11 08:23:52 (*) Running Generator Program for sysid
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -117,7 +107,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:48 (*) Running Generator Program for leds
+# 2018.04.11 08:23:53 (*) Running Generator Program for jtag_uart_0
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -128,7 +118,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:48 (*) Running Generator Program for keys
+# 2018.04.11 08:23:53 (*) Running Generator Program for leds
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -139,7 +129,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:48 (*) Running Generator Program for HEX0
+# 2018.04.11 08:23:54 (*) Running Generator Program for keys
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -150,7 +140,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:49 (*) Running Generator Program for HEX1
+# 2018.04.11 08:23:54 (*) Running Generator Program for HEX0
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -161,7 +151,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:49 (*) Running Generator Program for HEX2
+# 2018.04.11 08:23:54 (*) Running Generator Program for HEX1
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -172,7 +162,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:50 (*) Running Generator Program for HEX3
+# 2018.04.11 08:23:55 (*) Running Generator Program for HEX2
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -183,7 +173,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:50 (*) Running Generator Program for HEX4
+# 2018.04.11 08:23:55 (*) Running Generator Program for HEX3
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -194,7 +184,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:51 (*) Running Generator Program for HEX5
+# 2018.04.11 08:23:56 (*) Running Generator Program for HEX4
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -205,7 +195,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:51 (*) Running Generator Program for HEX6
+# 2018.04.11 08:23:56 (*) Running Generator Program for HEX5
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -216,7 +206,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:52 (*) Running Generator Program for HEX7
+# 2018.04.11 08:23:57 (*) Running Generator Program for HEX6
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -227,7 +217,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:52 (*) Running Generator Program for performance_counter_0
+# 2018.04.11 08:23:57 (*) Running Generator Program for HEX7
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -238,7 +228,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:52 (*) Running Generator Program for nios_system_clock_0
+# 2018.04.11 08:23:57 (*) Running Generator Program for performance_counter_0
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -249,7 +239,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:53 (*) Running Generator Program for nios_system_clock_1
+# 2018.04.11 08:23:58 (*) Running Generator Program for nios_system_clock_0
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -260,7 +250,18 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:54 (*) Running Generator Program for nios_system_clock_2
+# 2018.04.11 08:23:58 (*) Running Generator Program for nios_system_clock_1
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "en_US",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+
+# 2018.04.11 08:23:59 (*) Running Generator Program for nios_system_clock_2
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -273,7 +274,7 @@ perl: warning: Falling back to the standard locale ("C").
 .
 
 
-# 2018.04.09 09:16:54 (*) Running Test Generator Program for sdram_0
+# 2018.04.11 08:24:00 (*) Running Test Generator Program for sdram_0
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -284,7 +285,7 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:54 (*) Making arbitration and system (top) modules.
+# 2018.04.11 08:24:00 (*) Making arbitration and system (top) modules.
 
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
@@ -295,18 +296,18 @@ perl: warning: Please check that your locale settings:
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
 
-# 2018.04.09 09:16:58 (*) Generating Quartus symbol for top level: nios_system
+# 2018.04.11 08:24:04 (*) Generating Quartus symbol for top level: nios_system
 
-# 2018.04.09 09:16:58 (*) Generating Symbol /acct/dallinw/git/CSCE313/lights/nios_system.bsf
+# 2018.04.11 08:24:04 (*) Symbol /acct/dallinw/git/CSCE313/lights/nios_system.bsf already exists, no need to regenerate
+# 2018.04.11 08:24:04 (*) Creating command-line system-generation script: /acct/dallinw/git/CSCE313/lights/nios_system_generation_script
 
-# 2018.04.09 09:16:58 (*) Creating command-line system-generation script: /acct/dallinw/git/CSCE313/lights/nios_system_generation_script
-
-# 2018.04.09 09:16:59 (*) Running setup for HDL simulator: modelsim
+# 2018.04.11 08:24:04 (*) Running setup for HDL simulator: modelsim
 
 
 Building ModelSim Project
 
 Reading pref.tcl
+
 Reading /acct/dallinw/git/CSCE313/lights/nios_system_sim/modelsim.tcl
 
 /usr/local/3rdparty/altera/quartus12/quartus//sopc_builder
@@ -348,7 +349,6 @@ Sopc_Builder Directory: /usr/local/3rdparty/altera/quartus12/quartus//sopc_build
 @@
 @@
 
-
 # 10.4b
 
 
@@ -356,14 +356,14 @@ Sopc_Builder Directory: /usr/local/3rdparty/altera/quartus12/quartus//sopc_build
 
 # Loading project nios_system_sim
 
-# 2018.04.09 09:17:00 (*) Completed generation for system: nios_system.
-# 2018.04.09 09:17:00 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+# 2018.04.11 08:24:06 (*) Completed generation for system: nios_system.
+# 2018.04.11 08:24:06 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
   SOPC Builder database : /acct/dallinw/git/CSCE313/lights/nios_system.ptf 
   System HDL Model : /acct/dallinw/git/CSCE313/lights/nios_system.v 
   System Generation Script : /acct/dallinw/git/CSCE313/lights/nios_system_generation_script 
   HDL Simulation Directory : /acct/dallinw/git/CSCE313/lights/nios_system_sim 
 
-# 2018.04.09 09:17:00 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+# 2018.04.11 08:24:06 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
 
 
 Press 'Exit' to exit.

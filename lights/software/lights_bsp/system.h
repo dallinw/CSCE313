@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Mon Apr 09 09:21:56 EDT 2018
+ * Generated: Wed Apr 11 08:27:47 EDT 2018
  */
 
 /*
@@ -380,6 +380,12 @@
 #define ALT_NUM_EXTERNAL_INTERRUPT_CONTROLLERS 0
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
+#define ALT_STDERR "/dev/jtag_uart_0"
+#define ALT_STDERR_BASE 0x112050d0
+#define ALT_STDERR_DEV jtag_uart_0
+#define ALT_STDERR_IS_JTAG_UART
+#define ALT_STDERR_PRESENT
+#define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
 #define ALT_STDIN_BASE 0x112050d0
 #define ALT_STDIN_DEV jtag_uart_0
@@ -393,16 +399,6 @@
 #define ALT_STDOUT_PRESENT
 #define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
 #define ALT_SYSTEM_NAME "nios_system"
-
-
-/*
- * altera_ro_zipfs configuration
- *
- */
-
-#define ALTERA_RO_ZIPFS_BASE 0x10800000
-#define ALTERA_RO_ZIPFS_NAME "my_fs"
-#define ALTERA_RO_ZIPFS_OFFSET 0x0
 
 
 /*
@@ -581,7 +577,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1523279750u
+#define SYSID_TIMESTAMP 1523449357u
 #define SYSID_TYPE "altera_avalon_sysid"
 
 
