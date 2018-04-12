@@ -455,9 +455,9 @@ module nios_system_clock_7 (
                            )
 ;
 
-  output  [  8: 0] master_address;
+  output  [ 26: 0] master_address;
   output  [  3: 0] master_byteenable;
-  output  [  6: 0] master_nativeaddress;
+  output  [ 24: 0] master_nativeaddress;
   output           master_read;
   output           master_write;
   output  [ 31: 0] master_writedata;
@@ -469,18 +469,18 @@ module nios_system_clock_7 (
   input   [ 31: 0] master_readdata;
   input            master_reset_n;
   input            master_waitrequest;
-  input   [  8: 0] slave_address;
+  input   [ 26: 0] slave_address;
   input   [  3: 0] slave_byteenable;
   input            slave_clk;
-  input   [  6: 0] slave_nativeaddress;
+  input   [ 24: 0] slave_nativeaddress;
   input            slave_read;
   input            slave_reset_n;
   input            slave_write;
   input   [ 31: 0] slave_writedata;
 
-  reg     [  8: 0] master_address /* synthesis ALTERA_ATTRIBUTE = "PRESERVE_REGISTER=ON"  */;
+  reg     [ 26: 0] master_address /* synthesis ALTERA_ATTRIBUTE = "PRESERVE_REGISTER=ON"  */;
   reg     [  3: 0] master_byteenable /* synthesis ALTERA_ATTRIBUTE = "PRESERVE_REGISTER=ON"  */;
-  reg     [  6: 0] master_nativeaddress /* synthesis ALTERA_ATTRIBUTE = "PRESERVE_REGISTER=ON"  */;
+  reg     [ 24: 0] master_nativeaddress /* synthesis ALTERA_ATTRIBUTE = "PRESERVE_REGISTER=ON"  */;
   wire             master_read;
   wire             master_read_done;
   wire             master_read_done_sync;
@@ -490,10 +490,10 @@ module nios_system_clock_7 (
   wire             master_write_done_sync;
   wire             master_write_done_token;
   reg     [ 31: 0] master_writedata /* synthesis ALTERA_ATTRIBUTE = "PRESERVE_REGISTER=ON"  */;
-  reg     [  8: 0] slave_address_d1 /* synthesis ALTERA_ATTRIBUTE = "{-to \"*\"} CUT=ON ; PRESERVE_REGISTER=ON"  */;
+  reg     [ 26: 0] slave_address_d1 /* synthesis ALTERA_ATTRIBUTE = "{-to \"*\"} CUT=ON ; PRESERVE_REGISTER=ON"  */;
   reg     [  3: 0] slave_byteenable_d1 /* synthesis ALTERA_ATTRIBUTE = "{-to \"*\"} CUT=ON ; PRESERVE_REGISTER=ON"  */;
   wire             slave_endofpacket;
-  reg     [  6: 0] slave_nativeaddress_d1 /* synthesis ALTERA_ATTRIBUTE = "{-to \"*\"} CUT=ON ; PRESERVE_REGISTER=ON"  */;
+  reg     [ 24: 0] slave_nativeaddress_d1 /* synthesis ALTERA_ATTRIBUTE = "{-to \"*\"} CUT=ON ; PRESERVE_REGISTER=ON"  */;
   wire             slave_read_request;
   wire             slave_read_request_sync;
   wire             slave_read_request_token;

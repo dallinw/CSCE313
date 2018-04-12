@@ -97,7 +97,10 @@ proc s_stratixv {} {
     foreach file $v_files  {if {[ file exists $file ]} {vlog $file}}
   }
 }
-alias jtag_uart_0_log "./jtag_uart_0_log.bat $sopc_perl/bin &"
+alias jtag_uart_2_log "./jtag_uart_2_log.bat $sopc_perl/bin &"
+ alias jtag_uart_0_log "./jtag_uart_0_log.bat $sopc_perl/bin &"
+ alias jtag_uart_3_log "./jtag_uart_3_log.bat $sopc_perl/bin &"
+ alias jtag_uart_1_log "./jtag_uart_1_log.bat $sopc_perl/bin &"
 alias h "
 echo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 echo @@
@@ -129,7 +132,10 @@ echo @@          signals 'marked' for listing during
 echo @@          simulation.  This command opens a list-
 echo @@          window containing all such signals.
 echo @@
-echo @@   jtag_uart_0_log  -- display interactive output window for jtag_uart_0
+echo @@   jtag_uart_2_log  -- display interactive output window for jtag_uart_2
+ echo @@   jtag_uart_0_log  -- display interactive output window for jtag_uart_0
+ echo @@   jtag_uart_3_log  -- display interactive output window for jtag_uart_3
+ echo @@   jtag_uart_1_log  -- display interactive output window for jtag_uart_1
 
 echo @@
 echo @@   h  -- print this message 

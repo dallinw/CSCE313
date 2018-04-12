@@ -1,4 +1,5 @@
-#Thu Mar 08 14:20:49 EST 2018
+#Thu Apr 12 09:45:37 EDT 2018
+org.eclipse.debug.ui.auto_remove_old_launches=false
 eclipse.preferences.version=1
 preferredTargets=org.eclipse.cdt.debug.ui.toggleCBreakpointTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n

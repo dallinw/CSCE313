@@ -9,7 +9,13 @@ obj/default/hello_world.o: hello_world.c ../fractals_bsp/system.h \
   ../fractals_bsp//HAL/inc/sys/alt_llist.h \
   ../fractals_bsp//HAL/inc/priv/alt_dev_llist.h \
   ../fractals_bsp//HAL/inc/sys/alt_llist.h \
-  ../fractals_bsp//drivers/inc/altera_avalon_performance_counter.h
+  ../fractals_bsp//drivers/inc/altera_avalon_performance_counter.h \
+  ../fractals_bsp//drivers/inc/altera_avalon_mailbox.h \
+  ../fractals_bsp//HAL/inc/priv/alt_dev_llist.h \
+  ../fractals_bsp//HAL/inc/os/alt_sem.h \
+  ../fractals_bsp//HAL/inc/priv/alt_no_error.h \
+  ../fractals_bsp//drivers/inc/altera_avalon_mutex.h \
+  ../fractals_bsp//HAL/inc/sys/alt_errno.h
 
 ../fractals_bsp/system.h:
 
@@ -38,3 +44,15 @@ obj/default/hello_world.o: hello_world.c ../fractals_bsp/system.h \
 ../fractals_bsp//HAL/inc/sys/alt_llist.h:
 
 ../fractals_bsp//drivers/inc/altera_avalon_performance_counter.h:
+
+../fractals_bsp//drivers/inc/altera_avalon_mailbox.h:
+
+../fractals_bsp//HAL/inc/priv/alt_dev_llist.h:
+
+../fractals_bsp//HAL/inc/os/alt_sem.h:
+
+../fractals_bsp//HAL/inc/priv/alt_no_error.h:
+
+../fractals_bsp//drivers/inc/altera_avalon_mutex.h:
+
+../fractals_bsp//HAL/inc/sys/alt_errno.h:

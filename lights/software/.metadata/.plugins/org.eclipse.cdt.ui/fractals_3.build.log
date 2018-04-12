@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project fractals_3 ****
+
+make all 
+Info: Building ../fractals_3_bsp/
+make --no-print-directory -C ../fractals_3_bsp/
+[BSP build complete]
+[fractals_3 build complete]

@@ -37,9 +37,9 @@ output          VGA_HS,     //VGA H_SYNC
 output          VGA_VS,     //VGA V_SYNC
 output          VGA_BLANK,  //VGA BLANK
 output          VGA_SYNC,   //VGA SYNC
-output   [9:0]	VGA_R,      //VGA Red[7:0]
-output   [9:0]	VGA_G,      //VGA Green[7:0]
-output   [9:0]	VGA_B,      //VGA Blue[7:0]
+output   [7:0]	VGA_R,      //VGA Red[7:0]
+output   [7:0]	VGA_G,      //VGA Green[7:0]
+output   [7:0]	VGA_B,      //VGA Blue[7:0]
 
 ////////////////////////Flash Interface////////////////////////
 //inout			[7:0]	FL_DQ,      //FLASH Data bus 8 Bits

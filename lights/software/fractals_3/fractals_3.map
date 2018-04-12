@@ -1,0 +1,1957 @@
+Archive member included because of file (symbol)
+
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+                              obj/default/hello_world.o (pow)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (__ieee754_pow)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o) (__ieee754_sqrt)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o) (fabs)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (finite)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (__isnand)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (__fdlib_version)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (matherr)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o) (nan)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (rint)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o) (scalbn)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o) (copysign)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+                              obj/default/hello_world.o (__divsf3)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+                              obj/default/hello_world.o (__lesf2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+                              obj/default/hello_world.o (__floatsisf)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+                              obj/default/hello_world.o (__extendsfdf2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o) (__thenan_sf)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o) (__subdf3)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (__muldf3)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+                              obj/default/hello_world.o (__divdf3)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (__eqdf2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (__nedf2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o) (__gtdf2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (__ltdf2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o) (__ledf2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+                              obj/default/hello_world.o (__floatsidf)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o) (__make_dp)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+                              obj/default/hello_world.o (__truncdfsf2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o) (__thenan_df)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+                              obj/default/hello_world.o (__divsi3)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o) (__muldi3)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o) (__clzsi2)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o) (__pack_f)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o) (__unpack_f)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o) (__fpcmp_parts_f)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o) (__make_fp)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o) (__pack_d)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o) (__unpack_d)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o) (__fpcmp_parts_d)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o) (__clz_tab)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o) (__errno)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o) (_impure_ptr)
+../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+                              ../fractals_3_bsp//obj/HAL/src/crt0.o (alt_load)
+../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+                              ../fractals_3_bsp//obj/HAL/src/crt0.o (alt_main)
+../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_main.o) (alt_irq_init)
+../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_init)
+../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_ioctl)
+../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o) (alt_avalon_mailbox_init)
+../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o) (alt_mutex_list)
+../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+                              obj/default/hello_world.o (alt_up_pixel_buffer_dma_open_dev)
+../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
+../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_main.o) (close)
+../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_main.o) (_do_ctors)
+../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_main.o) (_do_dtors)
+../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o) (alt_errno)
+../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o) (alt_find_dev)
+../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_ic_isr_register)
+../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_main.o) (alt_io_redirect)
+../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_iic.o) (alt_irq_active)
+../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o) (open)
+../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_close.o) (alt_release_fd)
+../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o) (_alt_tick_rate)
+../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o) (altera_nios2_irq_init)
+../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_open.o) (alt_find_file)
+../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_open.o) (alt_get_fd)
+../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_main.o) (atexit)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_main.o) (exit)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o) (errno)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o) (memcmp)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+                              ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o) (memcpy)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+                              ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o) (strlen)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o) (__register_exitproc)
+/usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o) (__call_exitprocs)
+../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+                              /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+mailbox_0           0x4               obj/default/hello_world.o
+mailbox_2           0x4               obj/default/hello_world.o
+errno               0x4               /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+mailbox_1           0x4               obj/default/hello_world.o
+col                 0x4               obj/default/hello_world.o
+_atexit0            0x190             /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+my_pixel_buffer     0x4               obj/default/hello_world.o
+mailbox_3           0x4               obj/default/hello_world.o
+row                 0x4               obj/default/hello_world.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+onchip_memory2_0 0x00003000         0x00000200
+onchip_memory2_1 0x00004000         0x00000200
+onchip_memory2_2 0x00005000         0x00000200
+onchip_memory2_3 0x00007000         0x00000200
+sdram_0_BEFORE_RESET 0x08000000         0x00120000
+reset            0x08120000         0x00000020
+sdram_0          0x08120020         0x002dffe0
+sram_0           0x11000000         0x00200000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../fractals_3_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world.o
+LOAD /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libstdc++.a
+LOAD /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a
+LOAD /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a
+START GROUP
+LOAD /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a
+LOAD /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a
+LOAD ../fractals_3_bsp//libhal_bsp.a
+END GROUP
+LOAD /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a
+                0x00003000                __alt_mem_onchip_memory2_0 = 0x3000
+                0x00004000                __alt_mem_onchip_memory2_1 = 0x4000
+                0x00005000                __alt_mem_onchip_memory2_2 = 0x5000
+                0x00007000                __alt_mem_onchip_memory2_3 = 0x7000
+                0x08000000                __alt_mem_sdram_0 = 0x8000000
+                0x11000000                __alt_mem_sram_0 = 0x11000000
+
+.entry          0x08120000       0x20
+ *(.entry)
+ .entry         0x08120000       0x20 ../fractals_3_bsp//obj/HAL/src/crt0.o
+                0x08120000                __reset
+
+.exceptions     0x08120020      0x194
+                0x08120020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x08120020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x08120020        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+                0x08120020                alt_irq_entry
+ .exceptions.entry.label
+                0x08120020        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+                0x08120020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x08120020       0x54 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x08120074       0x10 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x08120084        0x4 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x08120088        0x4 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0812008c        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0812008c        0x8 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x08120094        0x4 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x08120098        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x08120098        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x08120098       0x54 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x081200ec       0xc8 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+                0x081200ec                alt_irq_handler
+                0x081201b4                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x08120020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x081201b4     0x8698
+                0x081201b4                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x081201b4       0x4c ../fractals_3_bsp//obj/HAL/src/crt0.o
+                0x081201b4                _start
+ .text          0x08120200      0x7ec obj/default/hello_world.o
+                0x08120200                main
+                0x08120788                barrier
+                0x081208d0                pend
+                0x08120900                post
+ .text          0x081209ec      0x488 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+                0x081209ec                pow
+ .text          0x08120e74     0x1300 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+                0x08120e74                __ieee754_pow
+ .text          0x08122174      0x2c8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+                0x08122174                __ieee754_sqrt
+ .text          0x0812243c       0x18 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+                0x0812243c                fabs
+ .text          0x08122454       0x1c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+                0x08122454                finite
+ .text          0x08122470       0x30 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+                0x08122470                __isnand
+ .text          0x081224a0        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .text          0x081224a0        0x8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+                0x081224a0                matherr
+ .text          0x081224a8       0x10 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+                0x081224a8                nan
+ .text          0x081224b8      0x210 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+                0x081224b8                rint
+ .text          0x081226c8      0x1e0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+                0x081226c8                scalbn
+ .text          0x081228a8       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+                0x081228a8                copysign
+ .text          0x081228cc      0x174 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+                0x081228cc                __divsf3
+ .text          0x08122a40       0x78 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+                0x08122a40                __lesf2
+ .text          0x08122ab8       0x98 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+                0x08122ab8                __floatsisf
+ .text          0x08122b50       0x54 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+                0x08122b50                __extendsfdf2
+ .text          0x08122ba4        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .text          0x08122ba4      0x504 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+                0x08122fb4                __subdf3
+                0x08123034                __adddf3
+ .text          0x081230a8      0x3c4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+                0x081230a8                __muldf3
+ .text          0x0812346c      0x258 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+                0x0812346c                __divdf3
+ .text          0x081236c4       0x88 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+                0x081236c4                __eqdf2
+ .text          0x0812374c       0x88 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+                0x0812374c                __nedf2
+ .text          0x081237d4       0x88 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+                0x081237d4                __gtdf2
+ .text          0x0812385c       0x88 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+                0x0812385c                __ltdf2
+ .text          0x081238e4       0x88 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+                0x081238e4                __ledf2
+ .text          0x0812396c       0xf8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+                0x0812396c                __floatsidf
+ .text          0x08123a64       0x38 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+                0x08123a64                __make_dp
+ .text          0x08123a9c       0x74 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+                0x08123a9c                __truncdfsf2
+ .text          0x08123b10        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .text          0x08123b10      0x14c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+                0x08123b8c                __divsi3
+                0x08123bec                __modsi3
+                0x08123c4c                __udivsi3
+                0x08123c54                __umodsi3
+ .text          0x08123c5c       0x98 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+                0x08123c5c                __muldi3
+ .text          0x08123cf4       0x80 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+                0x08123cf4                __clzsi2
+ .text          0x08123d74      0x160 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+                0x08123d74                __pack_f
+ .text          0x08123ed4       0xc8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+                0x08123ed4                __unpack_f
+ .text          0x08123f9c       0xa8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+                0x08123f9c                __fpcmp_parts_f
+ .text          0x08124044       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+                0x08124044                __make_fp
+ .text          0x08124070      0x314 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+                0x08124070                __pack_d
+ .text          0x08124384      0x138 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+                0x08124384                __unpack_d
+ .text          0x081244bc       0xc8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+                0x081244bc                __fpcmp_parts_d
+ .text          0x08124584        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .text          0x08124584       0x10 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+                0x08124584                __errno
+ .text          0x08124594        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .text          0x08124594       0xec ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+                0x08124594                alt_load
+ .text          0x08124680       0x6c ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+                0x08124680                alt_main
+ .text          0x081246ec      0x2e4 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+                0x081246ec                alt_irq_init
+                0x08124720                alt_sys_init
+ .text          0x081249d0      0x148 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x081249d0                altera_avalon_jtag_uart_read_fd
+                0x08124a28                altera_avalon_jtag_uart_write_fd
+                0x08124a80                altera_avalon_jtag_uart_close_fd
+                0x08124ac8                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x08124b18      0x40c ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x08124b18                altera_avalon_jtag_uart_init
+                0x08124eb0                altera_avalon_jtag_uart_close
+ .text          0x08124f24       0xf4 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x08124f24                altera_avalon_jtag_uart_ioctl
+ .text          0x08125018      0x224 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x08125018                altera_avalon_jtag_uart_read
+ .text          0x0812523c      0x240 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0812523c                altera_avalon_jtag_uart_write
+ .text          0x0812547c      0x528 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+                0x0812547c                alt_avalon_mailbox_init
+                0x081256a0                altera_avalon_mailbox_open
+                0x081256f8                altera_avalon_mailbox_close
+                0x08125718                altera_avalon_mailbox_post
+                0x08125824                altera_avalon_mailbox_pend
+                0x081258cc                altera_avalon_mailbox_get
+ .text          0x081259a4      0x304 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+                0x08125a20                altera_avalon_mutex_open
+                0x08125ad8                altera_avalon_mutex_close
+                0x08125af8                altera_avalon_mutex_lock
+                0x08125b38                altera_avalon_mutex_trylock
+                0x08125b78                altera_avalon_mutex_unlock
+                0x08125bd4                altera_avalon_mutex_is_mine
+                0x08125c50                altera_avalon_mutex_first_lock
+ .text          0x08125ca8     0x156c ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+                0x08125ca8                alt_up_pixel_buffer_dma_open_dev
+                0x08125ce8                alt_up_pixel_buffer_dma_draw
+                0x08125e88                alt_up_pixel_buffer_dma_change_back_buffer_address
+                0x08125ee0                alt_up_pixel_buffer_dma_swap_buffers
+                0x08125f38                alt_up_pixel_buffer_dma_check_swap_buffers_status
+                0x08125f6c                alt_up_pixel_buffer_dma_clear_screen
+                0x081260d0                alt_up_pixel_buffer_dma_draw_box
+                0x081265c4                alt_up_pixel_buffer_dma_draw_hline
+                0x08126914                alt_up_pixel_buffer_dma_draw_vline
+                0x08126ce4                alt_up_pixel_buffer_dma_draw_rectangle
+                0x08126da8                helper_plot_pixel
+                0x08126e78                alt_up_pixel_buffer_dma_draw_line
+ .text          0x08127214      0x154 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+                0x08127214                alt_alarm_start
+ .text          0x08127368      0x15c ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+                0x08127368                close
+ .text          0x081274c4       0x44 ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+                0x081274c4                alt_dcache_flush_all
+ .text          0x08127508       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .text          0x08127534      0x114 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+                0x08127534                alt_dev_llist_insert
+ .text          0x08127648       0x64 ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+                0x08127648                _do_ctors
+ .text          0x081276ac       0x64 ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+                0x081276ac                _do_dtors
+ .text          0x08127710        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .text          0x08127710       0x94 ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+                0x08127710                alt_find_dev
+ .text          0x081277a4       0x30 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+                0x081277a4                alt_icache_flush_all
+ .text          0x081277d4      0x1d4 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+                0x081277d4                alt_ic_isr_register
+                0x08127824                alt_ic_irq_enable
+                0x081278c0                alt_ic_irq_disable
+                0x08127960                alt_ic_irq_enabled
+ .text          0x081279a8       0xf8 ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+                0x081279a8                alt_iic_isr_register
+ .text          0x08127aa0      0x13c ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+                0x08127b64                alt_io_redirect
+ .text          0x08127bdc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .text          0x08127bdc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .text          0x08127bdc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .text          0x08127bdc      0x2c4 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+                0x08127cb8                open
+ .text          0x08127ea0       0x60 ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+                0x08127ea0                alt_release_fd
+ .text          0x08127f00      0x1a4 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+                0x08127f00                alt_alarm_stop
+                0x08127f98                alt_tick
+ .text          0x081280a4       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+                0x081280a4                altera_nios2_irq_init
+ .text          0x081280c4        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .text          0x081280c4      0x120 ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+                0x081280c4                alt_find_file
+ .text          0x081281e4       0xb8 ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+                0x081281e4                alt_get_fd
+ .text          0x0812829c       0x90 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+                0x0812829c                alt_icache_flush
+ .text          0x0812832c       0x14 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+                0x0812832c                atexit
+ .text          0x08128340       0x38 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+                0x08128340                exit
+ .text          0x08128378        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+ .text          0x08128378       0x74 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+                0x08128378                memcmp
+ .text          0x081283ec       0xa0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+                0x081283ec                memcpy
+ .text          0x0812848c       0x74 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+                0x0812848c                strlen
+ .text          0x08128500      0x134 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+                0x08128500                __register_exitproc
+ .text          0x08128634      0x1b4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+                0x08128638                __call_exitprocs
+ .text          0x081287e8       0x60 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+                0x08128828                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                0x08128848                PROVIDE (__etext, ABSOLUTE (.))
+                0x08128848                PROVIDE (_etext, ABSOLUTE (.))
+                0x08128848                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x08128848                . = ALIGN (0x4)
+                0x08128848                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x08128848                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x08128848                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x08128848                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x08128848                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x08128848                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table)
+ *(.dynamic)
+                0x08128848                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+ .ctors.65535   0x08128848        0x4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+                0x0812884c                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x0812884c                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x0812884c                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x0812884c                . = ALIGN (0x4)
+
+.rodata         0x0812884c      0x324
+                0x0812884c                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x0812884c                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0812884c       0x60 obj/default/hello_world.o
+ .rodata.str1.4
+                0x081288ac        0x4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .rodata.str1.4
+                0x081288b0        0x1 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+                                  0x4 (size before relaxing)
+ *fill*         0x081288b1        0x3 00
+ .rodata        0x081288b4       0x30 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .rodata        0x081288e4       0x10 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .rodata        0x081288f4       0x10 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+                0x081288f4                __thenan_sf
+ .rodata        0x08128904       0x14 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+                0x08128904                __thenan_df
+ .rodata        0x08128918      0x100 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+                0x08128918                __clz_tab
+ .rodata.str1.4
+                0x08128a18        0x4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .rodata        0x08128a1c       0x14 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .rodata        0x08128a30      0x134 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x08128b64        0xc ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x08128b70                . = ALIGN (0x4)
+                0x08128b70                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x0812884c                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x08128b70     0x1798 load address 0x0812a308
+                0x08128b70                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x08128b70                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x08128b70        0x0 ../fractals_3_bsp//obj/HAL/src/crt0.o
+ .data          0x08128b70        0x0 obj/default/hello_world.o
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .data          0x08128b70        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .data          0x08128b70      0x400 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .data          0x08128f70        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .data          0x08128f70        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .data          0x08128f70     0x11a4 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .data          0x0812a114        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x0812a114      0x1a8 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+                0x0812a114                alt_dev_null
+                0x0812a13c                alt_fd_list
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0812a2bc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .data          0x0812a2bc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .data          0x0812a2bc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+ .data          0x0812a2bc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .data          0x0812a2bc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .data          0x0812a2bc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .data          0x0812a2bc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .data          0x0812a2bc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .data          0x0812a2bc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+                0x081322bc                _gp = ABSOLUTE ((. + 0x8000))
+                0x081322bc                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0812a2bc        0xc obj/default/hello_world.o
+                0x0812a2bc                num_rows
+                0x0812a2c0                num_cols
+                0x0812a2c4                n
+ .sdata         0x0812a2c8        0x4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+                0x0812a2c8                __fdlib_version
+ .sdata         0x0812a2cc        0x8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+                0x0812a2cc                _impure_ptr
+                0x0812a2d0                _global_impure_ptr
+ .sdata         0x0812a2d4        0x8 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+                0x0812a2d4                alt_mailbox_list
+ .sdata         0x0812a2dc        0x8 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+                0x0812a2dc                alt_mutex_list
+ .sdata         0x0812a2e4       0x14 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+                0x0812a2e4                alt_fs_list
+                0x0812a2ec                alt_dev_list
+                0x0812a2f4                alt_max_fd
+ .sdata         0x0812a2f8        0x4 ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+                0x0812a2f8                alt_errno
+ .sdata         0x0812a2fc        0x4 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+                0x0812a2fc                alt_priority_mask
+ .sdata         0x0812a300        0x8 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+                0x0812a300                alt_alarm_list
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0812a308                . = ALIGN (0x4)
+                0x0812a308                _edata = ABSOLUTE (.)
+                0x0812a308                PROVIDE (edata, ABSOLUTE (.))
+                0x0812a308                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0812a308                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0812baa0      0x2cc
+                0x0812baa0                __bss_start = ABSOLUTE (.)
+                0x0812baa0                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0812baa0                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0812baa0        0x4 obj/default/hello_world.o
+                0x0812baa0                message
+ .sbss          0x0812baa4       0x1c obj/default/hello_world.o
+                0x0812baa4                mailbox_0
+                0x0812baa8                mailbox_2
+                0x0812baac                mailbox_1
+                0x0812bab0                col
+                0x0812bab4                my_pixel_buffer
+                0x0812bab8                mailbox_3
+                0x0812babc                row
+ .sbss          0x0812bac0        0xc ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+                0x0812bac0                alt_argc
+                0x0812bac4                alt_argv
+                0x0812bac8                alt_envp
+ .sbss          0x0812bacc        0x4 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+                0x0812bacc                alt_irq_active
+ .sbss          0x0812bad0        0x8 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+                0x0812bad0                _alt_tick_rate
+                0x0812bad4                _alt_nticks
+ .sbss          0x0812bad8        0x4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+                0x0812bad8                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x0812badc                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x0812badc                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//obj/HAL/src/crt0.o
+ .bss           0x0812badc        0x0 obj/default/hello_world.o
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .bss           0x0812badc        0x0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .bss           0x0812badc        0x0 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x0812badc      0x100 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+                0x0812badc                alt_irq
+ COMMON         0x0812bbdc      0x190 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+                0x0812bbdc                _atexit0
+                0x0812bd6c                . = ALIGN (0x4)
+                0x0812bd6c                __bss_end = ABSOLUTE (.)
+
+.onchip_memory2_0
+                0x00003000        0x0 load address 0x0812bd6c
+                0x00003000                PROVIDE (_alt_partition_onchip_memory2_0_start, ABSOLUTE (.))
+ *(.onchip_memory2_0. onchip_memory2_0.*)
+                0x00003000                . = ALIGN (0x4)
+                0x00003000                PROVIDE (_alt_partition_onchip_memory2_0_end, ABSOLUTE (.))
+                0x0812bd6c                PROVIDE (_alt_partition_onchip_memory2_0_load_addr, LOADADDR (.onchip_memory2_0))
+
+.onchip_memory2_1
+                0x00004000        0x0 load address 0x0812bd6c
+                0x00004000                PROVIDE (_alt_partition_onchip_memory2_1_start, ABSOLUTE (.))
+ *(.onchip_memory2_1. onchip_memory2_1.*)
+                0x00004000                . = ALIGN (0x4)
+                0x00004000                PROVIDE (_alt_partition_onchip_memory2_1_end, ABSOLUTE (.))
+                0x0812bd6c                PROVIDE (_alt_partition_onchip_memory2_1_load_addr, LOADADDR (.onchip_memory2_1))
+
+.onchip_memory2_2
+                0x00005000        0x0 load address 0x0812bd6c
+                0x00005000                PROVIDE (_alt_partition_onchip_memory2_2_start, ABSOLUTE (.))
+ *(.onchip_memory2_2. onchip_memory2_2.*)
+                0x00005000                . = ALIGN (0x4)
+                0x00005000                PROVIDE (_alt_partition_onchip_memory2_2_end, ABSOLUTE (.))
+                0x0812bd6c                PROVIDE (_alt_partition_onchip_memory2_2_load_addr, LOADADDR (.onchip_memory2_2))
+
+.onchip_memory2_3
+                0x00007000        0x0 load address 0x0812bd6c
+                0x00007000                PROVIDE (_alt_partition_onchip_memory2_3_start, ABSOLUTE (.))
+ *(.onchip_memory2_3. onchip_memory2_3.*)
+                0x00007000                . = ALIGN (0x4)
+                0x00007000                PROVIDE (_alt_partition_onchip_memory2_3_end, ABSOLUTE (.))
+                0x0812bd6c                PROVIDE (_alt_partition_onchip_memory2_3_load_addr, LOADADDR (.onchip_memory2_3))
+
+.sdram_0        0x0812bd6c        0x0
+                0x0812bd6c                PROVIDE (_alt_partition_sdram_0_start, ABSOLUTE (.))
+ *(.sdram_0. sdram_0.*)
+                0x0812bd6c                . = ALIGN (0x4)
+                0x0812bd6c                PROVIDE (_alt_partition_sdram_0_end, ABSOLUTE (.))
+                0x0812bd6c                _end = ABSOLUTE (.)
+                0x0812bd6c                end = ABSOLUTE (.)
+                0x0812bd6c                __alt_stack_base = ABSOLUTE (.)
+                0x0812bd6c                PROVIDE (_alt_partition_sdram_0_load_addr, LOADADDR (.sdram_0))
+
+.sram_0         0x11000000        0x0 load address 0x0812bd6c
+                0x11000000                PROVIDE (_alt_partition_sram_0_start, ABSOLUTE (.))
+ *(.sram_0. sram_0.*)
+                0x11000000                . = ALIGN (0x4)
+                0x11000000                PROVIDE (_alt_partition_sram_0_end, ABSOLUTE (.))
+                0x0812bd6c                PROVIDE (_alt_partition_sram_0_load_addr, LOADADDR (.sram_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/hello_world.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .comment       0x00000000       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .comment       0x00000000       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xa38
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../fractals_3_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/hello_world.o
+ .debug_aranges
+                0x00000048       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .debug_aranges
+                0x00000068       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .debug_aranges
+                0x00000088       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .debug_aranges
+                0x000000a8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .debug_aranges
+                0x000000c8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .debug_aranges
+                0x000000e8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .debug_aranges
+                0x00000108       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .debug_aranges
+                0x00000128       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .debug_aranges
+                0x00000148       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .debug_aranges
+                0x00000168       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .debug_aranges
+                0x00000188       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .debug_aranges
+                0x000001a8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .debug_aranges
+                0x000001c8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .debug_aranges
+                0x000001e8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .debug_aranges
+                0x00000208       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .debug_aranges
+                0x00000228       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .debug_aranges
+                0x00000248       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .debug_aranges
+                0x00000268       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .debug_aranges
+                0x00000288       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .debug_aranges
+                0x000002a8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .debug_aranges
+                0x000002c8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .debug_aranges
+                0x000002e8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .debug_aranges
+                0x00000308       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .debug_aranges
+                0x00000328       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .debug_aranges
+                0x00000348       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .debug_aranges
+                0x00000368       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .debug_aranges
+                0x00000388       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x000003a8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .debug_aranges
+                0x000003c8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x000003e8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .debug_aranges
+                0x00000408       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .debug_aranges
+                0x00000428       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .debug_aranges
+                0x00000448       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .debug_aranges
+                0x00000468       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .debug_aranges
+                0x00000488       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .debug_aranges
+                0x000004a8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .debug_aranges
+                0x000004c8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .debug_aranges
+                0x000004e8       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000508       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000528       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000548       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000568       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_aranges
+                0x00000588       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_aranges
+                0x000005a8       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x000005c8       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x000005e8       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .debug_aranges
+                0x00000608       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .debug_aranges
+                0x00000628       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .debug_aranges
+                0x00000648       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_aranges
+                0x00000668       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000688       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x000006a8       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x000006c8       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x000006e8       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x00000708       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .debug_aranges
+                0x00000728       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x00000748       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000768       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x00000788       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x000007a8       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x000007c8       0x30 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x000007f8       0x28 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000820       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x00000840       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x00000860       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x00000880       0x20 ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .debug_aranges
+                0x000008a0       0x38 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x000008d8       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x000008f8       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x00000918       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x00000938       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x00000958       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x00000978       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000998       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x000009b8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x000009d8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x000009f8       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x00000a18       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+                0x00000000     0x117b
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xc1 obj/default/hello_world.o
+ .debug_pubnames
+                0x000000c1       0x1a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .debug_pubnames
+                0x000000db       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .debug_pubnames
+                0x000000ff       0x25 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .debug_pubnames
+                0x00000124       0x1b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .debug_pubnames
+                0x0000013f       0x1d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .debug_pubnames
+                0x0000015c       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .debug_pubnames
+                0x0000017b       0x26 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .debug_pubnames
+                0x000001a1       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .debug_pubnames
+                0x000001bf       0x1a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .debug_pubnames
+                0x000001d9       0x1b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .debug_pubnames
+                0x000001f4       0x1d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .debug_pubnames
+                0x00000211       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .debug_pubnames
+                0x00000230       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .debug_pubnames
+                0x0000024f       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .debug_pubnames
+                0x0000026d       0x22 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .debug_pubnames
+                0x0000028f       0x24 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .debug_pubnames
+                0x000002b3       0x22 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .debug_pubnames
+                0x000002d5       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .debug_pubnames
+                0x00000301       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .debug_pubnames
+                0x00000320       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .debug_pubnames
+                0x0000033f       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .debug_pubnames
+                0x0000035d       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .debug_pubnames
+                0x0000037b       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .debug_pubnames
+                0x00000399       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .debug_pubnames
+                0x000003b7       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .debug_pubnames
+                0x000003d5       0x22 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .debug_pubnames
+                0x000003f7       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .debug_pubnames
+                0x00000417       0x23 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .debug_pubnames
+                0x0000043a       0x22 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .debug_pubnames
+                0x0000045c       0x48 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .debug_pubnames
+                0x000004a4       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .debug_pubnames
+                0x000004c3       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .debug_pubnames
+                0x000004e2       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .debug_pubnames
+                0x00000501       0x21 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .debug_pubnames
+                0x00000522       0x26 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .debug_pubnames
+                0x00000548       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .debug_pubnames
+                0x00000568       0x1f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .debug_pubnames
+                0x00000587       0x21 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .debug_pubnames
+                0x000005a8       0x26 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .debug_pubnames
+                0x000005ce       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .debug_pubnames
+                0x000005ee       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .debug_pubnames
+                0x0000060c       0x39 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .debug_pubnames
+                0x00000645       0x1f ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .debug_pubnames
+                0x00000664       0x46 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .debug_pubnames
+                0x000006aa       0x34 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_pubnames
+                0x000006de       0xa5 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_pubnames
+                0x00000783       0x55 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_pubnames
+                0x000007d8       0x34 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_pubnames
+                0x0000080c       0x33 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_pubnames
+                0x0000083f       0x34 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_pubnames
+                0x00000873       0xde ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .debug_pubnames
+                0x00000951       0xff ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .debug_pubnames
+                0x00000a50      0x1f1 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .debug_pubnames
+                0x00000c41       0x26 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_pubnames
+                0x00000c67       0x1c ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .debug_pubnames
+                0x00000c83       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_pubnames
+                0x00000cae       0x63 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_pubnames
+                0x00000d11       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_pubnames
+                0x00000d3c       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .debug_pubnames
+                0x00000d5c       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .debug_pubnames
+                0x00000d7c       0x20 ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_pubnames
+                0x00000d9c       0x23 ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_pubnames
+                0x00000dbf       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_pubnames
+                0x00000dea       0x6e ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_pubnames
+                0x00000e58       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_pubnames
+                0x00000e83       0x26 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_pubnames
+                0x00000ea9       0x32 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_pubnames
+                0x00000edb       0x3b ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_pubnames
+                0x00000f16       0x1b ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .debug_pubnames
+                0x00000f31       0x25 ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_pubnames
+                0x00000f56       0x68 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_pubnames
+                0x00000fbe       0x2c ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .debug_pubnames
+                0x00000fea       0x24 ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_pubnames
+                0x0000100e       0x21 ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_pubnames
+                0x0000102f       0x27 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_pubnames
+                0x00001056       0x2a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .debug_pubnames
+                0x00001080       0x1b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .debug_pubnames
+                0x0000109b       0x1c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+ .debug_pubnames
+                0x000010b7       0x1d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .debug_pubnames
+                0x000010d4       0x1d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .debug_pubnames
+                0x000010f1       0x1d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .debug_pubnames
+                0x0000110e       0x2a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .debug_pubnames
+                0x00001138       0x27 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .debug_pubnames
+                0x0000115f       0x1c ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_info     0x00000000    0x126d5
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x6a ../fractals_3_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000006a      0x997 obj/default/hello_world.o
+ .debug_info    0x00000a01      0x1cc /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .debug_info    0x00000bcd      0x726 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .debug_info    0x000012f3      0x23a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .debug_info    0x0000152d      0x13b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .debug_info    0x00001668      0x149 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .debug_info    0x000017b1       0xd5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .debug_info    0x00001886       0xc7 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .debug_info    0x0000194d      0x133 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .debug_info    0x00001a80      0x145 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .debug_info    0x00001bc5      0x208 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .debug_info    0x00001dcd      0x225 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .debug_info    0x00001ff2      0x154 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .debug_info    0x00002146      0x391 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .debug_info    0x000024d7      0x290 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .debug_info    0x00002767      0x214 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .debug_info    0x0000297b      0x245 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .debug_info    0x00002bc0      0x164 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .debug_info    0x00002d24      0x493 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .debug_info    0x000031b7      0x488 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .debug_info    0x0000363f      0x39b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .debug_info    0x000039da      0x29d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .debug_info    0x00003c77      0x29d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .debug_info    0x00003f14      0x29d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .debug_info    0x000041b1      0x29d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .debug_info    0x0000444e      0x29d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .debug_info    0x000046eb      0x218 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .debug_info    0x00004903      0x1d6 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .debug_info    0x00004ad9      0x261 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .debug_info    0x00004d3a      0x164 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .debug_info    0x00004e9e      0x21c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .debug_info    0x000050ba      0x215 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .debug_info    0x000052cf      0x130 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .debug_info    0x000053ff      0x2f2 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .debug_info    0x000056f1      0x25a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .debug_info    0x0000594b      0x21f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .debug_info    0x00005b6a      0x1d7 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .debug_info    0x00005d41      0x2fc /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .debug_info    0x0000603d      0x268 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .debug_info    0x000062a5      0x21b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .debug_info    0x000064c0       0xc9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .debug_info    0x00006589      0x92e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .debug_info    0x00006eb7      0x93d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .debug_info    0x000077f4      0x27c ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .debug_info    0x00007a70      0x214 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .debug_info    0x00007c84      0xa1f ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x000086a3      0x7c8 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x00008e6b      0x5f0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x0000945b      0x432 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x0000988d      0x535 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x00009dc2      0x52d ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000a2ef      0x662 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .debug_info    0x0000a951      0x579 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .debug_info    0x0000aeca      0xe6d ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .debug_info    0x0000bd37      0x431 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x0000c168      0x456 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .debug_info    0x0000c5be      0x15e ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000c71c      0x66e ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000cd8a      0x2a6 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x0000d030       0xfe ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x0000d12e       0xfd ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x0000d22b      0x153 ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000d37e      0x407 ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x0000d785      0x14b ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000d8d0      0x482 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_info    0x0000dd52      0x303 ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x0000e055      0x684 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000e6d9       0x73 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000e74c      0x264 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000e9b0      0x156 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000eb06      0x514 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .debug_info    0x0000f01a      0x3e1 ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x0000f3fb      0x3ed ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_info    0x0000f7e8      0x148 ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .debug_info    0x0000f930       0x79 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000f9a9      0x40e ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x0000fdb7      0x44f ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00010206      0x193 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x00010399      0x181 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .debug_info    0x0001051a      0x93f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .debug_info    0x00010e59       0x8c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+ .debug_info    0x00010ee5      0x115 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .debug_info    0x00010ffa      0x106 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .debug_info    0x00011100       0xdb /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .debug_info    0x000111db      0x99c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .debug_info    0x00011b77      0x9e2 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x00012559      0x17c ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x00000000     0x5823
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 ../fractals_3_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012      0x135 obj/default/hello_world.o
+ .debug_abbrev  0x00000147       0xf0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .debug_abbrev  0x00000237      0x14c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .debug_abbrev  0x00000383      0x122 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .debug_abbrev  0x000004a5       0xc3 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .debug_abbrev  0x00000568       0xc5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .debug_abbrev  0x0000062d       0x79 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .debug_abbrev  0x000006a6       0x53 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .debug_abbrev  0x000006f9       0x95 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .debug_abbrev  0x0000078e       0xd5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .debug_abbrev  0x00000863      0x11b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .debug_abbrev  0x0000097e       0xf5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .debug_abbrev  0x00000a73       0xc3 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .debug_abbrev  0x00000b36      0x1e5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .debug_abbrev  0x00000d1b      0x151 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .debug_abbrev  0x00000e6c      0x13d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .debug_abbrev  0x00000fa9      0x128 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .debug_abbrev  0x000010d1       0xba /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .debug_abbrev  0x0000118b      0x1d2 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .debug_abbrev  0x0000135d      0x204 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .debug_abbrev  0x00001561      0x1e3 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .debug_abbrev  0x00001744      0x151 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .debug_abbrev  0x00001895      0x151 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .debug_abbrev  0x000019e6      0x151 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .debug_abbrev  0x00001b37      0x151 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .debug_abbrev  0x00001c88      0x151 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .debug_abbrev  0x00001dd9      0x13f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .debug_abbrev  0x00001f18      0x10f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .debug_abbrev  0x00002027      0x137 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .debug_abbrev  0x0000215e       0xba /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .debug_abbrev  0x00002218       0xe0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x000022f8       0xee /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .debug_abbrev  0x000023e6       0xb9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x0000249f      0x1aa /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .debug_abbrev  0x00002649      0x158 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .debug_abbrev  0x000027a1      0x132 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .debug_abbrev  0x000028d3      0x100 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .debug_abbrev  0x000029d3      0x1b1 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .debug_abbrev  0x00002b84      0x149 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .debug_abbrev  0x00002ccd      0x132 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .debug_abbrev  0x00002dff       0x61 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .debug_abbrev  0x00002e60      0x15f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .debug_abbrev  0x00002fbf      0x157 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .debug_abbrev  0x00003116       0x88 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000319e       0xb7 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00003255      0x16a ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000033bf       0xf7 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x000034b6      0x17c ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x00003632       0xf0 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x00003722      0x191 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x000038b3      0x18d ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00003a40      0x172 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .debug_abbrev  0x00003bb2      0x15c ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .debug_abbrev  0x00003d0e      0x196 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .debug_abbrev  0x00003ea4      0x172 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x00004016       0xfb ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x00004111       0x57 ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00004168       0xc7 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000422f       0xf6 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x00004325       0x76 ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x0000439b       0x76 ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x00004411       0x5e ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000446f       0xcf ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x0000453e       0x3f ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000457d      0x134 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x000046b1      0x14e ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x000047ff       0xf0 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x000048ef       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00004901      0x10c ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00004a0d       0x44 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00004a51      0x112 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00004b63       0xc1 ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00004c24      0x150 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x00004d74       0x3f ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .debug_abbrev  0x00004db3       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x00004dc5       0xcf ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x00004e94       0xfb ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x00004f8f       0x7a ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x00005009       0xb7 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x000050c0      0x16e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .debug_abbrev  0x0000522e       0x3b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x00005269       0x7c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x000052e5       0xb5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000539a       0x8b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00005425      0x1ae /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x000055d3      0x1de /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x000057b1       0x72 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x00000000     0xd90f
+ *(.debug_line)
+ .debug_line    0x00000000       0x72 ../fractals_3_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000072      0x5e0 obj/default/hello_world.o
+ .debug_line    0x00000652      0x59b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .debug_line    0x00000bed      0xacf /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .debug_line    0x000016bc      0x4da /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .debug_line    0x00001b96      0x222 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .debug_line    0x00001db8      0x20c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .debug_line    0x00001fc4      0x214 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .debug_line    0x000021d8      0x1f3 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+ .debug_line    0x000023cb      0x205 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .debug_line    0x000025d0      0x209 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .debug_line    0x000027d9      0x326 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .debug_line    0x00002aff      0x328 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .debug_line    0x00002e27      0x226 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .debug_line    0x0000304d      0x26a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .debug_line    0x000032b7      0x121 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .debug_line    0x000033d8      0x187 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .debug_line    0x0000355f       0xd1 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .debug_line    0x00003630       0x94 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .debug_line    0x000036c4      0x430 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .debug_line    0x00003af4      0x3e5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .debug_line    0x00003ed9      0x301 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .debug_line    0x000041da      0x129 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .debug_line    0x00004303      0x129 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .debug_line    0x0000442c      0x129 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .debug_line    0x00004555      0x129 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .debug_line    0x0000467e      0x129 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .debug_line    0x000047a7      0x175 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .debug_line    0x0000491c       0xe9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .debug_line    0x00004a05      0x121 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .debug_line    0x00004b26       0x94 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .debug_line    0x00004bba      0x2c3 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .debug_line    0x00004e7d      0x193 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .debug_line    0x00005010      0x179 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .debug_line    0x00005189      0x1ca /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .debug_line    0x00005353      0x197 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .debug_line    0x000054ea      0x177 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .debug_line    0x00005661       0xe1 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .debug_line    0x00005742      0x222 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .debug_line    0x00005964      0x1e4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .debug_line    0x00005b48      0x187 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .debug_line    0x00005ccf      0x11e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .debug_line    0x00005ded      0x1e6 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .debug_line    0x00005fd3      0x224 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+ .debug_line    0x000061f7      0x247 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000643e      0x2fa ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .debug_line    0x00006738      0x376 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00006aae      0x22f ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x00006cdd      0x4db ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x000071b8      0x347 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x000074ff      0x427 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x00007926      0x435 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x00007d5b      0x542 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .debug_line    0x0000829d      0x411 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .debug_line    0x000086ae      0xbbb ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .debug_line    0x00009269      0x30c ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x00009575      0x2c9 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .debug_line    0x0000983e      0x1fd ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00009a3b      0x284 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00009cbf      0x28a ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00009f49       0x83 ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x00009fcc       0x83 ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x0000a04f      0x1da ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_line    0x0000a229      0x29b ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x0000a4c4      0x1ed ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000a6b1      0x2f8 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000a9a9      0x279 ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000ac22      0x2e4 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x0000af06       0x6b ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000af71      0x278 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000b1e9       0x72 ../fractals_3_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000b25b      0x32f ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .debug_line    0x0000b58a       0xed ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x0000b677      0x30c ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000b983      0x1f9 ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .debug_line    0x0000bb7c       0xab ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000bc27      0x2ac ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x0000bed3      0x2c7 ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x0000c19a      0x229 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x0000c3c3      0x1fa /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .debug_line    0x0000c5bd      0x232 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .debug_line    0x0000c7ef      0x1d9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+ .debug_line    0x0000c9c8      0x296 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .debug_line    0x0000cc5e      0x1a9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .debug_line    0x0000ce07      0x264 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .debug_line    0x0000d06b      0x30d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .debug_line    0x0000d378      0x361 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x0000d6d9      0x236 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x00000000     0x12a8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x84 obj/default/hello_world.o
+ .debug_frame   0x00000084       0x38 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .debug_frame   0x000000bc       0x3c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .debug_frame   0x000000f8       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x00000124       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .debug_frame   0x00000144       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+ .debug_frame   0x00000164       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .debug_frame   0x00000184       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x000001a4       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+ .debug_frame   0x000001c4       0x30 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .debug_frame   0x000001f4       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .debug_frame   0x00000220       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .debug_frame   0x00000240       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .debug_frame   0x0000026c       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .debug_frame   0x00000298       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .debug_frame   0x000002c0       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .debug_frame   0x000002e8       0x70 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .debug_frame   0x00000358       0x3c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .debug_frame   0x00000394       0x30 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .debug_frame   0x000003c4       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .debug_frame   0x000003f0       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .debug_frame   0x0000041c       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .debug_frame   0x00000448       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .debug_frame   0x00000474       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .debug_frame   0x000004a0       0x30 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .debug_frame   0x000004d0       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .debug_frame   0x000004f8       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .debug_frame   0x00000520       0x70 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .debug_frame   0x00000590       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .debug_frame   0x000005bc       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .debug_frame   0x000005dc       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .debug_frame   0x000005fc       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .debug_frame   0x0000061c       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .debug_frame   0x0000063c       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .debug_frame   0x00000664       0x2c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .debug_frame   0x00000690       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .debug_frame   0x000006b0       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+ .debug_frame   0x000006d0       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+ .debug_frame   0x000006f0       0x48 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000738       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000764       0x64 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000007c8       0x80 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x00000848       0x80 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_frame   0x000008c8       0x2c ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_frame   0x000008f4       0x2c ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000920       0x2c ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x0000094c      0x114 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .debug_frame   0x00000a60      0x10c ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .debug_frame   0x00000b6c      0x160 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .debug_frame   0x00000ccc       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_frame   0x00000cf8       0x48 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .debug_frame   0x00000d40       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000d6c       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x00000d98       0x48 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000de0       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x00000e0c       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .debug_frame   0x00000e38       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x00000e64       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x00000e90       0x80 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x00000f10       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x00000f3c       0x48 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x00000f84       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000fb0       0x64 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .debug_frame   0x00001014       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x00001040       0x48 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x00001088       0x2c ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .debug_frame   0x000010b4       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x000010e0       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x0000110c       0x2c ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x00001138       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .debug_frame   0x00001158       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .debug_frame   0x00001180       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .debug_frame   0x000011a0       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .debug_frame   0x000011c0       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .debug_frame   0x000011e0       0x34 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00001214       0x4c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00001260       0x48 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x00000000     0x16b5
+ *(.debug_str)
+ .debug_str     0x00000000       0x4c obj/default/hello_world.o
+ .debug_str     0x0000004c      0x1a7 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+                                0x1f2 (size before relaxing)
+ .debug_str     0x000001f3       0xd3 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+                                0x21e (size before relaxing)
+ .debug_str     0x000002c6       0x4d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+                                0x1ce (size before relaxing)
+ .debug_str     0x00000313       0x43 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+                                0x1b0 (size before relaxing)
+ .debug_str     0x00000356       0xd2 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_finite.o)
+                                0x1bd (size before relaxing)
+ .debug_str     0x00000428       0x46 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+                                0x18c (size before relaxing)
+ .debug_str     0x0000046e       0x3e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_lib_ver.o)
+                                0x1d5 (size before relaxing)
+ .debug_str     0x000004ac       0x46 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_matherr.o)
+                                0x1a7 (size before relaxing)
+ .debug_str     0x000004f2       0x3a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_nan.o)
+                                0x1b0 (size before relaxing)
+ .debug_str     0x0000052c       0x46 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+                                0x1c4 (size before relaxing)
+ .debug_str     0x00000572       0x51 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+                                0x1de (size before relaxing)
+ .debug_str     0x000005c3       0x48 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+                                0x1b7 (size before relaxing)
+ .debug_str     0x0000060b      0x186 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+                                0x22d (size before relaxing)
+ .debug_str     0x00000791        0x8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+                                0x1fa (size before relaxing)
+ .debug_str     0x00000799       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+                                0x1e0 (size before relaxing)
+ .debug_str     0x000007b7       0x15 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+                                0x1f4 (size before relaxing)
+ .debug_str     0x00000000      0x1a5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_sf.o)
+ .debug_str     0x000007cc       0x8a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+                                0x271 (size before relaxing)
+ .debug_str     0x00000856       0x40 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+                                0x243 (size before relaxing)
+ .debug_str     0x00000896        0x9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+                                0x233 (size before relaxing)
+ .debug_str     0x0000089f        0x8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+                                0x200 (size before relaxing)
+ .debug_str     0x000008a7        0x8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+                                0x200 (size before relaxing)
+ .debug_str     0x000008af        0x8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+                                0x200 (size before relaxing)
+ .debug_str     0x000008b7        0x8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+                                0x200 (size before relaxing)
+ .debug_str     0x000008bf        0x8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+                                0x200 (size before relaxing)
+ .debug_str     0x000008c7        0xc /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+                                0x1e0 (size before relaxing)
+ .debug_str     0x000008d3        0xa /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+                                0x1bb (size before relaxing)
+ .debug_str     0x000008dd       0x14 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+                                0x200 (size before relaxing)
+ .debug_str     0x00000000      0x1a5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_thenan_df.o)
+ .debug_str     0x000008f1       0x93 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+                                0x1b6 (size before relaxing)
+ .debug_str     0x00000984       0x62 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+                                0x1ae (size before relaxing)
+ .debug_str     0x000009e6       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+                                0x180 (size before relaxing)
+ .debug_str     0x00000a06       0x10 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+                                0x202 (size before relaxing)
+ .debug_str     0x00000a16        0xb /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+                                0x1e4 (size before relaxing)
+ .debug_str     0x00000a21       0x10 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+                                0x1c8 (size before relaxing)
+ .debug_str     0x00000a31        0xa /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+                                0x1bb (size before relaxing)
+ .debug_str     0x00000a3b        0x9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+                                0x208 (size before relaxing)
+ .debug_str     0x00000a44        0xb /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+                                0x1ea (size before relaxing)
+ .debug_str     0x00000a4f       0x10 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_df.o)
+                                0x1c8 (size before relaxing)
+ .debug_str     0x00000000      0x163 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clz.o)
+ .debug_str     0x00000a5f      0x450 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-errno.o)
+                                0x504 (size before relaxing)
+ .debug_str     0x00000eaf       0xe6 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-impure.o)
+                                0x51c (size before relaxing)
+ .debug_str     0x00000f95       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .debug_str     0x00000fa7       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .debug_str     0x00000fb9       0x52 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_str     0x0000100b       0x12 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_str     0x0000101d       0x1a ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_str     0x00001037       0x12 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_str     0x00001049       0x1a ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_str     0x00001063       0x1a ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_str     0x0000107d       0x50 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .debug_str     0x000010cd       0x2f ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .debug_str     0x000010fc       0x93 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .debug_str     0x0000118f       0x23 ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_str     0x000011b2       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .debug_str     0x000011c4       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x000011d6       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_str     0x000011e8       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_str     0x000011fa       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_str     0x0000120c       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_str     0x0000121e       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x00001230       0x18 ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_str     0x00001248       0x1a ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_str     0x00001262       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_str     0x00001274       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_str     0x00001286       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .debug_str     0x00001298       0x1a ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_str     0x000012b2       0x12 ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .debug_str     0x000012c4       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_str     0x000012d6       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_str     0x000012e8       0x12 ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_str     0x000012fa       0xc9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+                                0x1c1 (size before relaxing)
+ .debug_str     0x000013c3       0x3e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+                                0x50e (size before relaxing)
+ .debug_str     0x00001401       0x3d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-int_errno.o)
+                                0x165 (size before relaxing)
+ .debug_str     0x0000143e       0xd7 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+                                0x16c (size before relaxing)
+ .debug_str     0x00001515       0x69 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+                                0x12a (size before relaxing)
+ .debug_str     0x0000157e       0x4f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+                                0x17f (size before relaxing)
+ .debug_str     0x000015cd       0x51 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+                                0x526 (size before relaxing)
+ .debug_str     0x0000161e       0x7b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+                                0x550 (size before relaxing)
+ .debug_str     0x00001699       0x1c ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_loc      0x00000000     0x448a
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xad obj/default/hello_world.o
+ .debug_loc     0x000000ad       0xf8 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-w_pow.o)
+ .debug_loc     0x000001a5     0x1125 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .debug_loc     0x000012ca      0x41e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .debug_loc     0x000016e8       0x18 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_isnand.o)
+ .debug_loc     0x00001700      0x23c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .debug_loc     0x0000193c      0x228 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .debug_loc     0x00001b64      0x11d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .debug_loc     0x00001c81       0x45 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_sf.o)
+ .debug_loc     0x00001cc6       0x8f /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .debug_loc     0x00001d55       0x32 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_sf_to_df.o)
+ .debug_loc     0x00001d87      0x47a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .debug_loc     0x00002201      0x3b4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .debug_loc     0x000025b5      0x1df /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .debug_loc     0x00002794       0x70 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_eq_df.o)
+ .debug_loc     0x00002804       0x70 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_ne_df.o)
+ .debug_loc     0x00002874       0x70 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_gt_df.o)
+ .debug_loc     0x000028e4       0x70 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_lt_df.o)
+ .debug_loc     0x00002954       0x70 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_le_df.o)
+ .debug_loc     0x000029c4       0x9a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_df.o)
+ .debug_loc     0x00002a5e       0x58 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_df.o)
+ .debug_loc     0x00002ab6       0x6a /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_df_to_sf.o)
+ .debug_loc     0x00002b20      0x1d2 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(lib2-divmod.o)
+ .debug_loc     0x00002cf2       0xc4 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .debug_loc     0x00002db6       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .debug_loc     0x00002dd4       0xf9 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_sf.o)
+ .debug_loc     0x00002ecd       0x31 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_sf.o)
+ .debug_loc     0x00002efe       0x3c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_fpcmp_parts_sf.o)
+ .debug_loc     0x00002f3a       0x6b /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_make_sf.o)
+ .debug_loc     0x00002fa5      0x184 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .debug_loc     0x00003129       0xe5 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_unpack_df.o)
+ .debug_loc     0x0000320e       0x56 ../fractals_3_bsp//libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00003264       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_main.o)
+ .debug_loc     0x0000328f       0x81 ../fractals_3_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00003310       0xac ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x000033bc       0xac ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_loc     0x00003468       0x2b ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_loc     0x00003493       0x2b ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x000034be       0x2b ../fractals_3_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x000034e9      0x183 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mailbox.o)
+ .debug_loc     0x0000366c      0x183 ../fractals_3_bsp//libhal_bsp.a(altera_avalon_mutex.o)
+ .debug_loc     0x000037ef      0x206 ../fractals_3_bsp//libhal_bsp.a(altera_up_avalon_video_pixel_buffer_dma.o)
+ .debug_loc     0x000039f5       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_alarm_start.o)
+ .debug_loc     0x00003a20       0x56 ../fractals_3_bsp//libhal_bsp.a(alt_close.o)
+ .debug_loc     0x00003a76       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x00003aa1       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x00003acc       0x56 ../fractals_3_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x00003b22       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_do_ctors.o)
+ .debug_loc     0x00003b4d       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_do_dtors.o)
+ .debug_loc     0x00003b78       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x00003ba3       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_loc     0x00003bce       0xac ../fractals_3_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x00003c7a       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x00003ca5       0x56 ../fractals_3_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x00003cfb       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00003d26       0x81 ../fractals_3_bsp//libhal_bsp.a(alt_open.o)
+ .debug_loc     0x00003da7       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x00003dd2       0x56 ../fractals_3_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_loc     0x00003e28       0x2b ../fractals_3_bsp//libhal_bsp.a(altera_nios2_irq.o)
+ .debug_loc     0x00003e53       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x00003e7e       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x00003ea9       0x2b ../fractals_3_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x00003ed4       0x1e /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-atexit.o)
+ .debug_loc     0x00003ef2       0x3d /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-exit.o)
+ .debug_loc     0x00003f2f      0x114 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcmp.o)
+ .debug_loc     0x00004043       0xca /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-memcpy.o)
+ .debug_loc     0x0000410d       0x3c /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-strlen.o)
+ .debug_loc     0x00004149      0x120 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__atexit.o)
+ .debug_loc     0x00004269      0x1cb /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)
+ .debug_loc     0x00004434       0x56 ../fractals_3_bsp//libhal_bsp.a(alt_exit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x30
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x30 ../fractals_3_bsp//obj/HAL/src/crt0.o
+                0x08400000                __alt_data_end = 0x8400000
+                0x08400000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0812bd6c                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0812bd6c                PROVIDE (__alt_heap_start, end)
+                0x08400000                PROVIDE (__alt_heap_limit, 0x8400000)
+OUTPUT(fractals_3.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000      0x538
+ .debug_ranges  0x00000000       0x20 ../fractals_3_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020      0x1d0 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_pow.o)
+ .debug_ranges  0x000001f0       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-e_sqrt.o)
+ .debug_ranges  0x00000218       0x18 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_fabs.o)
+ .debug_ranges  0x00000230       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_rint.o)
+ .debug_ranges  0x00000258       0x20 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_scalbn.o)
+ .debug_ranges  0x00000278       0x18 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libm.a(lib_a-s_copysign.o)
+ .debug_ranges  0x00000290       0x60 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_sf.o)
+ .debug_ranges  0x000002f0       0x18 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_si_to_sf.o)
+ .debug_ranges  0x00000308       0x30 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_addsub_df.o)
+ .debug_ranges  0x00000338       0x88 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_mul_df.o)
+ .debug_ranges  0x000003c0       0x50 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_div_df.o)
+ .debug_ranges  0x00000410       0x68 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_muldi3.o)
+ .debug_ranges  0x00000478       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_clzsi2.o)
+ .debug_ranges  0x000004a0       0x28 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/libgcc.a(_pack_df.o)
+ .debug_ranges  0x000004c8       0x28 ../fractals_3_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x000004f0       0x30 ../fractals_3_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x00000520       0x18 /usr/local/3rdparty/altera/quartus12/nios2eds/bin/gnu/H-i686-pc-linux-gnu/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/libc.a(lib_a-__call_atexit.o)

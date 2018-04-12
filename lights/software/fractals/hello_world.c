@@ -7,12 +7,11 @@
 #include "system.h"
 #include "altera_avalon_pio_regs.h"
 #include "alt_types.h"
-#include <altera_up_avalon_video_character_buffer_with_dma.h>  // to write characters to video
 #include <altera_up_avalon_video_pixel_buffer_dma.h> // to swap front and back buffer
 #include <math.h>  // for trigonometry functions
 #include <stdlib.h>  // for file I/O
 #include <altera_avalon_performance_counter.h>
-//#include "altera_avalon_mailbox.h"
+#include "altera_avalon_mailbox.h"
 
 
 alt_up_pixel_buffer_dma_dev *my_pixel_buffer; //declare global var
@@ -20,32 +19,28 @@ const int num_rows = 240;  //from 320
 const int num_cols = 320; //from 240
 float row;
 float col;
+int n = 4; //number of processors
 
-int main()
-{
-/*
-	//declaring mailboxes
-	alt_u32 message = 0;
-	alt_mailbox_dev* mailbox_0;
-	alt_mailbox_dev* mailbox_1;
+//declaring mailboxes
+alt_mailbox_dev* mailbox_0;
+alt_mailbox_dev* mailbox_1;
+alt_mailbox_dev* mailbox_2;
+alt_mailbox_dev* mailbox_3;
+alt_u32 message = 0;
+
+void barrier(int id);
+void pend(alt_mailbox_dev*);
+void post(int id, alt_u32 mess);
+
+
+int main() {
 
 	mailbox_0 = altera_avalon_mailbox_open("/dev/mailbox_0");
 	mailbox_1 = altera_avalon_mailbox_open("/dev/mailbox_1");
+	mailbox_2 = altera_avalon_mailbox_open("/dev/mailbox_2");
+	mailbox_3 = altera_avalon_mailbox_open("/dev/mailbox_3");
 
 	int cpuid = __builtin_rdctl(5);
-
-	//BARRIER: DO WE NEED THIS HERE?
-	/*
-	if(cpuid == 0) {
-		altera_avalon_mailbox_post(mailbox_1, message);
-		altera_avalon_mailbox_pend(mailbox_0);
-	} else {
-		altera_avalon_mailbox_post(mailbox_0, message);
-		altera_avalon_mailbox_pend(mailbox_1);
-	}
-*/
-
-	//pixel buffer
 
 	//alt_up_pixel_buffer_dma_dev *my_pixel_buffer; //declare global var
 	my_pixel_buffer=alt_up_pixel_buffer_dma_open_dev("/dev/video_pixel_buffer_dma_0"); //assign it
@@ -57,16 +52,23 @@ int main()
 	max_x = 1.0;
 	min_y = -1.0;
 	max_y = 1.0;
+
+	int i, j;
+	float x, y, z;
+	float x0, y0;
+
+	float target_x, target_y;
+	int iteration;
+	int is_target; //false
+
+	barrier(cpuid);
 	while (1) {
-		int i, j;
-		float x, y, z;
-		float x0, y0;
+		//printf("barrier 1")
+		barrier(cpuid);
+		//printf("%d", cpuid);
+		is_target = 0;
 
-		float target_x, target_y;
-		int iteration;
-		int is_target = 0; //false
-
-		for (i = 0; i < num_rows; i++) {
+		for (i = cpuid; i < num_rows; i+=4) {
 			for (j = 0; j < num_cols; j++) {
 				x = 0;
 				y = 0;
@@ -83,28 +85,101 @@ int main()
 					x = xtemp;
 					iteration++;
 					if(iteration == 450 && is_target == 0) {
-						is_target == 1;
+						barrier(cpuid);
+						is_target = 1;
 					}
 				}
-				if(is_target == 1) {
-					target_x = x0;
-					target_y = y0;
-				}
-
 				//printf("Iteration: %d\n", iteration);
 				if(iteration == 500) {
 					alt_up_pixel_buffer_dma_draw(my_pixel_buffer, 0,j,i );
 				} else {
 					alt_up_pixel_buffer_dma_draw(my_pixel_buffer, (iteration*8/zoom) + (iteration*4/zoom) +(iteration*2/zoom), j, i);
 				}
-
+				//barrier(cpuid);
 			}
+			barrier(cpuid);
 		}
-		min_x = target_x - 1/(pow(1.5, zoom));
-		max_x = target_x + 1/(pow(1.5, zoom));
-		min_y = target_y - 0.75/(pow(1.5, zoom));
-		max_y = target_y + 0.75/(pow(1.5, zoom));
+		if(is_target == 1) {
+			target_x = x0;
+			target_y = y0;
+		}
+		barrier(cpuid);
+		min_x = target_x - (1/(pow(1.5, zoom)));
+		max_x = target_x + (1/(pow(1.5, zoom)));
+		min_y = target_y - (0.75/(pow(1.5, zoom)));
+		max_y = target_y + (0.75/(pow(1.5, zoom)));
 		zoom += 1;
+
 		alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);
 	}
 }
+
+void barrier(int id){
+	if(id == 0){
+		post(id, message);
+		int i;
+		for(i = 1; i < n-1; i++){
+			pend(mailbox_0);
+		}
+	}
+	if(id == 1){
+		post(id, message);
+		int i;
+		for(i = 1; i < n-1; i++){
+			pend(mailbox_1);
+		}
+	}
+
+	if(id == 2){
+		post(id, message);
+		int i;
+		for(i = 1; i < n-1; i++){
+			pend(mailbox_2);
+		}
+	}
+
+	if(id == 3){
+		post(id, message);
+		int i;
+		for(i = 1; i < n-1; i++){
+			pend(mailbox_3);
+		}
+	}
+}
+void pend(alt_mailbox_dev* box){
+	//printf("MAILBOX PENDING \n");
+	altera_avalon_mailbox_pend(box);
+}
+
+void post(int id, alt_u32 mess){
+	 //altera_avalon_mailbox_post(box, message);
+
+	 if(id == 0){
+	 //printf("MAILBOX 0 POSTING \n");
+	 altera_avalon_mailbox_post(mailbox_1, mess);
+	 altera_avalon_mailbox_post(mailbox_2, mess);
+	 altera_avalon_mailbox_post(mailbox_3, mess);
+	 }
+	 if(id == 1){
+	 //printf("MAILBOX 1 POSTING \n");
+	 altera_avalon_mailbox_post(mailbox_0, mess);
+	 altera_avalon_mailbox_post(mailbox_2, mess);
+	 altera_avalon_mailbox_post(mailbox_3, mess);
+	 }
+
+	 if(id == 2){
+	 //printf("MAILBOX 2 POSTING \n");
+	 altera_avalon_mailbox_post(mailbox_0, mess);
+	 altera_avalon_mailbox_post(mailbox_1, mess);
+	 altera_avalon_mailbox_post(mailbox_3, mess);
+	 }
+
+	 if(id == 3){
+	 //printf("MAILBOX 3 POSTING \n");
+	 altera_avalon_mailbox_post(mailbox_0, mess);
+	 altera_avalon_mailbox_post(mailbox_1, mess);
+	 altera_avalon_mailbox_post(mailbox_2, mess);
+	 }
+
+}
+
