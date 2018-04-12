@@ -3036,3 +3036,80 @@ Command-line arguments:  -os linux -ws gtk -arch x86 --launcher.GTK_version 2 -p
 
 !ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:48:45.197
 !MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals_3/fractals_3.elf]
+!SESSION 2018-04-12 12:54:00.250 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os linux -ws gtk -arch x86 --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-04-12 12:54:55.390
+!MESSAGE The system console model is invalid. Cannot launch.
+!SESSION 2018-04-12 12:55:04.832 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os linux -ws gtk -arch x86 --launcher.GTK_version 2 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:55:14.460
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=1 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1523545723]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:55:16.050
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=1 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals/fractals.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:55:19.068
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=2 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1523545723]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:55:20.631
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=2 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals1/fractals1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:55:23.614
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=3 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1523545723]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:55:25.181
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=3 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals2/fractals2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:55:28.229
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1523545723]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:55:29.801
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals_3/fractals_3.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:19.706
+!MESSAGE Terminated Launch with connection: 11USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:20.217
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=1 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1523545723]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:21.776
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=1 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals/fractals.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:24.127
+!MESSAGE Terminated Launch with connection: 12USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:24.801
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=2 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1523545723]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:26.371
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=2 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals1/fractals1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:28.716
+!MESSAGE Terminated Launch with connection: 13USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:29.215
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=3 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1523545723]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:30.787
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=3 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals2/fractals2.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:33.252
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [1-2]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:33.767
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --stop --sidp=0x112050c8 --id=0x0 --timestamp=1523545723]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-04-12 12:56:35.331
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-Blaster on localhost [1-2]' --device=1 --instance=0 --go --sidp=0x112050c8 --id=0x0 --timestamp=1523545723 /acct/dallinw/git/CSCE313/lights/software/fractals_3/fractals_3.elf]

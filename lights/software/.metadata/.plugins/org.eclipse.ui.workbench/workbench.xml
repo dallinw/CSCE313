@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
 <window height="1040" maximized="true" width="1717" x="162" y="27">
 <fastViewData fastViewLocation="1024"/>
@@ -36,7 +36,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" partName="hello_world.c" path="/acct/dallinw/git/CSCE313/lights/software/fractals/hello_world.c" title="hello_world.c" tooltip="fractals/hello_world.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fractals/hello_world.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2910" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3186" selectionTopPixel="1679"/>
 </editor>
 </editors>
 <views>

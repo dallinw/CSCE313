@@ -42,7 +42,6 @@ int main() {
 
 	int cpuid = __builtin_rdctl(5);
 
-	barrier(cpuid);
 	//alt_up_pixel_buffer_dma_dev *my_pixel_buffer; //declare global var
 	my_pixel_buffer=alt_up_pixel_buffer_dma_open_dev("/dev/video_pixel_buffer_dma_0"); //assign it
 	alt_up_pixel_buffer_dma_clear_screen(my_pixel_buffer,0);//clear_screen();
