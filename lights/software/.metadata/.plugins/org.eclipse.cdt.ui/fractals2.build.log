@@ -19,8 +19,8 @@ perl: warning: Please check that your locale settings:
 	LANG = "C"
     are supported and installed on your system.
 perl: warning: Falling back to the standard locale ("C").
-Info: (fractals2.elf) 41 KBytes program size (code + initialized data).
-Info:                 122832 KBytes free for stack + heap.
+Info: (fractals2.elf) 79 KBytes program size (code + initialized data).
+Info:                 122793 KBytes free for stack + heap.
 Info: Creating fractals2.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source fractals2.elf >fractals2.objdump
 [fractals2 build complete]
